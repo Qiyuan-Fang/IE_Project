@@ -45,10 +45,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -127,16 +135,51 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Iteration1\Iteration1Controller.cs" />
+    <Compile Include="Controllers\Iteration1\SafetypointsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\DataModel.cs" />
+    <Compile Include="Models\Safetypoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\SafetyPoints.mdf" />
+    <Content Include="App_Data\SafetyPoints_log.ldf">
+      <DependentUpon>SafetyPoints.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Iteration1\fontAwesome.css" />
+    <Content Include="Content\Iteration1\hero-slider.css" />
+    <Content Include="Content\Iteration1\img\aboutus01.png" />
+    <Content Include="Content\Iteration1\img\black_logo.png" />
+    <Content Include="Content\Iteration1\img\blog-bg.png" />
+    <Content Include="Content\Iteration1\img\close.png" />
+    <Content Include="Content\Iteration1\img\contact-bg.png" />
+    <Content Include="Content\Iteration1\img\first-service-main.png" />
+    <Content Include="Content\Iteration1\img\first-service-white.png" />
+    <Content Include="Content\Iteration1\img\fourth-service-main.png" />
+    <Content Include="Content\Iteration1\img\fourth-service-white.png" />
+    <Content Include="Content\Iteration1\img\loading.gif" />
+    <Content Include="Content\Iteration1\img\map.jpg" />
+    <Content Include="Content\Iteration1\img\next.png" />
+    <Content Include="Content\Iteration1\img\prev.png" />
+    <Content Include="Content\Iteration1\img\second-service-main.png" />
+    <Content Include="Content\Iteration1\img\second-service-white.png" />
+    <Content Include="Content\Iteration1\img\slide_01.jpg" />
+    <Content Include="Content\Iteration1\img\slide_02.jpg" />
+    <Content Include="Content\Iteration1\img\team-logo.png" />
+    <Content Include="Content\Iteration1\img\third-service-main.png" />
+    <Content Include="Content\Iteration1\img\third-service-white.png" />
+    <Content Include="Content\Iteration1\img\what-we-do-bg.png" />
+    <Content Include="Content\Iteration1\img\what-we-do-right-image.png" />
+    <Content Include="Content\Iteration1\img\white_logo.png" />
+    <Content Include="Content\Iteration1\Site.css" />
+    <Content Include="Content\Iteration1\tooplate-style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -144,6 +187,11 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\Iteration1\dragbar.js" />
+    <Content Include="Scripts\Iteration1\main.js" />
+    <Content Include="Scripts\Iteration1\navbar.js" />
+    <Content Include="Scripts\Iteration1\plugins.js" />
+    <Content Include="Scripts\Iteration1\safetymap.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -168,10 +216,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Iteration1\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\Safetypoints\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

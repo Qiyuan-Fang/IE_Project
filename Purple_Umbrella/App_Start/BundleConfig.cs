@@ -25,6 +25,26 @@ namespace Purple_Umbrella
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/Iteration1").Include(
+                      "~/Content/bootstrap.css",
+                      "~/Content/Iteration1/site.css",
+                      "~/Content/Iteration1/hero-slider.css",
+                      "~/Content/Iteration1/tooplate-style.css",
+                      "~/Content/Iteration1/fontAwesome.css"
+                      ));
+
+            bundles.Add(new ScriptBundle("~/bundles/Iteration1").Include(
+                       "~/Scripts/jquery-{version}.js",
+                       "~/Scripts/bootstrap.js",
+                       "~/Scripts/modernizr-*",
+                       "~/Scripts/Iteration1/main.js",
+                       "~/Scripts/Iteration1/plugins.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/Iteration1Defer").Include(
+                      "~/Scripts/Iteration1/navbar.js",
+                      "~/Scripts/Iteration1/safetymap.js",
+                      "~/Scripts/Iteration1/dragbar.js"));
         }
     }
 }

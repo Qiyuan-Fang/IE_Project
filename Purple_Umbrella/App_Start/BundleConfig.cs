@@ -5,6 +5,7 @@ namespace Purple_Umbrella
 {
     public class BundleConfig
     {
+
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
@@ -26,12 +27,12 @@ namespace Purple_Umbrella
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
-            bundles.Add(new StyleBundle("~/Content/Iteration1").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/Iteration1/site.css",
-                      "~/Content/Iteration1/hero-slider.css",
-                      "~/Content/Iteration1/tooplate-style.css",
-                      "~/Content/Iteration1/fontAwesome.css"
+            bundles.Add(new StyleBundle("~/Content/Iteration1/css/style").Include(
+                "~/Content/bootstrap.css",
+                      "~/Content/Iteration1/css/Site.css", 
+                      "~/Content/Iteration1/css/hero-slider.css",
+                      "~/Content/Iteration1/css/tooplate-style.css",
+                      "~/Content/Iteration1/css/fontAwesome.css"
                       ));
 
             bundles.Add(new ScriptBundle("~/bundles/Iteration1").Include(

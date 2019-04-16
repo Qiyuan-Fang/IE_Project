@@ -43,6 +43,18 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PublishDatabaseSettings>
+      <Objects>
+        <ObjectGroup Name="DataModel-Deployment" Order="3" xmlns="">
+          <Destination Path="Server=tcp:pu.database.windows.net,1433%3bInitial Catalog=PurpleUmbrella%3bPersist Security Info=False%3bUser ID=AdminKeon%3bPassword=Keon_1234567%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b" />
+          <Object Type="DbFullSql" Enabled="True">
+            <PreSource Path="data source=%28LocalDB%29\MSSQLLocalDB%3battachdbfilename=|DataDirectory|\SafetyPoints.mdf%3bintegrated security=True%3bMultipleActiveResultSets=True%3bApp=EntityFramework" ScriptSchema="True" ScriptData="True" CopyAllFullTextCatalogs="False" DriDefaults="True" />
+            <Source Path="obj\Release\AutoScripts\DataModel-Deployment_SchemaAndData.sql" Transacted="True" />
+          </Object>
+        </ObjectGroup>
+      </Objects>
+    </PublishDatabaseSettings>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -188,39 +200,40 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Iteration1\fontAwesome.css" />
-    <Content Include="Content\Iteration1\hero-slider.css" />
-    <Content Include="Content\Iteration1\img\aboutus01.png" />
-    <Content Include="Content\Iteration1\img\black_logo.png" />
-    <Content Include="Content\Iteration1\img\blog-bg.png" />
-    <Content Include="Content\Iteration1\img\close.png" />
-    <Content Include="Content\Iteration1\img\contact-bg.png" />
-    <Content Include="Content\Iteration1\img\first-service-main.png" />
-    <Content Include="Content\Iteration1\img\first-service-white.png" />
-    <Content Include="Content\Iteration1\img\fourth-service-main.png" />
-    <Content Include="Content\Iteration1\img\fourth-service-white.png" />
-    <Content Include="Content\Iteration1\img\loading.gif" />
-    <Content Include="Content\Iteration1\img\map.jpg" />
-    <Content Include="Content\Iteration1\img\next.png" />
-    <Content Include="Content\Iteration1\img\prev.png" />
-    <Content Include="Content\Iteration1\img\second-service-main.png" />
-    <Content Include="Content\Iteration1\img\second-service-white.png" />
-    <Content Include="Content\Iteration1\img\slide_01.jpg" />
-    <Content Include="Content\Iteration1\img\slide_02.jpg" />
-    <Content Include="Content\Iteration1\img\team-logo.png" />
-    <Content Include="Content\Iteration1\img\third-service-main.png" />
-    <Content Include="Content\Iteration1\img\third-service-white.png" />
-    <Content Include="Content\Iteration1\img\what-we-do-bg.png" />
-    <Content Include="Content\Iteration1\img\what-we-do-right-image.png" />
-    <Content Include="Content\Iteration1\img\white_logo.png" />
-    <Content Include="Content\Iteration1\Site.css" />
-    <Content Include="Content\Iteration1\tooplate-style.css" />
+    <Content Include="Content\Iteration1\css\fontAwesome.css" />
+    <Content Include="Content\Iteration1\css\hero-slider.css" />
+    <Content Include="Content\Iteration1\css\img\aboutus01.png" />
+    <Content Include="Content\Iteration1\css\img\black_logo.png" />
+    <Content Include="Content\Iteration1\css\img\blog-bg.png" />
+    <Content Include="Content\Iteration1\css\img\close.png" />
+    <Content Include="Content\Iteration1\css\img\contact-bg.png" />
+    <Content Include="Content\Iteration1\css\img\first-service-main.png" />
+    <Content Include="Content\Iteration1\css\img\first-service-white.png" />
+    <Content Include="Content\Iteration1\css\img\fourth-service-main.png" />
+    <Content Include="Content\Iteration1\css\img\fourth-service-white.png" />
+    <Content Include="Content\Iteration1\css\img\loading.gif" />
+    <Content Include="Content\Iteration1\css\img\map.jpg" />
+    <Content Include="Content\Iteration1\css\img\next.png" />
+    <Content Include="Content\Iteration1\css\img\prev.png" />
+    <Content Include="Content\Iteration1\css\img\second-service-main.png" />
+    <Content Include="Content\Iteration1\css\img\second-service-white.png" />
+    <Content Include="Content\Iteration1\css\img\slide_01.jpg" />
+    <Content Include="Content\Iteration1\css\img\slide_02.jpg" />
+    <Content Include="Content\Iteration1\css\img\team-logo.png" />
+    <Content Include="Content\Iteration1\css\img\third-service-main.png" />
+    <Content Include="Content\Iteration1\css\img\third-service-white.png" />
+    <Content Include="Content\Iteration1\css\img\what-we-do-bg.png" />
+    <Content Include="Content\Iteration1\css\img\what-we-do-right-image.png" />
+    <Content Include="Content\Iteration1\css\img\white_logo.png" />
+    <Content Include="Content\Iteration1\css\Site.css" />
+    <Content Include="Content\Iteration1\css\tooplate-style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\PurpleUmbrella - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\Iteration1\dragbar.js" />
     <Content Include="Scripts\Iteration1\main.js" />
@@ -273,9 +286,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Safetypoints\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -292,6 +303,12 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
@@ -313,6 +330,9 @@
           <CustomServerUrl>
           </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <servers defaultServer="SelfHostServer">
+            <server name="SelfHostServer" exePath="" cmdArgs="" url="http://localhost:2952/" workingDir="" />
+          </servers>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>

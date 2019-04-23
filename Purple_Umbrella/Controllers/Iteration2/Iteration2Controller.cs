@@ -4,11 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Purple_Umbrella.Controllers.Iteration1
+namespace Purple_Umbrella.Controllers.Iteration2
 {
-    public class Iteration1Controller : Controller
+    public class Iteration2Controller : Controller
     {
-        // GET: Iteration1
+        // GET: Iteration2
         public ActionResult Index()
         {
             if (User.Identity.IsAuthenticated)

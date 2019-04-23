@@ -12,6 +12,7 @@ namespace Purple_Umbrella.Models
         {
         }
 
+        public virtual DbSet<Road_Segments> Road_Segments { get; set; }
         public virtual DbSet<Safetypoint> Safetypoints { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

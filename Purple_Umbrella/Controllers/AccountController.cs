@@ -81,7 +81,7 @@ namespace Purple_Umbrella.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
-                    return RedirectToAction("../Iteration1/Index");
+                    return RedirectToAction("../Iteration1");
                     //return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:
                     return View("Lockout");

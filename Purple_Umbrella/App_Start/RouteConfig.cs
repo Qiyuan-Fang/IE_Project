@@ -14,10 +14,23 @@ namespace Purple_Umbrella
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Iteration1",
+                url: "Iteration1/{action}",
+                defaults: new { controller = "Iteration1", action = "Index" }
+            );
+
+            routes.MapRoute(
+                name: "Iteration2",
+                url: "Iteration2/{action}",
+                defaults: new { controller = "Iteration2", action = "Index" }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Account", action = "Login", id = UrlParameter.Optional }
             );
+
         }
     }
 }

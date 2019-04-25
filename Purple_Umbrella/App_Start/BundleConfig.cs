@@ -48,6 +48,13 @@ namespace Purple_Umbrella
                       "~/Scripts/Iteration1/navbar.js",
                       "~/Scripts/Iteration1/safetymap.js",
                       "~/Scripts/Iteration1/dragbar.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/Iteration2Defer").Include(
+                      "~/Scripts/Iteration1/navbar.js",
+                      "~/Scripts/Iteration2/map.js",
+                      "~/Scripts/Iteration1/dragbar.js"));
+
+
         }
     }
 }

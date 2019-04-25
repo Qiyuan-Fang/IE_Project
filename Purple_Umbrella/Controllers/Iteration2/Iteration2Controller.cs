@@ -11,11 +11,12 @@ namespace Purple_Umbrella.Controllers.Iteration2
         // GET: Iteration2
         public ActionResult Index()
         {
-            if (User.Identity.IsAuthenticated)
-            {
-                return View();
-            }
-            return RedirectToAction("../Account/Login");
+            return View();
+            //if (User.Identity.IsAuthenticated)
+            //{
+                
+            //}
+            //return RedirectToAction("../Account/Login");
         }
     }
 }

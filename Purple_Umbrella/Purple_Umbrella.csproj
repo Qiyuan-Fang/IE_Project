@@ -180,6 +180,7 @@
     <Compile Include="Controllers\Iteration1\Iteration1Controller.cs" />
     <Compile Include="Controllers\Iteration1\SafetypointsController.cs" />
     <Compile Include="Controllers\Iteration2\Iteration2Controller.cs" />
+    <Compile Include="Controllers\Iteration2\Road_SegmentsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -188,6 +189,11 @@
     <Compile Include="Models\DataModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Road_Segments.cs" />
     <Compile Include="Models\Safetypoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -235,6 +241,13 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\PurpleUmbrella - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\Iteration1\dragbar.js" />

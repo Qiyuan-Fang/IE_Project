@@ -1,0 +1,51 @@
+﻿@model Purple_Umbrella.Models.Feedback
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Feedback</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Road_Segments.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Road_Segments.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Negative)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Negative)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Neutral)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Neutral)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Positive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Positive)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

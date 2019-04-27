@@ -51,6 +51,7 @@ namespace Purple_Umbrella
 
             bundles.Add(new ScriptBundle("~/bundles/Iteration2Defer").Include(
                       "~/Scripts/Iteration1/navbar.js",
+                      //"~/Scripts/Iteration2/drawroutes.js",
                       "~/Scripts/Iteration2/map.js",
                       "~/Scripts/Iteration1/dragbar.js"));
 

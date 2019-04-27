@@ -29,5 +29,7 @@ namespace Purple_Umbrella.Models
         public double Light_Index { get; set; }
 
         public double Camera_Index { get; set; }
+
+        public virtual Feedback Feedback { get; set; }
     }
 }

@@ -17,7 +17,8 @@ namespace Purple_Umbrella.Controllers.Iteration2
         // GET: Road_Segments
         public ActionResult Index()
         {
-            return View(db.Road_Segments.ToList());
+            var road_Segments = db.Road_Segments.Include(r => r.Feedback);
+            return View(road_Segments.ToList());
         }
 
         // GET: Road_Segments/Details/5
@@ -38,6 +39,7 @@ namespace Purple_Umbrella.Controllers.Iteration2
         // GET: Road_Segments/Create
         public ActionResult Create()
         {
+            ViewBag.Id = new SelectList(db.Feedbacks, "Id", "Id");
             return View();
         }
 
@@ -55,6 +57,7 @@ namespace Purple_Umbrella.Controllers.Iteration2
                 return RedirectToAction("Index");
             }
 
+            ViewBag.Id = new SelectList(db.Feedbacks, "Id", "Id", road_Segments.Id);
             return View(road_Segments);
         }
 
@@ -70,6 +73,7 @@ namespace Purple_Umbrella.Controllers.Iteration2
             {
                 return HttpNotFound();
             }
+            ViewBag.Id = new SelectList(db.Feedbacks, "Id", "Id", road_Segments.Id);
             return View(road_Segments);
         }
 
@@ -86,6 +90,7 @@ namespace Purple_Umbrella.Controllers.Iteration2
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.Id = new SelectList(db.Feedbacks, "Id", "Id", road_Segments.Id);
             return View(road_Segments);
         }
 

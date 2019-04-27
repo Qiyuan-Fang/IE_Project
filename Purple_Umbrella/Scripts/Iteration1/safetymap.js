@@ -22,6 +22,7 @@ function getData(callback) {
         callback(data);
     });
 }
+
 $(document).ready(getData(function (data) {
     var locations = [];
     for (i = 0; i < data.length; i++) {
@@ -68,7 +69,7 @@ $(document).ready(getData(function (data) {
         style: 'mapbox://styles/mapbox/dark-v10',
         zoom: 6,
         center: [144.9630189, -37.81073331],
-        maxBounds: bounds
+        //maxBounds: bounds
     });
 
     map.addControl(new mapboxgl.NavigationControl());

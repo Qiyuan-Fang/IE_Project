@@ -1,0 +1,8 @@
+﻿CREATE TRIGGER Trigger_Feedback 
+ON [dbo].[Road_Segments]
+AFTER INSERT AS
+BEGIN
+INSERT INTO [dbo].[Feedback] (Id)
+SELECT Id FROM INSERTED
+END
+GO

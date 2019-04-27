@@ -179,6 +179,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Iteration1\Iteration1Controller.cs" />
     <Compile Include="Controllers\Iteration1\SafetypointsController.cs" />
+    <Compile Include="Controllers\Iteration2\FeedbacksController.cs" />
     <Compile Include="Controllers\Iteration2\Iteration2Controller.cs" />
     <Compile Include="Controllers\Iteration2\Road_SegmentsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -187,13 +188,9 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\DataModel.cs" />
+    <Compile Include="Models\Feedback.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Models\Road_Segments.cs" />
     <Compile Include="Models\Safetypoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -241,13 +238,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Content>
     <None Include="Properties\PublishProfiles\PurpleUmbrella - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\Iteration1\dragbar.js" />
@@ -255,6 +245,7 @@
     <Content Include="Scripts\Iteration1\navbar.js" />
     <Content Include="Scripts\Iteration1\plugins.js" />
     <Content Include="Scripts\Iteration1\safetymap.js" />
+    <Content Include="Scripts\Iteration2\drawroutes.js" />
     <Content Include="Scripts\Iteration2\map.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -303,6 +294,16 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Iteration2\Index.cshtml" />
+    <Content Include="Views\Road_Segments\Create.cshtml" />
+    <Content Include="Views\Road_Segments\Delete.cshtml" />
+    <Content Include="Views\Road_Segments\Details.cshtml" />
+    <Content Include="Views\Road_Segments\Edit.cshtml" />
+    <Content Include="Views\Road_Segments\Index.cshtml" />
+    <Content Include="Views\Feedbacks\Create.cshtml" />
+    <Content Include="Views\Feedbacks\Delete.cshtml" />
+    <Content Include="Views\Feedbacks\Details.cshtml" />
+    <Content Include="Views\Feedbacks\Edit.cshtml" />
+    <Content Include="Views\Feedbacks\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

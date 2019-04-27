@@ -1,0 +1,99 @@
+﻿@model Purple_Umbrella.Models.Road_Segments
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Road_Segments</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Feedback.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Feedback.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Point1_X)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Point1_X)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Point1_Y)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Point1_Y)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Point2_X)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Point2_X)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Point2_Y)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Point2_Y)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bar_Index)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bar_Index)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cafe_Index)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cafe_Index)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Light_Index)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Light_Index)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Camera_Index)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Camera_Index)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -156,3 +156,10 @@ input[type="range"]::-webkit-slider-thumb:active {
             background-color: #7030A0;
         }
 
+.marker {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+}

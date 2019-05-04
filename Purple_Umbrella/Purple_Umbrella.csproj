@@ -182,6 +182,7 @@
     <Compile Include="Controllers\Iteration2\FeedbacksController.cs" />
     <Compile Include="Controllers\Iteration2\Iteration2Controller.cs" />
     <Compile Include="Controllers\Iteration2\Road_SegmentsController.cs" />
+    <Compile Include="Controllers\Iteration3\Iteration3Controller.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -232,6 +233,43 @@
     <Content Include="Content\Iteration1\css\img\white_logo.png" />
     <Content Include="Content\Iteration1\css\Site.css" />
     <Content Include="Content\Iteration1\css\tooplate-style.css" />
+    <Content Include="Content\Iteration2\css\fontAwesome.css" />
+    <Content Include="Content\Iteration2\css\hero-slider.css" />
+    <Content Include="Content\Iteration2\css\img\happy.png" />
+    <Content Include="Content\Iteration2\css\img\netural.png" />
+    <Content Include="Content\Iteration2\css\img\unhappy.png" />
+    <Content Include="Content\Iteration2\css\img\aboutus01.png" />
+    <Content Include="Content\Iteration2\css\img\alarm.png" />
+    <Content Include="Content\Iteration2\css\img\black_logo.png" />
+    <Content Include="Content\Iteration2\css\img\blog-bg.png" />
+    <Content Include="Content\Iteration2\css\img\close.png" />
+    <Content Include="Content\Iteration2\css\img\contact-bg.png" />
+    <Content Include="Content\Iteration2\css\img\first-service-main.png" />
+    <Content Include="Content\Iteration2\css\img\first-service-white.png" />
+    <Content Include="Content\Iteration2\css\img\fourth-service-main.png" />
+    <Content Include="Content\Iteration2\css\img\fourth-service-white.png" />
+    <Content Include="Content\Iteration2\css\img\icon_bar.png" />
+    <Content Include="Content\Iteration2\css\img\icon_cafe.png" />
+    <Content Include="Content\Iteration2\css\img\icon_camera.png" />
+    <Content Include="Content\Iteration2\css\img\icon_light.png" />
+    <Content Include="Content\Iteration2\css\img\loading.gif" />
+    <Content Include="Content\Iteration2\css\img\map.jpg" />
+    <Content Include="Content\Iteration2\css\img\next.png" />
+    <Content Include="Content\Iteration2\css\img\pedestrain.png" />
+    <Content Include="Content\Iteration2\css\img\prev.png" />
+    <Content Include="Content\Iteration2\css\img\safe.png" />
+    <Content Include="Content\Iteration2\css\img\second-service-main.png" />
+    <Content Include="Content\Iteration2\css\img\second-service-white.png" />
+    <Content Include="Content\Iteration2\css\img\slide_01.jpg" />
+    <Content Include="Content\Iteration2\css\img\slide_02.jpg" />
+    <Content Include="Content\Iteration2\css\img\team-logo.png" />
+    <Content Include="Content\Iteration2\css\img\third-service-main.png" />
+    <Content Include="Content\Iteration2\css\img\third-service-white.png" />
+    <Content Include="Content\Iteration2\css\img\what-we-do-bg.png" />
+    <Content Include="Content\Iteration2\css\img\what-we-do-right-image.png" />
+    <Content Include="Content\Iteration2\css\img\white_logo.png" />
+    <Content Include="Content\Iteration2\css\Site.css" />
+    <Content Include="Content\Iteration2\css\tooplate-style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -245,8 +283,14 @@
     <Content Include="Scripts\Iteration1\navbar.js" />
     <Content Include="Scripts\Iteration1\plugins.js" />
     <Content Include="Scripts\Iteration1\safetymap.js" />
+    <Content Include="Scripts\Iteration2\customizedmap.js" />
     <Content Include="Scripts\Iteration2\drawroutes.js" />
     <Content Include="Scripts\Iteration2\map.js" />
+    <Content Include="Scripts\Iteration2\popover.js" />
+    <Content Include="Scripts\Iteration3\customizedmap.js" />
+    <Content Include="Scripts\Iteration3\drawroutes.js" />
+    <Content Include="Scripts\Iteration3\map.js" />
+    <Content Include="Scripts\Iteration3\popover.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -304,6 +348,7 @@
     <Content Include="Views\Feedbacks\Details.cshtml" />
     <Content Include="Views\Feedbacks\Edit.cshtml" />
     <Content Include="Views\Feedbacks\Index.cshtml" />
+    <Content Include="Views\Iteration3\index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

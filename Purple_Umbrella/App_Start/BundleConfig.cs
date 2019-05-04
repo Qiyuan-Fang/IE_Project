@@ -30,7 +30,7 @@ namespace Purple_Umbrella
                       "~/Content/site.css"));
 
             bundles.Add(new StyleBundle("~/Content/Iteration1/css/style").Include(
-                "~/Content/bootstrap.css",
+                      "~/Content/bootstrap.css",
                       "~/Content/Iteration1/css/Site.css", 
                       "~/Content/Iteration1/css/hero-slider.css",
                       "~/Content/Iteration1/css/tooplate-style.css",
@@ -53,9 +53,17 @@ namespace Purple_Umbrella
                       "~/Scripts/Iteration1/navbar.js",
                       //"~/Scripts/Iteration2/drawroutes.js",
                       "~/Scripts/Iteration2/map.js",
-                      "~/Scripts/Iteration1/dragbar.js"));
+                      "~/Scripts/Iteration2/customizedmap.js",
+                      "~/Scripts/Iteration2/popover.js"
+                      ));
 
-
+            bundles.Add(new StyleBundle("~/Content/Iteration2/css/style").Include(
+                       "~/Content/bootstrap.css",
+                       "~/Content/Iteration2/css/Site.css",
+                       "~/Content/Iteration2/css/hero-slider.css",
+                       "~/Content/Iteration2/css/tooplate-style.css",
+                       "~/Content/Iteration2/css/fontAwesome.css"
+                       ));
         }
     }
 }

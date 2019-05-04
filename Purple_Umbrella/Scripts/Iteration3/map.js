@@ -253,8 +253,7 @@ $(document).ready(getData(function (data) {
             'type': 'Feature',
             'properties': {
                 'index': roadSegments[i].index,
-                'name': roadSegments[i].name,
-                'color': '#F7455D' // red
+                'name': roadSegments[i].name
             },
             'geometry': {
                 'type': 'LineString',
@@ -333,14 +332,14 @@ $(document).ready(getData(function (data) {
     map.addControl(draw);
 
     // filters for classifying safety level into five categories based on score
-    var score1 = ["<", ["get", "score"], 2];
-    var score2 = ["all", [">=", ["get", "score"], 2], ["<", ["get", "score"], 4]];
-    var score3 = ["all", [">=", ["get", "score"], 4], ["<", ["get", "score"], 6]];
-    var score4 = ["all", [">=", ["get", "score"], 6], ["<", ["get", "score"], 8]];
-    var score5 = [">=", ["get", "score"], 8];
+    var index1 = ["<", ["get", "index"], 1];
+    var index2 = ["all", [">=", ["get", "index"], 1], ["<", ["get", "index"], 2]];
+    var index3 = ["all", [">=", ["get", "index"], 2], ["<", ["get", "index"], 3]];
+    var index4 = ["all", [">=", ["get", "index"], 3], ["<", ["get", "index"], 4]];
+    var index5 = [">=", ["get", "index"], 5];
 
     // colors to use for the categories
-    var colors = ['#EAE6F4', '#D7CCE9', '#B9A6DB', '#B098D4', '#A17DD0'];
+    var colors = ['#C00000', '#D07F78', '#FFC000', '#C5E0B4', '#548235'];
     var road_id = null;
 
     map.on('load', function () {
@@ -357,7 +356,7 @@ $(document).ready(getData(function (data) {
                 break;
             }
         }
-        // add a clustered GeoJSON source for a sample set of earthquakes
+        // add a GeoJSON source 
         map.addSource("road_segments", {
             "type": "geojson",
             'data': {
@@ -365,7 +364,7 @@ $(document).ready(getData(function (data) {
                 'features': road_data
             }
         });
-        // circle and symbol layers for rendering individual safety points (unclustered points)
+        // line layers for rendering individual road segments
         map.addLayer({
             "id": "lines",
             "type": "line",
@@ -379,17 +378,15 @@ $(document).ready(getData(function (data) {
                 // Use a get expression (https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-get)
                 // to set the line-color to a feature property value.
                 //'line-color': ['get', 'color']
-                'line-color':
-                {
-                    'property': 'index',
-                    'stops': [
-                        [1.0, "#FF3333"],//"#EAE6F4"],
-                        [2.0, "#FF9999"],//"#D7CCE9"],
-                        [3.0, "#FFFF66"],//"#B9A6DB"],
-                        [4.0, "#98FB98"],//'#B098D4'],
-                        [5.0, "#32CD32"]//'#A17DD0']
-                    ]
-                }
+                'line-color': ["case",
+                    index1, colors[0],
+                    index2, colors[1],
+                    index3, colors[2],
+                    index4, colors[3], colors[4]],
+                "line-opacity": ["case",
+                    ["boolean", ["feature-state", "hover"], false],
+                    2,
+                    1]
             }
         }, firstSymbolId);
 

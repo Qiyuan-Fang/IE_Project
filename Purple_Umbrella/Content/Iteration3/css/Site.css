@@ -1,0 +1,378 @@
+﻿body {
+    padding-top: 50px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.team-logo {
+    background-image: url('img/aboutus01.png');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.legend {
+    background-color: #fff;
+    border-radius: 3px;
+    bottom: 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.10);
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+}
+
+    .legend h4 {
+        margin: 0 0 10px;
+    }
+
+    .legend div span {
+        border-radius: 50%;
+        display: inline-block;
+        height: 10px;
+        margin-right: 5px;
+        width: 10px;
+    }
+
+input[type="range"] {
+    margin-top: 20px;
+    display: block;
+    -webkit-appearance: none;
+    background-color: #bdc3c7;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    outline: 0;
+    direction:rtl;
+}
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        background-color: palevioletred;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid white;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+    }
+
+​
+input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: white;
+    border: 2px solid #e74c3c;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+    transform: scale(1.6);
+}
+.range-labels {
+    padding-top: 12px;
+    list-style: none;
+}
+
+    .range-labels ul {
+        width: auto;
+        display: table;
+        table-layout: fixed;
+    }
+
+    .range-labels li {
+        margin:0 auto;
+        display: table-cell;
+        position: relative;
+        display: inline;
+        white-space: nowrap;
+        text-align: center;
+        color: #b2b2b2;
+        font-size: 14px;
+    }
+
+#point_detail {
+    box-sizing: border-box;
+    border-radius: 3px;
+    top: 10px;
+    position: absolute;
+    left: 10px;
+    width: 200px;
+    overflow: auto;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+
+    #point_detail h1 {
+        text-align: center;
+        font: 16px/15px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+
+    #point_detail h2 {
+        text-align:center;
+        font: 14px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+
+    #point_detail h4 {
+        text-align: center;
+        font: 12px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+
+.submit-button {
+}
+
+    .submit-button a {
+        text-align:center;
+        display: inline-block;
+        background-color: #9870CB;
+        padding: 12px 18px;
+        color: #fff;
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 20px;
+        transition: all 0.5s;
+    }
+
+        .submit-button a:hover {
+            background-color: #7030A0;
+        }
+
+.marker {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+}
+
+/*Round button for showing introduction*/
+.round {
+    border-radius: 50%;
+}
+
+.btn1 {
+    padding: 1px 10px;
+    border: 0 none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    top: 20px;
+    left: 20px;
+}
+
+    .btn1:focus, .btn1:active:focus, .btn1.active:focus {
+        outline: 0 none;
+    }
+
+.btn-intro {
+    background: #7030A0;
+    color: #ffffff;
+}
+
+    .btn-intro:hover, .btn-intro:focus, .btn-intro:active, .btn-intro.active, .open > .dropdown-toggle.btn-intro {
+        background: #9870CB;
+        color: #ffffff;
+    }
+
+    .btn-intro:active, .btn-intro.active {
+        background: #9870CB;
+        color: #ffffff;
+        box-shadow: none;
+    }
+
+
+/*Button: Apply user's prefrences*/
+.round {
+    border-radius: 15px;
+}
+
+.btn2 {
+    padding: 4px 10px;
+    border: 0 none;
+    font-weight: 1000;
+    letter-spacing: 1px;
+}
+
+    .btn2:focus, .btn1:active:focus, .btn1.active:focus {
+        outline: 0 none;
+    }
+
+.btn-apply {
+    background: #9870CB;
+    color: #ffffff;
+}
+
+    .btn-apply:hover, .btn-intro:focus, .btn-intro:active, .btn-intro.active, .open > .dropdown-toggle.btn-intro {
+        background: #7030A0;
+        color: #ffffff;
+    }
+
+    .btn-apply:active, .btn-intro.active {
+        background: #591E84;
+        color: #ffffff;
+        box-shadow: none;
+    }
+
+.popover {
+    background: #D7CCE9;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .popover {
+        background: #D7CCE9;
+        min-width: 100%;
+    }
+}
+
+/*Round button for showing introduction*/
+.round {
+    border-radius: 50%;
+}
+
+.btn1 {
+    padding: 1px 10px;
+    border: 0 none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    top: 20px;
+    left: 20px;
+}
+
+    .btn1:focus, .btn1:active:focus, .btn1.active:focus {
+        outline: 0 none;
+    }
+
+.btn-intro {
+    background: #7030A0;
+    color: #ffffff;
+}
+
+    .btn-intro:hover, .btn-intro:focus, .btn-intro:active, .btn-intro.active, .open > .dropdown-toggle.btn-intro {
+        background: #9870CB;
+        color: #ffffff;
+    }
+
+    .btn-intro:active, .btn-intro.active {
+        background: #9870CB;
+        color: #ffffff;
+        box-shadow: none;
+    }
+
+
+/*Button: Apply user's prefrences*/
+.round {
+    border-radius: 15px;
+}
+
+.btn2 {
+    padding: 4px 10px;
+    border: 0 none;
+    font-weight: 1000;
+    letter-spacing: 1px;
+}
+
+    .btn2:focus, .btn1:active:focus, .btn1.active:focus {
+        outline: 0 none;
+    }
+
+.btn-apply {
+    background: #9870CB;
+    color: #ffffff;
+}
+
+    .btn-apply:hover, .btn-intro:focus, .btn-intro:active, .btn-intro.active, .open > .dropdown-toggle.btn-intro {
+        background: #7030A0;
+        color: #ffffff;
+    }
+
+    .btn-apply:active, .btn-intro.active {
+        background: #591E84;
+        color: #ffffff;
+        box-shadow: none;
+    }
+
+#feedback_css h4 {
+    font-size: 16px;
+    color: #9870cb;
+}
+
+#feedback_css button {
+    background-color: #9870cb;
+    border-radius:3px 4px;
+    border: 2px;
+    border-color: #9870cb;
+    color: white;
+    padding: 5px, 5px, 5px, 5px;
+    text-align: center;
+    font-size: 12px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
+
+    #feedback_css button:hover {
+        background-color: #7030a0;
+    }
+
+.html_fullscreen {
+        overflow-x: hidden;
+        height:100%;
+    }
+.body_fullscreen {
+        overflow-x: hidden;
+        position: relative;
+        height: 100%;
+        padding-top: 0px;
+    }
+
+#safetymap {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (orientation:landscape) {
+    .html_fullscreen {
+        overflow-x: hidden;
+        height: 100%;
+    }
+
+    .body_fullscreen {
+        overflow-x: hidden;
+        position: relative;
+        height: 100%;
+        padding-top: 0px;
+    }
+
+    #safetymap {
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+.mapbox-gl-draw_point {
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: auto;
+    background-image: url('img/question.png');
+}

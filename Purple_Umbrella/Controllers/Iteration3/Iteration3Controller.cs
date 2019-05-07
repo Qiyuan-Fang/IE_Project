@@ -13,5 +13,17 @@ namespace Purple_Umbrella.Controllers.Iteration3
         {
             return View();
         }
+
+        // GET: Map
+        public ActionResult Map()
+        {
+            return View();
+        }
+
+        public ActionResult NavigationMap()
+        {
+            return View();
+        }
+       
     }
 }

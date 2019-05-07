@@ -237,15 +237,17 @@ $(document).ready(getData(function (data) {
         var light_Index = parseFloat(data[i].Light_Index);
         var index = camera_Index + light_Index + cafe_Index + bar_Index;
         //NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
-        var new_index = ((index + 7.387) * (4.8 - 0.2) / (50.867 + 7.387)) + 0.2;
-        var roadSegment = {
-            'id': id,
-            'name': name,
-            'coordinate_1': coordinate_1,
-            'coordinate_2': coordinate_2,
-            'index': roundtToDecimal(new_index)
-        };
-        roadSegments.push(roadSegment);
+        var new_index = ((index + 1.360181178) * (4.8 - 0.2) / (121.9326 + 1.360181178)) + 0.2;
+        if (!name.includes("lane")) {
+            var roadSegment = {
+                'id': id,
+                'name': name,
+                'coordinate_1': coordinate_1,
+                'coordinate_2': coordinate_2,
+                'index': roundtToDecimal(new_index)
+            };
+            roadSegments.push(roadSegment);
+        }
     }
     var road_data = [];
     for (i = 0; i < roadSegments.length; i++) {
@@ -253,8 +255,7 @@ $(document).ready(getData(function (data) {
             'type': 'Feature',
             'properties': {
                 'index': roadSegments[i].index,
-                'name': roadSegments[i].name,
-                'color': '#F7455D' // red
+                'name': roadSegments[i].name
             },
             'geometry': {
                 'type': 'LineString',
@@ -519,7 +520,7 @@ $(document).ready(getData(function (data) {
     // Make a Map Matching request
     function getMatch(coordinates, radius, profile) {
         // Separate the radiuses with semicolons
-        var radiuses = radius.join(';')
+        var radiuses = radius.join(';');
         // Create the query
         var query = 'https://api.mapbox.com/matching/v5/mapbox/' + profile + '/' + coordinates + '?geometries=geojson&radiuses=' + radiuses + '&steps=true&access_token=' + mapboxgl.accessToken;
 

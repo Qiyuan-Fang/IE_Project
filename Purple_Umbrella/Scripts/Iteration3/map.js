@@ -4,10 +4,67 @@ function roundtToDecimal(num) {
     return Math.round(num * 100) / 100;
 }
 
-//Get data from backend
-function getData(callback) {
+//Get road data from backend
+function getAllRoadData(callback) {
     $.get("/Road_Segments/ReturnAllRoadSegments", function (data) {
-        callback(data);
+        var roadSegments = [];
+        for (i = 0; i < data.length; i++) {
+            var id = parseInt(data[i].Id);
+            var name = data[i].Name;
+            var point1_x = parseFloat(data[i].Point1_X);
+            var point1_y = parseFloat(data[i].Point1_Y);
+            var point2_x = parseFloat(data[i].Point2_X);
+            var point2_y = parseFloat(data[i].Point2_Y);
+            var coordinate_1 = [point1_x, point1_y];
+            var coordinate_2 = [point2_x, point2_y];
+            var bar_Index = parseFloat(data[i].Bar_Index);
+            var cafe_Index = parseFloat(data[i].Cafe_Index);
+            var camera_Index = parseFloat(data[i].Camera_Index);
+            var light_Index = parseFloat(data[i].Light_Index);
+            var index = camera_Index + light_Index + cafe_Index + bar_Index;
+            //NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
+            var new_index = ((index + 1.360181178) * (4.8 - 0.2) / (121.9326 + 1.360181178)) + 0.2;
+            if (name.includes("lane")) {
+                let roadSegment = {
+                    'id': id,
+                    'name': name,
+                    'type': 'Lane',
+                    'coordinate_1': coordinate_1,
+                    'coordinate_2': coordinate_2,
+                    'index': roundtToDecimal(new_index)
+                };
+                roadSegments.push(roadSegment);
+            }
+            else {
+                let roadSegment = {
+                    'id': id,
+                    'name': name,
+                    'type': 'Road',
+                    'coordinate_1': coordinate_1,
+                    'coordinate_2': coordinate_2,
+                    'index': roundtToDecimal(new_index)
+                };
+                roadSegments.push(roadSegment);
+            }
+        }
+        var road_data = [];
+        for (i = 0; i < roadSegments.length; i++) {
+            let feature = {
+                'type': 'Feature',
+                'properties': {
+                    'index': roadSegments[i].index,
+                    'name': roadSegments[i].name,
+                    'type': roadSegments[i].type
+                },
+                'geometry': {
+                    'type': 'LineString',
+                    'coordinates': [roadSegments[i].coordinate_1, roadSegments[i].coordinate_2]
+                },
+                'id': roadSegments[i].id
+            };
+            road_data.push(feature);
+        }
+        callback(road_data);
     });
 }
 
@@ -137,34 +194,6 @@ function pushFeedbackToBackEnd(id) {
 //    //}
 //}
 
-//function addMarker(map, lngLat) {
-//    var marker = {
-//        "type": "Feature",
-//        "properties": {
-//            "message": "Baz",
-//            "iconSize": [40, 40]
-//        },
-//        "geometry": {
-//            "type": "Point",
-//            "coordinates": [
-//                lngLat[0],
-//                lngLat[1]
-//            ]
-//        }
-//    };
-//    var el = document.createElement('div');
-//    el.className = 'marker';
-//    el.style.backgroundImage = 'url(https://placekitten.com/g/' + marker.properties.iconSize.join('/') + '/)';
-//    el.style.width = marker.properties.iconSize[0] + 'px';
-//    el.style.height = marker.properties.iconSize[1] + 'px';
-//    new mapboxgl.Marker(el)
-//        .setLngLat(marker.geometry.coordinates)
-//        .addTo(map);
-//    //var marker = new mapboxgl.Marker()
-//    //    .setLngLat([lngLat[0], lngLat[1]])
-//    //    .addTo(map);
-//}
-
 var draw = new MapboxDraw({
     // Instead of showing all the draw tools, show only the line string and delete tools
     displayControlsDefault: false,
@@ -220,60 +249,17 @@ var draw = new MapboxDraw({
     ]
 });
 
-$(document).ready(getData(function (data) {
-    var roadSegments = [];
-    for (i = 0; i < data.length; i++) {
-        var id = parseInt(data[i].Id);
-        var name = data[i].Name;
-        var point1_x = parseFloat(data[i].Point1_X);
-        var point1_y = parseFloat(data[i].Point1_Y);
-        var point2_x = parseFloat(data[i].Point2_X);
-        var point2_y = parseFloat(data[i].Point2_Y);
-        var coordinate_1 = [point1_x, point1_y];
-        var coordinate_2 = [point2_x, point2_y];
-        var bar_Index = parseFloat(data[i].Bar_Index);
-        var cafe_Index = parseFloat(data[i].Cafe_Index);
-        var camera_Index = parseFloat(data[i].Camera_Index);
-        var light_Index = parseFloat(data[i].Light_Index);
-        var index = camera_Index + light_Index + cafe_Index + bar_Index;
-        //NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
-        var new_index = ((index + 7.387) * (4.8 - 0.2) / (50.867 + 7.387)) + 0.2;
-        var roadSegment = {
-            'id': id,
-            'name': name,
-            'coordinate_1': coordinate_1,
-            'coordinate_2': coordinate_2,
-            'index': roundtToDecimal(new_index)
-        };
-        roadSegments.push(roadSegment);
-    }
-    var road_data = [];
-    for (i = 0; i < roadSegments.length; i++) {
-        var feature = {
-            'type': 'Feature',
-            'properties': {
-                'index': roadSegments[i].index,
-                'name': roadSegments[i].name
-            },
-            'geometry': {
-                'type': 'LineString',
-                'coordinates': [roadSegments[i].coordinate_1, roadSegments[i].coordinate_2]
-            },
-            'id': roadSegments[i].id
-        };
-        road_data.push(feature);
-    }
-
+$(document).ready(getAllRoadData(function (road_data) {
     mapboxgl.accessToken = TOKEN;
     var bounds = [
-        [144.930764, -37.824244], // Southwest coordinates
-        [144.982105, -37.807000]  // Northeast coordinates
+        [144.930764, -37.924244], // Southwest coordinates
+        [144.982105, -37.707000]  // Northeast coordinates
     ];
     var map = new mapboxgl.Map({
         container: 'safetymap',
         style: 'mapbox://styles/mapbox/dark-v10',
         zoom: 14,
-        pitch: 45,
+        bearing: -90,
         center: [144.958429, -37.815858],
         maxBounds: bounds
     });
@@ -296,6 +282,7 @@ $(document).ready(getData(function (data) {
     //getCurrentLocation(function (result) {
     //    directions.setOrigin(result);
     //});
+    map.addControl(ctrlPoint, "bottom-left");
 
     var geolocate = new mapboxgl.GeolocateControl({
         positionOptions: {
@@ -340,7 +327,7 @@ $(document).ready(getData(function (data) {
 
     // colors to use for the categories
     var colors = ['#C00000', '#D07F78', '#FFC000', '#C5E0B4', '#548235'];
-    var road_id = null;
+    var line_id = null;
 
     map.on('load', function () {
         var layers = map.getStyle().layers;
@@ -356,7 +343,7 @@ $(document).ready(getData(function (data) {
                 break;
             }
         }
-        // add a GeoJSON source 
+        // create a Road source 
         map.addSource("road_segments", {
             "type": "geojson",
             'data': {
@@ -364,30 +351,62 @@ $(document).ready(getData(function (data) {
                 'features': road_data
             }
         });
+
         // line layers for rendering individual road segments
         map.addLayer({
-            "id": "lines",
+            "id": "roads",
             "type": "line",
             "source": "road_segments",
             'paint': {
-                'line-width':
-                {
-                    'base': 15,
-                    'stops': [[12, 5], [22, 300]]
-                },
-                // Use a get expression (https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-get)
+                'line-width': {
+                        'base': 15,
+                        'stops': [[14, 5], [16,10], [20, 300]]
+                    },
                 // to set the line-color to a feature property value.
                 //'line-color': ['get', 'color']
-                'line-color': ["case",
-                    index1, colors[0],
-                    index2, colors[1],
-                    index3, colors[2],
-                    index4, colors[3], colors[4]],
+                'line-color':
+                    ["case",
+                        ["boolean", ["feature-state", "touchstart"], false],
+                        "#00FFFF",
+                        ["case",
+                            index1, colors[0],
+                            index2, colors[1],
+                            index3, colors[2],
+                            index4, colors[3], colors[4]]],
                 "line-opacity": ["case",
-                    ["boolean", ["feature-state", "hover"], false],
-                    2,
-                    1]
-            }
+                    ["boolean", ["feature-state", "touchstart"], false],
+                    0.7,
+                    0.95]
+            },
+            "filter": ["==", ["get", "type"], 'Road']
+        }, firstSymbolId);
+
+        map.addLayer({
+            "id": "lanes",
+            "type": "line",
+            "source": "road_segments",
+            'paint': {
+                'line-width': {
+                    'base': 15,
+                    'stops': [[14, 3], [16, 8], [20, 240]]
+                },
+                // to set the line-color to a feature property value.
+                //'line-color': ['get', 'color']
+                'line-color':
+                    ["case",
+                        ["boolean", ["feature-state", "touchstart"], false],
+                        "#00FFFF",
+                        ["case",
+                            index1, colors[0],
+                            index2, colors[1],
+                            index3, colors[2],
+                            index4, colors[3], colors[4]]],
+                "line-opacity": ["case",
+                    ["boolean", ["feature-state", "touchstart"], false],
+                    0.7,
+                    0.95]
+            },
+            "filter": ["==", ["get", "type"], 'Lane']
         }, firstSymbolId);
 
         //map.addLayer({
@@ -416,80 +435,144 @@ $(document).ready(getData(function (data) {
         //    }
         //}, labelLayerId);
 
-        map.on('click', 'lines', function (e) {
-            var id = parseInt(e.features[0].id);
+        //Display popup when user touch a line
+        var popup = new mapboxgl.Popup({
+            closeButton: false
+        });
+
+        //Effect when mouse hover on a raod
+        map.on("mousemove", "roads", function (e) {
             var index = e.features[0].properties.index;
-            getFeedbackFromDb(id, function (data) {
-                var description = "<div id='feedback_css'>"
-                                        + "<h4 style='font-size: 16px;'>Safety Index: " + index + "</h4>"
-                                        + "<h4>How users feel:</h4>"
-                                        + "<div class='row' style='margin-left:0px;'>"
-                                            + "<img style='width: 18px;height: 18px;' src='../Content/Iteration2/css/img/unhappy.png'>"
-                                            + "<p style='font-size:18px;display:inline-block;padding-top:5px;'> Unsafe: " + data.Negative + "</p>"
-                                        + "</div>"
-                                        + "<div class='row' style='margin-left:0px;'>"
-                                            + "<img style='width: 18px;height: 18px;' src='../Content/Iteration2/css/img/netural.png'><p style='font-size:18px;display:inline-block;padding-top:5px;'>Netural: " + data.Neutral + "</p>"
-                                        + "</div>"
-                                        + "<div class='row' style='margin-left:0px;'>"
-                                            + "<img style='width: 18px;height: 18px;' src='../Content/Iteration2/css/img/happy.png'><p style='font-size:18px;display:inline-block;padding-top:5px;'>Safe: " + data.Positive + "</p>"
-                                        + "</div>"
-                                        + "<div id='feedback'>"
-                                            + "<button onclick='giveFeedback(" + id + ")'>Give my feedback</button>"
-                                        + "</div>"
-                                    + "</div>";
-                new mapboxgl.Popup()
-                    .setLngLat(e.lngLat)
-                    .setHTML(description)
-                    .addTo(map);
-            });
+            if (e.features.length > 0) {
+                if (line_id) {
+                    map.setFeatureState({ source: 'road_segments', id: line_id }, { touchstart: false });
+                }
+                line_id = e.features[0].id;
+                map.setFeatureState({ source: 'road_segments', id: line_id }, { touchstart: true });
+            }
+            var description = "<div id='feedback_css'>"
+                + "<h4 style='font-size: 16px;'>Safety Index: " + index + "</h4>"
+                + "</div>";
+            popup.setLngLat(e.lngLat)
+                .setHTML(description)
+                .addTo(map);
 
         });
 
+        // When the mouse leaves the road, update the feature state of the
+        // previously hovered feature.
+        map.on("mouseleave", "roads", function () {
+            if (line_id) {
+                map.setFeatureState({ source: 'road_segments', id: line_id }, { touchstart: false });
+            }
+            id: line_id = null;
+            popup.remove();
+        });
+
         // Change the cursor to a pointer when the mouse is over the states layer.
-        map.on('mouseenter', 'lines', function () {
+        map.on('mouseenter', 'roads', function () {
             map.getCanvas().style.cursor = 'pointer';
         });
 
         // Change it back to a pointer when it leaves.
-        map.on('mouseleave', 'lines', function () {
+        map.on('mouseleave', 'roads', function () {
             map.getCanvas().style.cursor = '';
         });
 
-        //Display popup when user touch a line
-        var popup = new mapboxgl.Popup({
-            closeButton: true
-        });
-        map.on("touchstart", "lines", function (e) {
-            var id = parseInt(e.features[0].id);
+        //Display popup when user touch a road
+        map.on("touchstart", "roads", function (e) {
             var index = e.features[0].properties.index;
-            getFeedbackFromDb(id, function (data) {
-                var description = "<div id='feedback_css'>"
-                    + "<h4 style='font-size: 16px;'>Safety Index: " + index + "</h4>"
-                    + "<h4>How users feel:</h4>"
-                    + "<div class='row' style='margin-left:0px;'>"
-                    + "<img style='width: 18px;height: 18px;' src='../Content/Iteration2/css/img/unhappy.png'>"
-                    + "<p style='font-size:18px;display:inline-block;padding-top:5px;'> Unsafe: " + data.Negative + "</p>"
-                    + "</div>"
-                    + "<div class='row' style='margin-left:0px;'>"
-                    + "<img style='width: 18px;height: 18px;' src='../Content/Iteration2/css/img/netural.png'><p style='font-size:18px;display:inline-block;padding-top:5px;'>Netural: " + data.Neutral + "</p>"
-                    + "</div>"
-                    + "<div class='row' style='margin-left:0px;'>"
-                    + "<img style='width: 18px;height: 18px;' src='../Content/Iteration2/css/img/happy.png'><p style='font-size:18px;display:inline-block;padding-top:5px;'>Safe: " + data.Positive + "</p>"
-                    + "</div>"
-                    + "<div id='feedback'>"
-                    + "<button onclick='giveFeedback(" + id + ")'>Give my feedback</button>"
-                    + "</div>"
-                    + "</div>";
-                popup.setLngLat(e.lngLat)
-                    .setHTML(description)
-                    .addTo(map);
-            });
+            if (e.features.length > 0) {
+                if (line_id) {
+                    map.setFeatureState({ source: 'road_segments', id: line_id }, { touchstart: false });
+                }
+                line_id = e.features[0].id;
+                map.setFeatureState({ source: 'road_segments', id: line_id }, { touchstart: true });
+            }
+            var description = "<div id='feedback_css'>"
+                + "<h4 style='font-size: 16px;'>Safety Index: " + index + "</h4>"
+                + "</div>";
+            popup.setLngLat(e.lngLat)
+                .setHTML(description)
+                .addTo(map);
 
         });
 
-        //map.on("touchcancel", function () {
-        //    popup.remove();
-        //});
+        // Delete the popup when user's finger leave the road
+        map.on("touchend", function () {
+            if (line_id) {
+                map.setFeatureState({ source: 'road_segments', id: line_id }, { touchstart: false });
+            }
+            id: line_id = null;
+            popup.remove();
+        });
+
+        //Effect when mouse hover on a raod
+        map.on("mousemove", "lanes", function (e) {
+            var index = e.features[0].properties.index;
+            if (e.features.length > 0) {
+                if (line_id) {
+                    map.setFeatureState({ source: 'road_segments', id: line_id }, { touchstart: false });
+                }
+                line_id = e.features[0].id;
+                map.setFeatureState({ source: 'road_segments', id: line_id }, { touchstart: true });
+            }
+            var description = "<div id='feedback_css'>"
+                + "<h4 style='font-size: 16px;'>Safety Index: " + index + "</h4>"
+                + "</div>";
+            popup.setLngLat(e.lngLat)
+                .setHTML(description)
+                .addTo(map);
+
+        });
+
+        // When the mouse leaves the road, update the feature state of the
+        // previously hovered feature.
+        map.on("mouseleave", "lanes", function () {
+            if (line_id) {
+                map.setFeatureState({ source: 'road_segments', id: line_id }, { touchstart: false });
+            }
+            id: line_id = null;
+            popup.remove();
+        });
+
+        // Change the cursor to a pointer when the mouse is over the states layer.
+        map.on('mouseenter', 'lanes', function () {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+
+        // Change it back to a pointer when it leaves.
+        map.on('mouseleave', 'lanes', function () {
+            map.getCanvas().style.cursor = '';
+        });
+
+        //Display popup when user touch a road
+        map.on("touchstart", "lanes", function (e) {
+            var index = e.features[0].properties.index;
+            if (e.features.length > 0) {
+                if (line_id) {
+                    map.setFeatureState({ source: 'road_segments', id: line_id }, { touchstart: false });
+                }
+                line_id = e.features[0].id;
+                map.setFeatureState({ source: 'road_segments', id: line_id }, { touchstart: true });
+            }
+            var description = "<div id='feedback_css'>"
+                + "<h4 style='font-size: 16px;'>Safety Index: " + index + "</h4>"
+                + "</div>";
+            popup.setLngLat(e.lngLat)
+                .setHTML(description)
+                .addTo(map);
+
+        });
+
+        // Delete the popup when user's finger leave the road
+        map.on("touchend", function () {
+            if (line_id) {
+                map.setFeatureState({ source: 'road_segments', id: line_id }, { touchstart: false });
+            }
+            id: line_id = null;
+            popup.remove();
+        });
     });
     map.on('draw.create', updateRoute);
     map.on('draw.update', updateRoute);

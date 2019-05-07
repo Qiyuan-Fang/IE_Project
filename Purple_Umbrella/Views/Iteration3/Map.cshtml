@@ -1,0 +1,37 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html class="html_fullscreen">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Map</title>
+    @Styles.Render("~/Content/Iteration3/css/style")
+    @Scripts.Render("~/bundles/Iteration1")
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.0/mapbox-gl-directions.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.0/mapbox-gl-directions.css' type='text/css' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.css' type='text/css' />
+</head>
+<body class="body_fullscreen">
+    <div id="safetymap">
+        <div id='state-legend' class='legend'>
+            <h4>Safety score</h4>
+            <h4 style="font-size:12px;">Higher, Safer</h4>
+            <div><span style='background-color: #548235'></span>4-5</div>
+            <div><span style='background-color: #C5E0B4'></span>3-4</div>
+            <div><span style='background-color: #FFC000'></span>2-3</div>
+            <div><span style='background-color: #D07F78'></span>1-2</div>
+            <div><span style='background-color: #C00000'></span>0-1</div>
+        </div>
+    </div>
+    @Scripts.Render("~/Scripts/Iteration3/mapControl.js")
+    @Scripts.Render("~/Scripts/Iteration3/map.js")
+    @*@Scripts.Render("~/bundles/Iteration3Defer")*@
+</body>
+</html>

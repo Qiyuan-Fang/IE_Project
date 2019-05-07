@@ -1,0 +1,4484 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2019-05-06T15:56:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/323355702",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "62",
+        "addr:postcode": "3065",
+        "addr:street": "Johnston Street",
+        "amenity": "bar",
+        "description": "Tiki bar",
+        "name": "Vaud d'vile Drag Cabaret Restaurant",
+        "phone": "+61394175447"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9768502,
+          -37.7982994
+        ]
+      },
+      "id": "node/323355702"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/365206796",
+        "addr:city": "South Melbourne",
+        "addr:housenumber": "345",
+        "addr:postcode": "3205",
+        "addr:street": "Clarendon Street",
+        "amenity": "bar",
+        "name": "Honey",
+        "phone": "+61 3 96863311",
+        "website": "http://www.honeybar.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.961919,
+          -37.835313
+        ]
+      },
+      "id": "node/365206796"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/390715486",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "243-245",
+        "addr:postcode": "3065",
+        "addr:street": "Gertrude Street",
+        "amenity": "bar",
+        "food": "yes",
+        "name": "The Fitzroy Beer Garden",
+        "old_name": "Sentido Funf",
+        "outdoor_seating": "yes",
+        "phone": "+61 3 94162689",
+        "smoking": "outside",
+        "website": "http://thefitzroybeergarden.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9825807,
+          -37.8062207
+        ]
+      },
+      "id": "node/390715486"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/443533778",
+        "addr:city": "Carlton North",
+        "addr:housenumber": "16",
+        "addr:postcode": "3054",
+        "addr:street": "Pigdon Street",
+        "amenity": "bar",
+        "building": "yes",
+        "name": "Bar Nothing Noir Lounge",
+        "phone": "+61 3 93802424"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9771876,
+          -37.7824364
+        ]
+      },
+      "id": "node/443533778"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/443540185",
+        "amenity": "bar",
+        "name": "Wild Oscar's"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9946615,
+          -37.8251672
+        ]
+      },
+      "id": "node/443540185"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/463468361",
+        "addr:housenumber": "68",
+        "addr:postcode": "3205",
+        "addr:street": "Cecil Street",
+        "amenity": "bar",
+        "name": "Kittens",
+        "website": "www.kittens.com.au/south-melbourne.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9562392,
+          -37.8301951
+        ]
+      },
+      "id": "node/463468361"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/498680512",
+        "addr:city": "Abbotsford",
+        "addr:housenumber": "160",
+        "addr:postcode": "3067",
+        "addr:street": "Hoddle Street",
+        "amenity": "bar",
+        "name": "Mr Boogie Man Bar",
+        "phone": "+61 3 94869900"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9928419,
+          -37.8024481
+        ]
+      },
+      "id": "node/498680512"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/550880815",
+        "addr:housenumber": "209",
+        "addr:postcode": "3205",
+        "addr:street": "Clarendon Street",
+        "amenity": "bar",
+        "name": "The Clarendon",
+        "website": "http://www.theclarendon.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9598544,
+          -37.8309126
+        ]
+      },
+      "id": "node/550880815"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/572835358",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "120",
+        "addr:postcode": "3065",
+        "addr:street": "Johnston Street",
+        "amenity": "bar",
+        "name": "One Twenty Bar",
+        "phone": "+61394161220",
+        "website": "http://www.120bar.com/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9789109,
+          -37.798515
+        ]
+      },
+      "id": "node/572835358"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/573779773",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "347",
+        "addr:postcode": "3065",
+        "addr:street": "Brunswick Street",
+        "amenity": "bar",
+        "name": "Damask Bar",
+        "opening_hours": "Fri to Sat 17:00 to 01:00 am, Sun 17:00 to 12:00am",
+        "phone": "(03) 9417 4578",
+        "website": "http://www.damaskbar.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9785347,
+          -37.7968516
+        ]
+      },
+      "id": "node/573779773"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/580269524",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "379",
+        "addr:postcode": "3004",
+        "addr:street": "St Kilda Road",
+        "amenity": "bar",
+        "food": "yes",
+        "name": "The Amberoom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.975373,
+          -37.835125
+        ]
+      },
+      "id": "node/580269524"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/588371530",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "42",
+        "addr:postcode": "3065",
+        "addr:street": "Johnston Street",
+        "amenity": "bar",
+        "name": "Vice",
+        "phone": "0394158088"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.976186,
+          -37.79824
+        ]
+      },
+      "id": "node/588371530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/588402315",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "46",
+        "addr:postcode": "3065",
+        "addr:street": "Johnston Street",
+        "amenity": "bar",
+        "cuisine": "spanish",
+        "name": "La Sangria",
+        "phone": "0394198503",
+        "website": "http://www.lasangriabar.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9762881,
+          -37.798246
+        ]
+      },
+      "id": "node/588402315"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/592841898",
+        "amenity": "bar",
+        "name": "Ondergronds Bar",
+        "phone": "+61 3 96503708",
+        "website": "http://www.ondergronds.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.96938,
+          -37.816038
+        ]
+      },
+      "id": "node/592841898"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/593990782",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "150",
+        "addr:postcode": "3000",
+        "addr:street": "Flinders Lane",
+        "amenity": "bar",
+        "name": "Yak Bar and Food",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9692274,
+          -37.8156596
+        ]
+      },
+      "id": "node/593990782"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/598049995",
+        "addr:housenumber": "162",
+        "addr:postcode": "3000",
+        "addr:street": "Collins Street",
+        "amenity": "bar",
+        "name": "The Longroom",
+        "website": "www.thelongroom.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9678809,
+          -37.8147584
+        ]
+      },
+      "id": "node/598049995"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/600329018",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "302",
+        "addr:postcode": "3065",
+        "addr:street": "Brunswick Street",
+        "amenity": "bar",
+        "internet_access": "wlan",
+        "name": "Baxter's Lot",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.978688,
+          -37.798131
+        ]
+      },
+      "id": "node/600329018"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/600329019",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "304",
+        "addr:postcode": "3065",
+        "addr:street": "Brunswick Street",
+        "amenity": "bar",
+        "name": "Black Pearl",
+        "opening_hours": "Mo-Su 17:00-03:00",
+        "phone": "+613 9417 0455",
+        "website": "https://www.blackpearlbar.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.978702,
+          -37.7980779
+        ]
+      },
+      "id": "node/600329019"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/600744881",
+        "addr:housenumber": "27-29",
+        "addr:postcode": "3000",
+        "addr:street": "Tattersalls Lane",
+        "amenity": "bar",
+        "name": "Section 8 Container Bar",
+        "name:ko": "섹션8 주차장 라운지",
+        "website": "http://www.section8.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.965405,
+          -37.8117457
+        ]
+      },
+      "id": "node/600744881"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/600777872",
+        "addr:housenumber": "242",
+        "addr:postcode": "3000",
+        "addr:street": "Little Bourke Street",
+        "amenity": "bar",
+        "name": "Shanghai Club"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9656641,
+          -37.8122542
+        ]
+      },
+      "id": "node/600777872"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/611566484",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "87",
+        "addr:postcode": "3000",
+        "addr:street": "Bourke Street",
+        "amenity": "bar",
+        "building": "retail",
+        "cuisine": "chinese",
+        "internet_access": "wlan",
+        "name": "The Grand Trailer Park Taverna",
+        "phone": "+61 3 99723699",
+        "website": "http://www.grandtrailerpark.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.970916,
+          -37.812124
+        ]
+      },
+      "id": "node/611566484"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/616546986",
+        "addr:housenumber": "1/391",
+        "addr:postcode": "3000",
+        "addr:street": "Little Lonsdale Street",
+        "amenity": "bar",
+        "building": "retail",
+        "email": "citylala@lalaland.com.au",
+        "fax": "0396706011",
+        "name": "La La Land",
+        "opening_hours": "Mo-Th 17:00+; Fr 16:00+; Sa,Su 19:00+",
+        "phone": "0396705011",
+        "website": "https://www.lalaland.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9603841,
+          -37.811896
+        ]
+      },
+      "id": "node/616546986"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/622312018",
+        "addr:housenumber": "370",
+        "addr:postcode": "3065",
+        "addr:street": "Brunswick Street",
+        "amenity": "bar",
+        "cuisine": "spanish",
+        "name": "Kommune Canteen",
+        "phone": "+61 3 94177029",
+        "website": "http://www.kommunecanteen.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.979024,
+          -37.796219
+        ]
+      },
+      "id": "node/622312018"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/633912832",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "577",
+        "addr:postcode": "3000",
+        "addr:street": "Little Bourke Street",
+        "amenity": "bar",
+        "name": "La Di Da",
+        "phone": "+61 3 96707680",
+        "website": "https://www.ladidapeople.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9556539,
+          -37.8155125
+        ]
+      },
+      "id": "node/633912832"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/639371091",
+        "addr:city": "Melbourne",
+        "addr:postcode": "3000",
+        "addr:street": "Mercantile Place",
+        "amenity": "bar",
+        "name": "The Deck Mercantile Place",
+        "phone": "0396291350",
+        "website": "http://www.deckmercantileplace.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9570813,
+          -37.8201468
+        ]
+      },
+      "id": "node/639371091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/660117383",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "12",
+        "addr:postcode": "3000",
+        "addr:street": "Bourke Street",
+        "amenity": "bar",
+        "name": "Korova Milk Bar",
+        "phone": "+61 3 9654 3965",
+        "website": "http://www.korovamilkbar.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.972501,
+          -37.811331
+        ]
+      },
+      "id": "node/660117383"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/660615394",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "185",
+        "addr:postcode": "3065",
+        "addr:street": "Smith Street",
+        "amenity": "bar",
+        "name": "The 86",
+        "phone": "+61 422 560 890",
+        "website": "http://www.the86.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9833093,
+          -37.8036557
+        ]
+      },
+      "id": "node/660615394"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/663117964",
+        "addr:housenumber": "Level 1, 79-85",
+        "addr:street": "Bourke Street",
+        "amenity": "bar",
+        "building": "retail",
+        "email": "enquiries@tuscanbar.com.au",
+        "name": "Tuscan Bar",
+        "opening_hours": "Tu 15:00-24:00; We,Th 00:00-01:00,15:00-24:00; Fr 00:00-01:00,12:00-24:00; Sa 00:00-03:00,15:00-24:00; Su 00:00-03:00",
+        "phone": "0396713322",
+        "website": "http://www.tuscanbar.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.971138,
+          -37.812155
+        ]
+      },
+      "id": "node/663117964"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/663539644",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "1",
+        "addr:postcode": "3000",
+        "addr:street": "Flinders Lane",
+        "amenity": "bar",
+        "name": "Verge",
+        "phone": "0396399500",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9743131,
+          -37.8144429
+        ]
+      },
+      "id": "node/663539644"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/663542562",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "41",
+        "addr:postcode": "3000",
+        "addr:street": "Bourke Street",
+        "amenity": "bar",
+        "name": "Spleen Central",
+        "phone": "0396502400"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9720038,
+          -37.8118527
+        ]
+      },
+      "id": "node/663542562"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/664318669",
+        "addr:city": "Melbourne",
+        "addr:housename": "The Arts Centre",
+        "addr:housenumber": "100",
+        "addr:postcode": "3000",
+        "addr:street": "St Kilda Road",
+        "amenity": "bar",
+        "name": "Curve Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.968341,
+          -37.821852
+        ]
+      },
+      "id": "node/664318669"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/664326819",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "586",
+        "addr:postcode": "3000",
+        "addr:street": "Little Bourke Street",
+        "amenity": "bar",
+        "name": "Bar Hum Bug"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9549167,
+          -37.81543
+        ]
+      },
+      "id": "node/664326819"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/667680169",
+        "addr:housenumber": "68",
+        "addr:postcode": "3000",
+        "addr:street": "Little Collins Street",
+        "amenity": "bar",
+        "name": "Pony",
+        "undefined": "http://www.pony.net.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9713468,
+          -37.8128427
+        ]
+      },
+      "id": "node/667680169"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/670133505",
+        "addr:housenumber": "1/231",
+        "addr:postcode": "3000",
+        "addr:street": "Bourke Street",
+        "amenity": "bar",
+        "building": "retail",
+        "name": "Red Violin",
+        "website": "https://www.facebook.com/redviolinmelbourne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.966896,
+          -37.813487
+        ]
+      },
+      "id": "node/670133505"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/679642741",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "317",
+        "addr:postcode": "3065",
+        "addr:street": "Brunswick Street",
+        "amenity": "bar",
+        "name": "Bar Open"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.978425,
+          -37.79773
+        ]
+      },
+      "id": "node/679642741"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/712746982",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "129",
+        "addr:postcode": "3065",
+        "addr:street": "Smith Street",
+        "amenity": "bar",
+        "food": "yes",
+        "name": "Habitat",
+        "outdoor_seating": "no",
+        "payment:bitcoin": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9830414,
+          -37.8051179
+        ]
+      },
+      "id": "node/712746982"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/719040393",
+        "amenity": "bar",
+        "name": "Sam's Boatshed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9052249,
+          -37.8628999
+        ]
+      },
+      "id": "node/719040393"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/726973675",
+        "addr:housenumber": "169",
+        "addr:street": "Exhibition Street",
+        "amenity": "bar",
+        "name": "1806",
+        "phone": "+61396637722",
+        "website": "http://www.1806.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.970126,
+          -37.811624
+        ]
+      },
+      "id": "node/726973675"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/763651276",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "125",
+        "addr:postcode": "3065",
+        "addr:street": "Smith Street",
+        "amenity": "bar",
+        "food": "yes",
+        "name": "Grumpy's",
+        "outdoor_seating": "yes",
+        "payment:bitcoin": "yes",
+        "phone": "+61 3 94161944",
+        "website": "http://www.grumpysgreen.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.983027,
+          -37.80524
+        ]
+      },
+      "id": "node/763651276"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/768250472",
+        "addr:housenumber": "140",
+        "addr:postcode": "3006",
+        "addr:street": "Southbank Boulevard",
+        "amenity": "bar",
+        "cuisine": "italian",
+        "name": "Script. Bar & Bistro",
+        "website": "https://www.scriptbar.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.968052,
+          -37.823972
+        ]
+      },
+      "id": "node/768250472"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/802081390",
+        "amenity": "bar",
+        "name": "Elgin Inn",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.0253388,
+          -37.821283
+        ]
+      },
+      "id": "node/802081390"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/802086106",
+        "addr:housenumber": "329",
+        "addr:postcode": "3122",
+        "addr:state": "VIC",
+        "addr:street": "Burwood Road",
+        "addr:suburb": "Hawthorn",
+        "amenity": "bar",
+        "brewery": "various",
+        "name": "Beer Deluxe",
+        "opening_hours": "Mo 16:00-01:00; Tu-We 11:00-01:00; Su 11:00-01:00; Th-Sa 11:00-03:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.0341257,
+          -37.8222746
+        ]
+      },
+      "id": "node/802086106"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/803092876",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "86A",
+        "addr:postcode": "3000",
+        "addr:street": "Collins Street",
+        "amenity": "bar",
+        "name": "Collins Quarter",
+        "phone": "+61 3 96508500",
+        "website": "http://www.collinsquarter.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9706833,
+          -37.8140492
+        ]
+      },
+      "id": "node/803092876"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/812680713",
+        "addr:city": "Melbourne",
+        "addr:postcode": "3000",
+        "addr:street": "Beaney Lane",
+        "amenity": "bar",
+        "name": "Spice Market",
+        "phone": "+61 3 96603777",
+        "website": "https://www.spicemarket.net.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.969617,
+          -37.8149873
+        ]
+      },
+      "id": "node/812680713"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/844369564",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "163",
+        "addr:postcode": "3000",
+        "addr:street": "Lonsdale Street",
+        "amenity": "bar",
+        "building": "retail",
+        "name": "Nihonshu Shochu & Sake Bar",
+        "phone": "+61 3 96638118",
+        "website": "http://www.nihonshu.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9677526,
+          -37.8108587
+        ]
+      },
+      "id": "node/844369564"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/844369568",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "234A",
+        "addr:postcode": "3000",
+        "addr:street": "Russell Street",
+        "amenity": "bar",
+        "building": "retail",
+        "name": "Mai Tai Hawaii Cocktail Bar",
+        "phone": "+61 3 96632112"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9674924,
+          -37.8109328
+        ]
+      },
+      "id": "node/844369568"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/844679161",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "14",
+        "addr:postcode": "3000",
+        "addr:street": "Corrs Lane",
+        "amenity": "bar",
+        "building": "retail",
+        "name": "Fad Gallery Bar",
+        "phone": "+61 3 96392700",
+        "website": "https://www.fadgallery.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9684346,
+          -37.8112208
+        ]
+      },
+      "id": "node/844679161"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/940882273",
+        "addr:city": "Collingwood",
+        "addr:housenumber": "80",
+        "addr:postcode": "3066",
+        "addr:street": "Smith Street",
+        "amenity": "bar",
+        "name": "Caz Reitop's Dirty Secrets",
+        "phone": "+61 3 94158876",
+        "website": "http://www.crds.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9832619,
+          -37.8059236
+        ]
+      },
+      "id": "node/940882273"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/940883376",
+        "addr:city": "Collingwood",
+        "addr:housenumber": "60",
+        "addr:postcode": "3066",
+        "addr:street": "Smith Street",
+        "amenity": "bar",
+        "food": "yes",
+        "name": "Mr Scruff's",
+        "outdoor_seating": "yes",
+        "phone": "+61 3 94159891",
+        "website": "http://www.mrscruffs.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.983129,
+          -37.806551
+        ]
+      },
+      "id": "node/940883376"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/949319166",
+        "addr:housenumber": "285",
+        "addr:postcode": "3065",
+        "addr:street": "Brunswick Street",
+        "amenity": "bar",
+        "name": "Naked For Satan",
+        "phone": "+61 3 9416 2238",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.nakedforsatan.com.au/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9782342,
+          -37.798862
+        ]
+      },
+      "id": "node/949319166"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/961213239",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "272",
+        "addr:postcode": "3065",
+        "addr:street": "Brunswick Street",
+        "amenity": "bar",
+        "name": "Kodiak Club",
+        "opening_hours": "Sunday/Monday 6pm-late, TUESDAY CLOSED, Wed/Thur/Friday/Saturday 5pm-late",
+        "payment:bitcoin": "no",
+        "phone": "03 9417 3733",
+        "website": "http://www.kodiakclub.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.978501,
+          -37.799285
+        ]
+      },
+      "id": "node/961213239"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/968356091",
+        "addr:housenumber": "34",
+        "addr:street": "Franklin Street",
+        "amenity": "bar",
+        "name": "Miss Libertine"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.961749,
+          -37.807643
+        ]
+      },
+      "id": "node/968356091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/973189129",
+        "addr:housename": "Crown Entertainment Complex",
+        "addr:housenumber": "8",
+        "addr:postcode": "3006",
+        "addr:street": "8 Whiteman Street",
+        "amenity": "bar",
+        "name": "Tonic Bar",
+        "website": "http://www.crowncasino.com.au/tonic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.960371,
+          -37.823633
+        ]
+      },
+      "id": "node/973189129"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/980014680",
+        "amenity": "bar",
+        "name": "Double Happiness"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9713306,
+          -37.8112722
+        ]
+      },
+      "id": "node/980014680"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1053649683",
+        "addr:housenumber": "121",
+        "addr:postcode": "3000",
+        "addr:street": "Exhibition Street",
+        "amenity": "bar",
+        "building": "retail",
+        "name": "Bar Urban"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.970072,
+          -37.812479
+        ]
+      },
+      "id": "node/1053649683"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1064839661",
+        "amenity": "bar",
+        "name": "Cure Bar & Eatery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.971072,
+          -37.795556
+        ]
+      },
+      "id": "node/1064839661"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1066774983",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "201",
+        "addr:postcode": "3065",
+        "addr:street": "Brunswick Street",
+        "amenity": "bar",
+        "name": "The Rooks Return"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.977767,
+          -37.801257
+        ]
+      },
+      "id": "node/1066774983"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1068752521",
+        "addr:city": "Collingwood",
+        "addr:housenumber": "284",
+        "addr:postcode": "3066",
+        "addr:street": "Smith Street",
+        "amenity": "bar",
+        "food": "yes",
+        "name": "The Noble Experiment",
+        "outdoor_seating": "yes",
+        "phone": "+61 3 94160058",
+        "smoking": "outside",
+        "website": "http://www.thenobleexperiment.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.98407,
+          -37.800846
+        ]
+      },
+      "id": "node/1068752521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1072618108",
+        "addr:housenumber": "176",
+        "addr:street": "Bellair Street",
+        "amenity": "bar",
+        "name": "White Rabbit Record Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.930075,
+          -37.793652
+        ]
+      },
+      "id": "node/1072618108"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1074099332",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "99-101",
+        "addr:postcode": "3065",
+        "addr:street": "Smith Street",
+        "amenity": "bar",
+        "name": "Yah Yah's",
+        "phone": "+61 3 94194920",
+        "website": "http://www.yahyahs.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.982925,
+          -37.8058662
+        ]
+      },
+      "id": "node/1074099332"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1074146412",
+        "amenity": "bar",
+        "name": "Kent Street"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9834109,
+          -37.8031532
+        ]
+      },
+      "id": "node/1074146412"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1120989938",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "103",
+        "addr:postcode": "3065",
+        "addr:street": "Smith Street",
+        "amenity": "bar",
+        "name": "Sircuit",
+        "website": "https://www.sircuit.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9829357,
+          -37.805781
+        ]
+      },
+      "id": "node/1120989938"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1120993500",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "97b",
+        "addr:postcode": "3065",
+        "addr:street": "Smith Street",
+        "amenity": "bar",
+        "name": "Mr Wow's Emporium",
+        "opening_hours": "We-Su 17:00-1:00",
+        "phone": "+61 3 94192992",
+        "website": "http://www.mrwowsemporium.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9828623,
+          -37.8059664
+        ]
+      },
+      "id": "node/1120993500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1138567916",
+        "amenity": "bar",
+        "name": "Greenwood Loft",
+        "phone": "+61 3 81993740"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.982707,
+          -37.806235
+        ]
+      },
+      "id": "node/1138567916"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1158434412",
+        "amenity": "bar",
+        "name": "Nevermind"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.0349998,
+          -37.8227063
+        ]
+      },
+      "id": "node/1158434412"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1252088743",
+        "amenity": "bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.0419693,
+          -37.7693461
+        ]
+      },
+      "id": "node/1252088743"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1370726907",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "361",
+        "addr:postcode": "3065",
+        "addr:street": "Brunswick Street",
+        "amenity": "bar",
+        "food": "yes",
+        "name": "The Alchemist",
+        "opening_hours": "Su-Th 17:00-23:00; Fr 17:00-01:00; Su 15:00-01:00",
+        "phone": "+61 3 94198250",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.978615,
+          -37.796478
+        ]
+      },
+      "id": "node/1370726907"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1370727391",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "334",
+        "addr:postcode": "3065",
+        "addr:street": "Brunswick Street",
+        "amenity": "bar",
+        "name": "The Rum Diary Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.978847,
+          -37.797093
+        ]
+      },
+      "id": "node/1370727391"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1435394145",
+        "amenity": "bar",
+        "name": "Djangos Bar and Grill"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.0451432,
+          -37.8232735
+        ]
+      },
+      "id": "node/1435394145"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1619646233",
+        "addr:housenumber": "129",
+        "addr:postcode": "3057",
+        "addr:street": "Lygon Street",
+        "amenity": "bar",
+        "building": "yes",
+        "name": "Atticus Finch",
+        "website": "https://www.atticusfinch.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9710964,
+          -37.7741912
+        ]
+      },
+      "id": "node/1619646233"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1619649676",
+        "amenity": "bar",
+        "name": "The Alderman"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9714274,
+          -37.77394
+        ]
+      },
+      "id": "node/1619649676"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1653907369",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "193",
+        "addr:postcode": "3000",
+        "addr:street": "Bourke Street",
+        "amenity": "bar",
+        "building": "retail",
+        "food": "yes",
+        "name": "The Carlton",
+        "outdoor_seating": "yes",
+        "phone": "+61 3 96633246",
+        "website": "https://www.thecarlton.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9676453,
+          -37.813096
+        ]
+      },
+      "id": "node/1653907369"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1668394666",
+        "amenity": "bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9762574,
+          -37.8483504
+        ]
+      },
+      "id": "node/1668394666"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1671557047",
+        "addr:city": "Brunswick East",
+        "addr:country": "AU",
+        "addr:housenumber": "86",
+        "addr:postcode": "3057",
+        "addr:street": "Lygon Street",
+        "amenity": "bar",
+        "building": "yes",
+        "name": "Eydie's"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9711838,
+          -37.7761091
+        ]
+      },
+      "id": "node/1671557047"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1931420320",
+        "addr:housename": "McPherson Building",
+        "addr:housenumber": "546",
+        "addr:postcode": "3000",
+        "addr:street": "Collins Street",
+        "amenity": "bar",
+        "building": "retail",
+        "name": "Nero Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9557352,
+          -37.8184563
+        ]
+      },
+      "id": "node/1931420320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1955937498",
+        "addr:city": "Melbourne",
+        "addr:country": "AU",
+        "addr:housenumber": "270",
+        "addr:postcode": "3000",
+        "addr:state": "Victoria",
+        "addr:street": "Russell Street",
+        "amenity": "bar",
+        "name": "Chez Regine"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9671503,
+          -37.8102819
+        ]
+      },
+      "id": "node/1955937498"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2095741057",
+        "addr:city": "Collingwood",
+        "addr:housenumber": "104",
+        "addr:postcode": "3066",
+        "addr:street": "Smith Street",
+        "amenity": "bar",
+        "name": "Bill's Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9833539,
+          -37.8053665
+        ]
+      },
+      "id": "node/2095741057"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2102423683",
+        "addr:city": "Collingwood",
+        "addr:housenumber": "310",
+        "addr:postcode": "3066",
+        "addr:street": "Smith Street",
+        "amenity": "bar",
+        "name": "Dingo's",
+        "website": "https://www.dingosbar.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9842549,
+          -37.7999844
+        ]
+      },
+      "id": "node/2102423683"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2105011695",
+        "amenity": "bar",
+        "name": "Masque",
+        "phone": "+61 3 90873073",
+        "website": "https://masquebar.com.au/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9699212,
+          -37.8331022
+        ]
+      },
+      "id": "node/2105011695"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2108124493",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "141",
+        "addr:postcode": "3065",
+        "addr:street": "Greeves Street",
+        "amenity": "bar",
+        "contact:email": "info@barparadiso.com.au",
+        "name": "Bad Frankie",
+        "phone": "+61 3 90783866",
+        "website": "http://www.badfrankie.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.983694,
+          -37.800318
+        ]
+      },
+      "id": "node/2108124493"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2108133053",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "135",
+        "addr:postcode": "3065",
+        "addr:street": "Greeves Street",
+        "amenity": "bar",
+        "contact:email": "hello@hellofthenorth.com.au",
+        "food": "yes",
+        "name": "Hell of the North",
+        "outdoor_seating": "yes",
+        "phone": "+61 3 94176660",
+        "website": "https://hellofthenorth.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.983538,
+          -37.800288
+        ]
+      },
+      "id": "node/2108133053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2108156061",
+        "addr:city": "Collingwood",
+        "addr:housenumber": "31",
+        "addr:postcode": "3066",
+        "addr:street": "Johnston Street",
+        "amenity": "bar",
+        "name": "99 Problems",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.985808,
+          -37.799286
+        ]
+      },
+      "id": "node/2108156061"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2109630961",
+        "addr:city": "Carlton",
+        "addr:housenumber": "333",
+        "addr:postcode": "3053",
+        "addr:street": "Lygon Street",
+        "amenity": "bar",
+        "food": "yes",
+        "name": "Jimmy Watson's Wine Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.967294,
+          -37.797383
+        ]
+      },
+      "id": "node/2109630961"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2217854718",
+        "amenity": "bar",
+        "food": "yes",
+        "name": "City Wine Shop",
+        "website": "http://www.citywineshop.net.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.972615,
+          -37.810953
+        ]
+      },
+      "id": "node/2217854718"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2240626094",
+        "addr:city": "Melbourne",
+        "addr:country": "AU",
+        "addr:housenumber": "16",
+        "addr:postcode": "3000",
+        "addr:state": "Victoria",
+        "addr:street": "Corrs Lane",
+        "amenity": "bar",
+        "building": "retail",
+        "email": "oliver@berlinbar.com.au",
+        "name": "Berlin Bar",
+        "note": "no bookings, no groups of more than 8 people",
+        "opening_hours": "Tu 19:00-24:00; We,Th 17:00-24:00; Fr 00:00-01:00,16:00-24:00; Sa 00:00-02:00,19:00-24:00; Su 00:00-02:00",
+        "phone": "+61-3-96393396",
+        "website": "https://berlinbar.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9683698,
+          -37.8111694
+        ]
+      },
+      "id": "node/2240626094"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2240626110",
+        "addr:city": "Melbourne",
+        "addr:country": "AU",
+        "addr:housenumber": "21",
+        "addr:postcode": "3000",
+        "addr:state": "Victoria",
+        "addr:street": "Croft Alley",
+        "amenity": "bar",
+        "building": "retail",
+        "name": "The Croft Institute",
+        "opening_hours": "Mo 17:00-24:00; Tu-Fr 00:00-01:00,17:00-24:00; Sa 00:00-03:00,17:00-24:00; Su 00:00-03:00",
+        "phone": "+61-3-96714399",
+        "website": "https://www.thecroftinstitute.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9691113,
+          -37.8120888
+        ]
+      },
+      "id": "node/2240626110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2240626119",
+        "addr:city": "Melbourne",
+        "addr:country": "AU",
+        "addr:housename": "Basement",
+        "addr:housenumber": "176",
+        "addr:postcode": "3000",
+        "addr:state": "Victoria",
+        "addr:street": "Little Lonsdale Street",
+        "amenity": "bar",
+        "email": "info@themoat.com.au",
+        "name": "The Moat Bar & Café",
+        "opening_hours": "Mo-Fr 08:00+; Sa 12:00+",
+        "phone": "+61-3-90947820",
+        "website": "https://www.themoat.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9652411,
+          -37.8101724
+        ]
+      },
+      "id": "node/2240626119"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2270171067",
+        "addr:city": "Southbank",
+        "addr:housenumber": "56",
+        "addr:postcode": "3006",
+        "addr:street": "Clarke Street",
+        "amenity": "bar",
+        "name": "Industry Bar Southbank",
+        "phone": "+61 3 96960096",
+        "website": "http://www.industrybarsouthbank.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.959219,
+          -37.8275355
+        ]
+      },
+      "id": "node/2270171067"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2292066210",
+        "amenity": "bar",
+        "food": "yes",
+        "name": "Cohen Cellars Wine Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.985229,
+          -37.809895
+        ]
+      },
+      "id": "node/2292066210"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2296822554",
+        "amenity": "bar",
+        "food": "yes",
+        "name": "Bluestone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.962818,
+          -37.817765
+        ]
+      },
+      "id": "node/2296822554"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2296836980",
+        "addr:city": "Melbourne",
+        "addr:street": "Bond Street",
+        "amenity": "bar",
+        "food": "yes",
+        "name": "Maha",
+        "outdoor_seating": "no",
+        "smoking": "no",
+        "website": "https://maharestaurant.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.962643,
+          -37.818209
+        ]
+      },
+      "id": "node/2296836980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2330235110",
+        "addr:city": "Williamstown",
+        "addr:housenumber": "185",
+        "addr:street": "Nelson Place",
+        "amenity": "bar",
+        "name": "Atomic Bar",
+        "outdoor_seating": "no",
+        "smoking": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.903291,
+          -37.862899
+        ]
+      },
+      "id": "node/2330235110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2330237411",
+        "addr:city": "Williamstown",
+        "addr:housenumber": "181",
+        "addr:street": "Nelson Place",
+        "amenity": "bar",
+        "food": "yes",
+        "name": "The Groove",
+        "outdoor_seating": "yes",
+        "smoking": "outside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.903447,
+          -37.862962
+        ]
+      },
+      "id": "node/2330237411"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2345090410",
+        "addr:street": "Little Collins Street",
+        "amenity": "bar",
+        "food": "yes",
+        "name": "The Alexander Bar",
+        "outdoor_seating": "yes",
+        "smoking": "outside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.954052,
+          -37.817874
+        ]
+      },
+      "id": "node/2345090410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2365435384",
+        "amenity": "bar",
+        "name": "Willow Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9983148,
+          -37.7736346
+        ]
+      },
+      "id": "node/2365435384"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2366494952",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "95",
+        "addr:postcode": "3065",
+        "addr:street": "Smith Street",
+        "amenity": "bar",
+        "name": "Los Barbudos",
+        "opening_hours": "We-Th 17:00-24:00; Fr 17:00-24:00; Sa 00:00-01:00,18:00-24:00; Su 00:00-01:00,18:00-23:00",
+        "phone": "+61 3 94160079",
+        "website": "http://www.losbarbudos.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9829133,
+          -37.8059993
+        ]
+      },
+      "id": "node/2366494952"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2372890746",
+        "addr:city": "Docklands",
+        "addr:postcode": "3008",
+        "addr:street": "Bourke Street",
+        "amenity": "bar",
+        "atm": "no",
+        "food": "yes",
+        "internet_access": "no",
+        "name": "Bob's Bar",
+        "outdoor_seating": "yes",
+        "smoking": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.948724,
+          -37.818788
+        ]
+      },
+      "id": "node/2372890746"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2400994271",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "243",
+        "addr:postcode": "3000",
+        "addr:street": "Swanston Street",
+        "amenity": "bar",
+        "food": "yes",
+        "name": "Lounge",
+        "phone": "+61 3 96632916",
+        "wheelchair": "no",
+        "wikidata": "Q5136244"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9648414,
+          -37.8122636
+        ]
+      },
+      "id": "node/2400994271"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2411587804",
+        "amenity": "bar",
+        "food": "yes",
+        "level": "0",
+        "name": "Network Public Bar & Pizzeria",
+        "website": "networkpublicbar.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9532602,
+          -37.8178056
+        ]
+      },
+      "id": "node/2411587804"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2421608393",
+        "amenity": "bar",
+        "name": "Rock Pool Bar & Grill",
+        "website": "www.rockpool.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9601634,
+          -37.8218036
+        ]
+      },
+      "id": "node/2421608393"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2485910391",
+        "addr:city": "Collingwood",
+        "addr:housenumber": "48a",
+        "addr:postcode": "3066",
+        "addr:street": "Smith Street",
+        "amenity": "bar",
+        "name": "Smithward",
+        "website": "http://smithward.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.983041,
+          -37.806924
+        ]
+      },
+      "id": "node/2485910391"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2491872772",
+        "addr:city": "Melbourne",
+        "addr:country": "AU",
+        "addr:housenumber": "71",
+        "addr:postcode": "3001",
+        "addr:state": "Victoria",
+        "addr:street": "Hardware Lane",
+        "amenity": "bar",
+        "fax": "+61-3-96001454",
+        "name": "Charlie's Bar",
+        "opening_hours": "Tu-Sa 17:00+",
+        "phone": "+61-3-96001454",
+        "website": "http://www.charliesbar.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9609388,
+          -37.8131871
+        ]
+      },
+      "id": "node/2491872772"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2503427932",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "215",
+        "addr:postcode": "3000",
+        "addr:street": "Bourke Street",
+        "amenity": "bar",
+        "building": "retail",
+        "cuisine": "asian",
+        "name": "TreasureStar",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.967212,
+          -37.813215
+        ]
+      },
+      "id": "node/2503427932"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2503440396",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "188",
+        "addr:postcode": "3000",
+        "addr:street": "Bourke Street",
+        "amenity": "bar",
+        "building": "retail",
+        "name": "The SGC Lounge",
+        "website": "http://www.thescglounge.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.967523,
+          -37.812681
+        ]
+      },
+      "id": "node/2503440396"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2505469998",
+        "amenity": "bar",
+        "name": "Castle Hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.953066,
+          -37.800954
+        ]
+      },
+      "id": "node/2505469998"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2534876354",
+        "addr:city": "Collingwood",
+        "addr:housenumber": "113",
+        "addr:postcode": "3066",
+        "addr:street": "Johnston Street",
+        "amenity": "bar",
+        "name": "Fee Fee's Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9885035,
+          -37.7994988
+        ]
+      },
+      "id": "node/2534876354"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2535973665",
+        "amenity": "bar",
+        "name": "Bar DiStasio",
+        "source:amenity": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.97441,
+          -37.8617812
+        ]
+      },
+      "id": "node/2535973665"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2570901406",
+        "amenity": "bar",
+        "fixme": "location approx",
+        "name": "The Alehouse Project"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9711443,
+          -37.7754766
+        ]
+      },
+      "id": "node/2570901406"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2602814888",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "347",
+        "addr:postcode": "3065",
+        "addr:street": "Smith Street",
+        "amenity": "bar",
+        "description": "Craft beer bar",
+        "name": "Lot 347",
+        "opening_hours": "Th-Sa 17:00-0:00; Su 16:00-23:00",
+        "phone": "+61 3 94172347",
+        "website": "http://www.lot347.com.au",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.984194,
+          -37.79855
+        ]
+      },
+      "id": "node/2602814888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2622851278",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "397",
+        "addr:postcode": "3000",
+        "addr:street": "Little Lonsdale Street",
+        "amenity": "bar",
+        "building": "retail",
+        "name": "Horse Bazaar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9601792,
+          -37.8118452
+        ]
+      },
+      "id": "node/2622851278"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2622865966",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "525",
+        "addr:postcode": "3000",
+        "addr:street": "Little Lonsdale Street",
+        "amenity": "bar",
+        "name": "Deja Vu Bar & Lounge",
+        "opening_hours": "Tu-Sa 16:00+",
+        "website": "www.dejavubar.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9562691,
+          -37.81294
+        ]
+      },
+      "id": "node/2622865966"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2623327362",
+        "addr:city": "Moonee Ponds",
+        "addr:housenumber": "18",
+        "addr:postcode": "3039",
+        "addr:street": "Hall Street",
+        "amenity": "bar",
+        "name": "Valley Cellar Door",
+        "website": "http://www.valleycellardoor.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9222951,
+          -37.7659973
+        ]
+      },
+      "id": "node/2623327362"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2632220290",
+        "amenity": "bar",
+        "name": "La La Land",
+        "website": "https://www.lalaland.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9931515,
+          -37.8535489
+        ]
+      },
+      "id": "node/2632220290"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2686206075",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "10",
+        "addr:postcode": "3000",
+        "addr:street": "Russell Place",
+        "amenity": "bar",
+        "name": "Gin Palace",
+        "opening_hours": "16:00-03:00",
+        "phone": "+61 3 9654 0533",
+        "source": "website",
+        "website": "http://www.ginpalace.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9674924,
+          -37.8138376
+        ]
+      },
+      "id": "node/2686206075"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2687979796",
+        "amenity": "bar",
+        "name": "Captain Baxter",
+        "website": "http://captainbaxter.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.972422,
+          -37.865562
+        ]
+      },
+      "id": "node/2687979796"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2689166177",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "23",
+        "addr:postcode": "3000",
+        "addr:street": "Meyers Place",
+        "amenity": "bar",
+        "name": "Loop",
+        "note": "Website describes Loop as \"art space\" and \"project space\" as well as a bar.",
+        "source": "website",
+        "website": "https://looponline.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9721466,
+          -37.8121017
+        ]
+      },
+      "id": "node/2689166177"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2711791292",
+        "amenity": "bar",
+        "name": "Albion Hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.948542,
+          -37.798878
+        ]
+      },
+      "id": "node/2711791292"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2722293036",
+        "amenity": "bar",
+        "name": "Tram Bar",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9688,
+          -37.821611
+        ]
+      },
+      "id": "node/2722293036"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2751251180",
+        "addr:city": "Port Melbourne",
+        "addr:housenumber": "360",
+        "addr:postcode": "3207",
+        "addr:street": "Plummer Street",
+        "amenity": "bar",
+        "name": "Wine Box Warehouse",
+        "website": "www.wineboxwarehouse.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9226653,
+          -37.8333639
+        ]
+      },
+      "id": "node/2751251180"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2870497200",
+        "addr:housenumber": "348",
+        "addr:postcode": "3122",
+        "addr:state": "Victoria",
+        "addr:street": "Burwood Road",
+        "addr:suburb": "Hawthorn",
+        "amenity": "bar",
+        "brewery": "various",
+        "name": "The Kilburn",
+        "opening_hours": "Mo-Sa 16:00-02:00",
+        "smoking": "outside",
+        "website": "https://www.thekilburn.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.035168,
+          -37.8227048
+        ]
+      },
+      "id": "node/2870497200"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2890078394",
+        "addr:city": "Thornbury",
+        "addr:housenumber": "832a",
+        "addr:postcode": "3071",
+        "addr:street": "High Street",
+        "amenity": "bar",
+        "building": "yes",
+        "name": "Joanie's Baretto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.0016063,
+          -37.7531634
+        ]
+      },
+      "id": "node/2890078394"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2898209901",
+        "addr:city": "Fitzroy",
+        "addr:housenumber": "348",
+        "addr:postcode": "3065",
+        "addr:street": "Brunswick Street",
+        "amenity": "bar",
+        "name": "G & Tea Gin Garden",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.978891,
+          -37.796869
+        ]
+      },
+      "id": "node/2898209901"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2913949309",
+        "amenity": "bar",
+        "name": "Malthouse Bar/Cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9667889,
+          -37.8269917
+        ]
+      },
+      "id": "node/2913949309"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2934997613",
+        "amenity": "bar",
+        "name": "Testing Grounds",
+        "website": "http://www.testing-grounds.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9677257,
+          -37.8211796
+        ]
+      },
+      "id": "node/2934997613"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3072718452",
+        "amenity": "bar",
+        "name": "The Boatbuilders Yard",
+        "url": "http://www.theboatbuildersyard.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9529795,
+          -37.82414
+        ]
+      },
+      "id": "node/3072718452"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3093461729",
+        "amenity": "bar",
+        "name": "Hairy Little Sista",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.966689,
+          -37.814258
+        ]
+      },
+      "id": "node/3093461729"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3099960754",
+        "addr:city": "Clifton Hill",
+        "addr:housenumber": "123",
+        "addr:postcode": "3068",
+        "addr:street": "Queens Parade",
+        "amenity": "bar",
+        "name": "Some Velvet Morning",
+        "note": "music venue, gallery, cafe",
+        "website": "http://facebook.com/somevelvetmorning123/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9901107,
+          -37.7893136
+        ]
+      },
+      "id": "node/3099960754"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3148629929",
+        "amenity": "bar",
+        "name": "Sagi Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.996488,
+          -37.780831
+        ]
+      },
+      "id": "node/3148629929"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3161984762",
+        "amenity": "bar",
+        "name": "Blondie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.967752,
+          -37.823895
+        ]
+      },
+      "id": "node/3161984762"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3252955113",
+        "addr:city": "Brunswick",
+        "addr:housenumber": "291",
+        "addr:postcode": "3056",
+        "addr:street": "Albert Street",
+        "amenity": "bar",
+        "building": "yes",
+        "name": "Railway Hotel",
+        "website": "http://www.railwayhotelbrunswick.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9598217,
+          -37.7683522
+        ]
+      },
+      "id": "node/3252955113"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3375923625",
+        "amenity": "bar",
+        "name": "New Quay Hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.942374,
+          -37.8145826
+        ]
+      },
+      "id": "node/3375923625"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3467612383",
+        "addr:city": "Preston",
+        "addr:housenumber": "145",
+        "addr:postcode": "3072",
+        "addr:street": "Plenty Road",
+        "amenity": "bar",
+        "building": "yes",
+        "name": "The Racoon Club"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.0049031,
+          -37.7471646
+        ]
+      },
+      "id": "node/3467612383"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3467612386",
+        "addr:city": "Thornbury",
+        "addr:housenumber": "877",
+        "addr:postcode": "3071",
+        "addr:street": "High Street",
+        "amenity": "bar",
+        "building": "yes",
+        "name": "Carwyn Cellars"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.0012079,
+          -37.7540179
+        ]
+      },
+      "id": "node/3467612386"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3523510816",
+        "amenity": "bar",
+        "name": "Bar And Bistro"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9612913,
+          -37.8068657
+        ]
+      },
+      "id": "node/3523510816"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3608341897",
+        "addr:city": "Collingwood",
+        "addr:housenumber": "73",
+        "addr:postcode": "3066",
+        "addr:street": "Rupert Street",
+        "amenity": "bar",
+        "name": "Rupert on Rupert",
+        "website": "http://rupertonrupert.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9890053,
+          -37.8063772
+        ]
+      },
+      "id": "node/3608341897"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3709403626",
+        "amenity": "bar",
+        "name": "The B.East",
+        "outdoor_seating": "yes",
+        "website": "http://www.theb-east.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9711676,
+          -37.7762306
+        ]
+      },
+      "id": "node/3709403626"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3734155651",
+        "addr:city": "Richmond",
+        "addr:housenumber": "326",
+        "addr:postcode": "3121",
+        "addr:street": "Bridge Road",
+        "amenity": "bar",
+        "name": "tres",
+        "website": "http://www.tresbar.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.002218,
+          -37.8190291
+        ]
+      },
+      "id": "node/3734155651"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3860293391",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "16",
+        "addr:postcode": "3000",
+        "addr:street": "Russell Place",
+        "amenity": "bar",
+        "name": "Bar Ampere",
+        "smoking": "isolated"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9673858,
+          -37.8135603
+        ]
+      },
+      "id": "node/3860293391"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3885415461",
+        "amenity": "bar",
+        "name": "Dog's Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9779144,
+          -37.8663379
+        ]
+      },
+      "id": "node/3885415461"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3905908767",
+        "addr:city": "Docklands",
+        "addr:housenumber": "727",
+        "addr:postcode": "3008",
+        "addr:street": "Collins Street",
+        "amenity": "bar",
+        "name": "Bar Nacional",
+        "operator": "Collins Square Hospitality Group",
+        "phone": "(03) 9252 7999",
+        "website": "http://www.barnacional.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9501923,
+          -37.8204444
+        ]
+      },
+      "id": "node/3905908767"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3949687623",
+        "amenity": "bar",
+        "name": "Polly"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9788836,
+          -37.7950762
+        ]
+      },
+      "id": "node/3949687623"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3949687625",
+        "amenity": "bar",
+        "name": "Brunswick St Cider House",
+        "url": "theciderhouse.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9790543,
+          -37.7955217
+        ]
+      },
+      "id": "node/3949687625"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3949699694",
+        "amenity": "bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9787151,
+          -37.7959876
+        ]
+      },
+      "id": "node/3949699694"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3949699696",
+        "addr:housenumber": "319",
+        "addr:street": "Brunswick Street",
+        "amenity": "bar",
+        "name": "Ice Bar Melbourne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9784835,
+          -37.797576
+        ]
+      },
+      "id": "node/3949699696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3951193455",
+        "addr:city": "Abbotsford",
+        "addr:housenumber": "225",
+        "addr:postcode": "3067",
+        "addr:street": "Johnston Street",
+        "amenity": "bar",
+        "name": "Lulie Tavern"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.993642,
+          -37.8000394
+        ]
+      },
+      "id": "node/3951193455"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3954524057",
+        "amenity": "bar",
+        "name": "Bar Clarine"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.97974,
+          -37.80611
+        ]
+      },
+      "id": "node/3954524057"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4069409789",
+        "amenity": "bar",
+        "name": "Two Row Bar",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.984187,
+          -37.79848
+        ]
+      },
+      "id": "node/4069409789"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4198121893",
+        "amenity": "bar",
+        "name": "Central Club Hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.0026982,
+          -37.8260289
+        ]
+      },
+      "id": "node/4198121893"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4265464789",
+        "amenity": "bar",
+        "food": "yes",
+        "name": "Beer, Wine and Calzone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.956366,
+          -37.811121
+        ]
+      },
+      "id": "node/4265464789"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4296243504",
+        "addr:housenumber": "122",
+        "addr:street": "Chapel Street",
+        "amenity": "bar",
+        "building": "yes",
+        "name": "Yellow Bird Cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9930481,
+          -37.8538581
+        ]
+      },
+      "id": "node/4296243504"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4312299694",
+        "addr:housenumber": "18-28",
+        "addr:street": "Market Lane",
+        "amenity": "bar",
+        "name": "Höfbräuhouse",
+        "website": "http://www.hofbrauhaus.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9692631,
+          -37.8116136
+        ]
+      },
+      "id": "node/4312299694"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4339694192",
+        "amenity": "bar",
+        "name": "Charlton's"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9685516,
+          -37.8120705
+        ]
+      },
+      "id": "node/4339694192"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4358215283",
+        "amenity": "bar",
+        "name": "Coburg RSL",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9652556,
+          -37.7459533
+        ]
+      },
+      "id": "node/4358215283"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4462806590",
+        "addr:housenumber": "252",
+        "addr:street": "Swanston Street",
+        "amenity": "bar",
+        "name": "Rooftop bar",
+        "name:en": "Rooftop bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9651425,
+          -37.8119429
+        ]
+      },
+      "id": "node/4462806590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4466137122",
+        "amenity": "bar",
+        "name": "Asian Beer Cafe",
+        "name:en": "Asian Beer Cafe",
+        "website": "http://asianbeercafe.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9634158,
+          -37.809923
+        ]
+      },
+      "id": "node/4466137122"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4496744389",
+        "amenity": "bar",
+        "name": "State of Grace",
+        "name:en": "State of Grace"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.958352,
+          -37.8181108
+        ]
+      },
+      "id": "node/4496744389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4507303400",
+        "amenity": "bar",
+        "name": "The Crafty Squire Brewery",
+        "name:en": "The Crafty Squire Brewery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9680837,
+          -37.8133636
+        ]
+      },
+      "id": "node/4507303400"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4543144092",
+        "addr:housenumber": "347",
+        "addr:postcode": "3000",
+        "addr:street": "Flinders Lane",
+        "amenity": "bar",
+        "name": "The Bull & Bear Tavern",
+        "name:en": "The Bull & Bear Tavern",
+        "phone": "(03)96294116",
+        "website": "http://thebullandbear.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9630551,
+          -37.8177853
+        ]
+      },
+      "id": "node/4543144092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4547320785",
+        "addr:city": "Thornbury",
+        "addr:housenumber": "1",
+        "addr:street": "Theobald Street",
+        "amenity": "bar",
+        "craft": "breewry",
+        "microbrewery": "yes",
+        "name": "3 Ravens Brewery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.026949,
+          -37.7558765
+        ]
+      },
+      "id": "node/4547320785"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4566592998",
+        "amenity": "bar",
+        "name": "The Old Bar",
+        "name:en": "The Old Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9918656,
+          -37.8065
+        ]
+      },
+      "id": "node/4566592998"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4568062296",
+        "amenity": "bar",
+        "name": "Bomba Rooftop",
+        "name:en": "Bomba Rooftop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9694598,
+          -37.8103353
+        ]
+      },
+      "id": "node/4568062296"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4574487201",
+        "amenity": "bar",
+        "name": "Vintage Infusion",
+        "name:en": "Vintage Infusion"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9789482,
+          -37.7963325
+        ]
+      },
+      "id": "node/4574487201"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4634302290",
+        "amenity": "bar",
+        "name": "Milton Wine Bar",
+        "name:en": "Milton Wine Bar",
+        "opening_hours": "Mo-Fr 12:00-09:00; Sa-Su 12:00-11:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.0415948,
+          -37.8530728
+        ]
+      },
+      "id": "node/4634302290"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4671506492",
+        "amenity": "bar",
+        "name": "Howler",
+        "name:en": "Howler"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9593375,
+          -37.7719965
+        ]
+      },
+      "id": "node/4671506492"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4671702790",
+        "amenity": "bar",
+        "name": "The Workshop Bar",
+        "name:en": "The Workshop Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9606363,
+          -37.8092084
+        ]
+      },
+      "id": "node/4671702790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4671705490",
+        "amenity": "bar",
+        "name": "Joint Bar",
+        "name:en": "Joint Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9643462,
+          -37.8173329
+        ]
+      },
+      "id": "node/4671705490"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4671706389",
+        "amenity": "bar",
+        "name": "E55 (Fifty Five)",
+        "name:en": "E55 (Fifty Five)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.964248,
+          -37.8169962
+        ]
+      },
+      "id": "node/4671706389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4673771321",
+        "amenity": "bar",
+        "name": "Fitzroy Social Bar",
+        "name:en": "Fitzroy Social Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9781715,
+          -37.8009154
+        ]
+      },
+      "id": "node/4673771321"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4673882890",
+        "amenity": "bar",
+        "name": "Pixel Alley",
+        "name:en": "Pixel Alley"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9829315,
+          -37.8059278
+        ]
+      },
+      "id": "node/4673882890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4684645589",
+        "amenity": "bar",
+        "name": "Sister Bella",
+        "name:en": "Sister Bella"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9638606,
+          -37.8114481
+        ]
+      },
+      "id": "node/4684645589"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4709288090",
+        "amenity": "bar",
+        "name": "Mill House",
+        "name:en": "Mill House"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9650236,
+          -37.8171332
+        ]
+      },
+      "id": "node/4709288090"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4733654609",
+        "addr:city": "North Melbourne",
+        "addr:country": "AU",
+        "addr:housenumber": "7",
+        "addr:postcode": "3051",
+        "addr:state": "VIC",
+        "addr:street": "Errol Street",
+        "amenity": "bar",
+        "name": "Joe Taylor",
+        "opening_hours": "Mo-Th 16:00-01:00; Fr-Sa 15:00-01:00; Su 15:00-23:00",
+        "payment:american_express": "yes",
+        "payment:coins": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:notes": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "phone": "+61 3 9329 4669",
+        "smoking": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9490958,
+          -37.8048127
+        ]
+      },
+      "id": "node/4733654609"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4757491921",
+        "amenity": "bar",
+        "name": "Lona Bar",
+        "name:en": "Lona Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9842104,
+          -37.8616428
+        ]
+      },
+      "id": "node/4757491921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4760996322",
+        "addr:postcode": "3000",
+        "addr:state": "VIC",
+        "addr:street": "Flinders Walk",
+        "addr:suburb": "Melbourne",
+        "amenity": "bar",
+        "name": "Arboury Bar",
+        "name:en": "Arboury Bar",
+        "website": "http://arbory.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9656093,
+          -37.8190505
+        ]
+      },
+      "id": "node/4760996322"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4795892997",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "1",
+        "addr:postcode": "3000",
+        "addr:street": "Malthouse Lane",
+        "amenity": "bar",
+        "email": "melbourne@eaudevie.com.au",
+        "name": "Eau De Vie",
+        "phone": "+61 412 825 441",
+        "website": "https://eaudevie.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9716849,
+          -37.8160069
+        ]
+      },
+      "id": "node/4795892997"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4796188928",
+        "amenity": "bar",
+        "name": "Heartbreaker",
+        "name:en": "Heartbreaker"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9674689,
+          -37.8109648
+        ]
+      },
+      "id": "node/4796188928"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4834748858",
+        "amenity": "bar",
+        "name": "Jaffles and Local Spirits",
+        "name:en": "Jaffles and Local Spirits"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9837707,
+          -37.8005138
+        ]
+      },
+      "id": "node/4834748858"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4836169121",
+        "addr:housenumber": "335",
+        "addr:postcode": "3000",
+        "addr:street": "Flinders Lane",
+        "amenity": "bar",
+        "name": "Bartronica",
+        "name:en": "Bartronica"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9632048,
+          -37.8176178
+        ]
+      },
+      "id": "node/4836169121"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4959474621",
+        "amenity": "bar",
+        "name": "naked in the sky (rooftop)",
+        "name:en": "naked in the sky (rooftop)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9782625,
+          -37.7987594
+        ]
+      },
+      "id": "node/4959474621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4976357651",
+        "amenity": "bar",
+        "name": "The Swamp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9675152,
+          -37.8136577
+        ]
+      },
+      "id": "node/4976357651"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5046043221",
+        "amenity": "bar",
+        "name": "Somewhere bar",
+        "name:en": "Somewhere bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9933309,
+          -37.851565
+        ]
+      },
+      "id": "node/5046043221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5061490054",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "1",
+        "addr:postcode": "3000",
+        "addr:province": "VIC",
+        "addr:street": "Malthouse Lane",
+        "amenity": "bar",
+        "name": "Eau De Vie",
+        "opening_hours": "Mo-Th 17:00-01:00; Fr-Sa 16:00-01:00; Su 16:00-23:00",
+        "website": "https://eaudevie.com.au/melbourne/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9720258,
+          -37.8157517
+        ]
+      },
+      "id": "node/5061490054"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5257546863",
+        "amenity": "bar",
+        "name": "The Merri Clan",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.987849,
+          -37.7506708
+        ]
+      },
+      "id": "node/5257546863"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5280165127",
+        "amenity": "bar",
+        "name:zh": "rooftop bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9632217,
+          -37.8127833
+        ]
+      },
+      "id": "node/5280165127"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5305688121",
+        "amenity": "bar",
+        "name": "Grace"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9779296,
+          -37.7958975
+        ]
+      },
+      "id": "node/5305688121"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5432163221",
+        "amenity": "bar",
+        "name": "Bar Americano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9654266,
+          -37.815007
+        ]
+      },
+      "id": "node/5432163221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5456948824",
+        "amenity": "bar",
+        "name": "Back Alley Sally's"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9067649,
+          -37.8018806
+        ]
+      },
+      "id": "node/5456948824"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5483854520",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "185",
+        "addr:postcode": "3000",
+        "addr:province": "VIC",
+        "addr:street": "Lonsdale Street",
+        "amenity": "bar",
+        "name": "StoryVille",
+        "outdoor_seating": "no",
+        "phone": "(03) 9993 9034",
+        "website": "storyvillemelbourne.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9715321,
+          -37.8098002
+        ]
+      },
+      "id": "node/5483854520"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5483855676",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "590",
+        "addr:postcode": "3000",
+        "addr:province": "VIC",
+        "addr:street": "Little Bourke Street",
+        "amenity": "bar",
+        "email": "info@holeymoley.com.au",
+        "name": "Holey Moley Golf Melbourne",
+        "phone": "1300 727 833",
+        "website": "https://www.holeymoley.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9547648,
+          -37.8154549
+        ]
+      },
+      "id": "node/5483855676"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5548276452",
+        "amenity": "bar",
+        "name": "Modest Hugh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9323059,
+          -37.7809527
+        ]
+      },
+      "id": "node/5548276452"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5583284754",
+        "amenity": "bar",
+        "name": "Lily Blacks"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9724058,
+          -37.8122914
+        ]
+      },
+      "id": "node/5583284754"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5583285645",
+        "amenity": "bar",
+        "name": "Union Electric"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9667007,
+          -37.811781
+        ]
+      },
+      "id": "node/5583285645"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5583331822",
+        "addr:housenumber": "21",
+        "addr:street": "Liverpool Street",
+        "amenity": "bar",
+        "name": "New Gold Mountain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9713085,
+          -37.8111682
+        ]
+      },
+      "id": "node/5583331822"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5583331823",
+        "amenity": "bar",
+        "name": "Cabinet Bar & Balcony"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9663666,
+          -37.8141807
+        ]
+      },
+      "id": "node/5583331823"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5583355221",
+        "addr:housenumber": "209",
+        "addr:street": "Lonsdale Street",
+        "amenity": "bar",
+        "name": "Boilermaker House"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9662032,
+          -37.8112919
+        ]
+      },
+      "id": "node/5583355221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5593389422",
+        "addr:housenumber": "161",
+        "addr:street": "Spring Street",
+        "amenity": "bar",
+        "name": "Siglo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9726217,
+          -37.8108753
+        ]
+      },
+      "id": "node/5593389422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5593392521",
+        "addr:housenumber": "401",
+        "addr:street": "Collins Street",
+        "amenity": "bar",
+        "name": "Natural History Bar & Grill"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9611509,
+          -37.8171942
+        ]
+      },
+      "id": "node/5593392521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5625773121",
+        "addr:housenumber": "274",
+        "addr:street": "Brunswick Street",
+        "amenity": "bar",
+        "name": "Little Odessa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9785549,
+          -37.7991376
+        ]
+      },
+      "id": "node/5625773121"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5625773125",
+        "amenity": "bar",
+        "name": "Murmur Piano Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9619637,
+          -37.8138969
+        ]
+      },
+      "id": "node/5625773125"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5625776121",
+        "amenity": "bar",
+        "name": "The Roy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9789675,
+          -37.795082
+        ]
+      },
+      "id": "node/5625776121"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5794839053",
+        "addr:housenumber": "303",
+        "addr:street": "High Street",
+        "amenity": "bar",
+        "name": "Bar 303"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.99849,
+          -37.7713661
+        ]
+      },
+      "id": "node/5794839053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5892811351",
+        "amenity": "bar",
+        "name": "Daddy's"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9627689,
+          -37.7655982
+        ]
+      },
+      "id": "node/5892811351"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5912767411",
+        "amenity": "bar",
+        "name": "Bhang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9642136,
+          -37.7586673
+        ]
+      },
+      "id": "node/5912767411"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5925846286",
+        "addr:housenumber": "436",
+        "addr:street": "Lygon Street",
+        "amenity": "bar",
+        "name": "Dunning Kruger",
+        "website": "dunningkrugerbar.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9731645,
+          -37.7642093
+        ]
+      },
+      "id": "node/5925846286"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6033569527",
+        "amenity": "bar",
+        "name": "Footscray Club"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.8987833,
+          -37.8010274
+        ]
+      },
+      "id": "node/6033569527"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6067535386",
+        "addr:housenumber": "264",
+        "addr:street": "Swanston Street",
+        "amenity": "bar",
+        "name": "Goldilocks Rooftop Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9649766,
+          -37.8116518
+        ]
+      },
+      "id": "node/6067535386"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6067566485",
+        "addr:housenumber": "79",
+        "addr:street": "Bourke Street",
+        "amenity": "bar",
+        "name": "Good Heavens Rooftop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9710491,
+          -37.8120832
+        ]
+      },
+      "id": "node/6067566485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6097173277",
+        "amenity": "bar",
+        "name": "Cam's"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.0031505,
+          -37.8025109
+        ]
+      },
+      "id": "node/6097173277"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6144934993",
+        "amenity": "bar",
+        "name": "Elysium whiskey bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9772768,
+          -37.8042626
+        ]
+      },
+      "id": "node/6144934993"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6149719985",
+        "amenity": "bar",
+        "name": "Prudence"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9541944,
+          -37.8055458
+        ]
+      },
+      "id": "node/6149719985"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6151055786",
+        "amenity": "bar",
+        "name": "Fixation Brewery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9848283,
+          -37.7962341
+        ]
+      },
+      "id": "node/6151055786"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6177470785",
+        "amenity": "bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.0175495,
+          -37.7840838
+        ]
+      },
+      "id": "node/6177470785"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6222270385",
+        "amenity": "bar",
+        "name": "Mill house brewery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9860847,
+          -37.7983206
+        ]
+      },
+      "id": "node/6222270385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6241030485",
+        "addr:housenumber": "23",
+        "addr:postcode": "3205",
+        "addr:state": "VIC",
+        "addr:street": "Alfred Street",
+        "addr:suburb": "South Melbourne",
+        "amenity": "bar",
+        "name": "Westside Ale Works",
+        "website": "http://www.westsidealeworks.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9500578,
+          -37.8319713
+        ]
+      },
+      "id": "node/6241030485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6265814885",
+        "amenity": "bar",
+        "name": "Red Hummingbird"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9672029,
+          -37.8104035
+        ]
+      },
+      "id": "node/6265814885"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6267047186",
+        "amenity": "bar",
+        "name": "Tower Hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.049099,
+          -37.824492
+        ]
+      },
+      "id": "node/6267047186"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6267109486",
+        "amenity": "bar",
+        "name": "Burnley Brewing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.0136457,
+          -37.8202502
+        ]
+      },
+      "id": "node/6267109486"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6277581985",
+        "amenity": "bar",
+        "name": "Thunder Road Brew House"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9701744,
+          -37.7773164
+        ]
+      },
+      "id": "node/6277581985"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6342677587",
+        "amenity": "bar",
+        "name": "Craft beer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.0475686,
+          -37.8238965
+        ]
+      },
+      "id": "node/6342677587"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6348633352",
+        "addr:street": "Houdini Lane",
+        "amenity": "bar",
+        "name": "Red Betty"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9635249,
+          -37.7560088
+        ]
+      },
+      "id": "node/6348633352"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6382955585",
+        "addr:housenumber": "210",
+        "addr:street": "Chapel Street",
+        "amenity": "bar",
+        "name": "3 monkeys"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9934621,
+          -37.8510524
+        ]
+      },
+      "id": "node/6382955585"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6400252400",
+        "amenity": "bar",
+        "name": "Bombay Rocks"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9609635,
+          -37.7704766
+        ]
+      },
+      "id": "node/6400252400"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6422188285",
+        "addr:housenumber": "106",
+        "addr:street": "Little Lonsdale Street",
+        "amenity": "bar",
+        "name": "Troika Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.968761,
+          -37.8091273
+        ]
+      },
+      "id": "node/6422188285"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6422202185",
+        "addr:housenumber": "60",
+        "addr:street": "Bray Street",
+        "amenity": "bar",
+        "name": "Sweetwater Inn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9954135,
+          -37.8431691
+        ]
+      },
+      "id": "node/6422202185"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6422208286",
+        "addr:housenumber": "229",
+        "addr:street": "Chapel Street",
+        "amenity": "bar",
+        "name": "Revolver Upstairs"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9934209,
+          -37.8505631
+        ]
+      },
+      "id": "node/6422208286"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6422513987",
+        "addr:housenumber": "7-9",
+        "addr:street": "Waratah Place",
+        "amenity": "bar",
+        "name": "Manchuria"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.967041,
+          -37.8114538
+        ]
+      },
+      "id": "node/6422513987"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6422704586",
+        "amenity": "bar",
+        "name": "The Lame Duck"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9827291,
+          -37.8061752
+        ]
+      },
+      "id": "node/6422704586"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6424661886",
+        "amenity": "bar",
+        "name": "Freddie Wimpoles"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9778004,
+          -37.8597908
+        ]
+      },
+      "id": "node/6424661886"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6424971487",
+        "amenity": "bar",
+        "name": "Rooftop at QT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.968104,
+          -37.8133274
+        ]
+      },
+      "id": "node/6424971487"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6425003585",
+        "amenity": "bar",
+        "name": "The Paris Cat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9607199,
+          -37.8134048
+        ]
+      },
+      "id": "node/6425003585"
+    }
+  ]
+}

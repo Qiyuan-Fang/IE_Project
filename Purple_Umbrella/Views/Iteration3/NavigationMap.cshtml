@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html class="html_fullscreen">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>NavigationMap</title>
+    @Styles.Render("~/Content/Iteration3/css/style")
+    @Scripts.Render("~/bundles/Iteration1")
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <script src='https://api.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js'></script>
+    @*<script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZcoH455V_6-Ojz4J3o_6-GwxTiNBqaxw&libraries=places&callback=initMap"></script>*@
+</head>
+<body class="body_fullscreen">
+    <div id="safetymap">daaf</div>
+    
+    @Scripts.Render("~/Scripts/Iteration3/navigationmap.js")
+
+    @*<div id="safetymap">
+        </div>
+        @Scripts.Render("~/Scripts/Iteration3/navigationmap.js")*@
+</body>
+</html>

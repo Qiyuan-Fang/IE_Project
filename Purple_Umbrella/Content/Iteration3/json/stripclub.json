@@ -1,0 +1,118 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2019-05-07T02:50:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/591382455",
+        "amenity": "stripclub",
+        "name": "Crazy Horse Club X",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.964766,
+          -37.8172518
+        ]
+      },
+      "id": "node/591382455"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/624940923",
+        "amenity": "stripclub",
+        "name": "Spearmint Rhino Gentlemen's Club",
+        "phone": "0396292300"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9575822,
+          -37.8198665
+        ]
+      },
+      "id": "node/624940923"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/624940927",
+        "amenity": "stripclub",
+        "name": "Centrefold Lounge",
+        "phone": "0396265677"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9575165,
+          -37.8197616
+        ]
+      },
+      "id": "node/624940927"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/626250405",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "46",
+        "addr:postcode": "3000",
+        "addr:street": "King Street",
+        "amenity": "stripclub",
+        "name": "Showgirls Bar 20",
+        "phone": "0396294684",
+        "website": "http://www.bar20.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9572773,
+          -37.819047
+        ]
+      },
+      "id": "node/626250405"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/660027387",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "195",
+        "addr:postcode": "3000",
+        "addr:street": "King Street",
+        "amenity": "stripclub",
+        "name": "Teezz Lounge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9551639,
+          -37.8156461
+        ]
+      },
+      "id": "node/660027387"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/660027388",
+        "amenity": "stripclub",
+        "name": "Dallas Showgirls Gentleman's Club",
+        "phone": "0396424666"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9551867,
+          -37.815698
+        ]
+      },
+      "id": "node/660027388"
+    }
+  ]
+}

@@ -176,6 +176,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="App_Start\CustomViewEngine.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Iteration1\Iteration1Controller.cs" />
     <Compile Include="Controllers\Iteration1\SafetypointsController.cs" />
@@ -183,6 +184,7 @@
     <Compile Include="Controllers\Iteration2\Iteration2Controller.cs" />
     <Compile Include="Controllers\Iteration2\Road_SegmentsController.cs" />
     <Compile Include="Controllers\Iteration3\Iteration3Controller.cs" />
+    <Compile Include="Controllers\Iteration3\ReportsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -271,6 +273,8 @@
     <Content Include="Content\Iteration2\css\img\white_logo.png" />
     <Content Include="Content\Iteration2\css\Site.css" />
     <Content Include="Content\Iteration2\css\tooplate-style.css" />
+    <Content Include="Content\Iteration3\css\bootstrap-datetimepicker.css" />
+    <Content Include="Content\Iteration3\css\bootstrap-datetimepicker.min.css" />
     <Content Include="Content\Iteration3\css\fontAwesome.css" />
     <Content Include="Content\Iteration3\css\hero-slider.css" />
     <Content Include="Content\Iteration3\css\img\aboutus01.png" />
@@ -328,11 +332,16 @@
     <Content Include="Scripts\Iteration2\drawroutes.js" />
     <Content Include="Scripts\Iteration2\map.js" />
     <Content Include="Scripts\Iteration2\popover.js" />
+    <Content Include="Scripts\Iteration3\bootstrap-datetimepicker.js" />
+    <Content Include="Scripts\Iteration3\bootstrap-datetimepicker.min.js" />
     <Content Include="Scripts\Iteration3\cookie.js" />
     <Content Include="Scripts\Iteration3\customizedmap.js" />
+    <Content Include="Scripts\Iteration3\datetimepicker.js" />
+    <Content Include="Scripts\Iteration3\datevalidation.js" />
     <Content Include="Scripts\Iteration3\drawroutes.js" />
     <Content Include="Scripts\Iteration3\map.js" />
     <Content Include="Scripts\Iteration3\mapControl.js" />
+    <Content Include="Scripts\Iteration3\moment.js" />
     <Content Include="Scripts\Iteration3\navigationmap.js" />
     <Content Include="Scripts\Iteration3\popover.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -395,6 +404,11 @@
     <Content Include="Views\Iteration3\Index.cshtml" />
     <Content Include="Views\Iteration3\Map.cshtml" />
     <Content Include="Views\Iteration3\NavigationMap.cshtml" />
+    <Content Include="Views\Iteration3\Reports\Create.cshtml" />
+    <Content Include="Views\Iteration3\Reports\Delete.cshtml" />
+    <Content Include="Views\Iteration3\Reports\Details.cshtml" />
+    <Content Include="Views\Iteration3\Reports\Edit.cshtml" />
+    <Content Include="Views\Iteration3\Reports\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

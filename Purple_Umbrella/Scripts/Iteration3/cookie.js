@@ -1,29 +1,59 @@
-﻿function setCookie(cname, cvalue, exdays) {
+﻿
+function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     var expires = "expires=" + d.toGMTString();
-    document.cookie = cname + "=" + cvalue + "; " + expires;
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
+function getCookie() {
+    var _uuid = "uuid" + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
     for (var i = 0; i < ca.length; i++) {
-        var c = ca[i].trim();
-        if (c.indexOf(name) == 0) { return c.substring(name.length, c.length); }
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(_uuid) == 0) {
+            return c.substring(_uuid.length, c.length);
+        }
     }
     return "";
 }
 
 function checkCookie() {
-    var user = getCookie("username");
-    if (user != "b") {
-        alert("欢迎 " + user + " 再次访问");
+    var uuid = getCookie("uuid");
+    if (uuid != "") {
+        alert("Welcome again " + uuid);
+    } else {
+        //user = createUuid();
+        //user = prompt("Please enter your name:", "");
+        //setCookie("username", user, 30);
+        //if (user != "" && user != null) {
+            
+        //}
     }
-    else {
-        user = prompt("请输入你的名字:", "");
-        if (user != "" && user != null) {
-            setCookie("username", user, 30);
-        }
-    }
+}
+
+function initiateCookie() {
+    var uuid = createUuid();
+    var d = new Date();
+    d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = "uuid" + "=" + uuid + ";" + expires + ";path=/";
+}
+
+
+$(document).ready(function () {
+    var ck = getCookie();
+    //document.getElementById("user-cookie").innerHTML(ck);
+    $('#user-cookie').innerText(ck);
+});
+
+//Create unique cookie for user
+function createUuid() {
+    return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
+        (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+    );
 }

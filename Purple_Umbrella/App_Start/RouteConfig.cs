@@ -25,10 +25,16 @@ namespace Purple_Umbrella
                 defaults: new { controller = "Iteration2", action = "Index" }
             );
 
+            routes.MapRoute(
+                name: "Iteration3",
+                url: "Iteration3/{action}",
+                defaults: new { controller = "Iteration3", action = "Index" }
+            );
+
             //routes.MapRoute(
-            //    name: "UpdateTable",
-            //    url: "Feedbacks/UpdateTable/{id}&{choice}",
-            //    defaults: new { controller = "Feedbacks", action = "UpdateTable"}
+            //    name: "Reports",
+            //    url: "Iteration3/Reports/{action}",
+            //    defaults: new { controller = "Reports"}
             //);
 
             routes.MapRoute(

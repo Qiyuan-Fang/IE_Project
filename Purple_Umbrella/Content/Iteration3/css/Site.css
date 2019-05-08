@@ -18,9 +18,17 @@
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
-textarea {
+textarea,
+.input-group {
     max-width: 280px;
 }
+    input.form-block,
+    select.form-block,
+    textarea.form-block {
+        max-width: none;
+    }
+
+
 .team-logo {
     background-image: url('img/aboutus01.png');
     width: 100%;
@@ -62,7 +70,7 @@ input[type="range"] {
     border-radius: 5px;
     margin: 0 auto;
     outline: 0;
-    direction:rtl;
+    direction: rtl;
 }
 
     input[type="range"]::-webkit-slider-thumb {
@@ -85,6 +93,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
 input[type="range"]::-webkit-slider-thumb:active {
     transform: scale(1.6);
 }
+
 .range-labels {
     padding-top: 12px;
     list-style: none;
@@ -97,7 +106,7 @@ input[type="range"]::-webkit-slider-thumb:active {
     }
 
     .range-labels li {
-        margin:0 auto;
+        margin: 0 auto;
         display: table-cell;
         position: relative;
         display: inline;
@@ -125,7 +134,7 @@ input[type="range"]::-webkit-slider-thumb:active {
     }
 
     #point_detail h2 {
-        text-align:center;
+        text-align: center;
         font: 14px 'Helvetica Neue', Arial, Helvetica, sans-serif;
     }
 
@@ -138,7 +147,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 }
 
     .submit-button a {
-        text-align:center;
+        text-align: center;
         display: inline-block;
         background-color: #9870CB;
         padding: 12px 18px;
@@ -317,7 +326,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 
 #feedback_css button {
     background-color: #9870cb;
-    border-radius:3px 4px;
+    border-radius: 3px 4px;
     border: 2px;
     border-color: #9870cb;
     color: white;
@@ -333,15 +342,16 @@ input[type="range"]::-webkit-slider-thumb:active {
     }
 
 .html_fullscreen {
-        overflow-x: hidden;
-        height:100%;
-    }
+    overflow-x: hidden;
+    height: 100%;
+}
+
 .body_fullscreen {
-        overflow-x: hidden;
-        position: relative;
-        height: 100%;
-        padding-top: 0px;
-    }
+    overflow-x: hidden;
+    position: relative;
+    height: 100%;
+    padding-top: 0px;
+}
 
 #safetymap {
     width: 100%;

@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iteration 2 HomePage</title>
+    <title>Iteration 3 HomePage</title>
     @Styles.Render("~/Content/Iteration2/css/style")
     @Scripts.Render("~/bundles/Iteration1")
 
@@ -20,7 +20,7 @@
     <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.css' type='text/css' />
     @*<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyATF3DsCfTsMYuUIfPOPhRfuK4n5JJbqnM&libraries=places"></script>*@
 </head>
-<body>
+<body onload="initiateCookie()">
     <div class="header">
         <div class="container">
             <nav class="navbar navbar-inverse" role="navigation">
@@ -234,5 +234,6 @@
     </div>
 
     @Scripts.Render("~/bundles/Iteration3Defer")
+    @Scripts.Render("~/Scripts/Iteration3/cookie.js")
 </body>
 </html>

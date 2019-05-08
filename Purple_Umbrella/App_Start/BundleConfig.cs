@@ -10,12 +10,14 @@ namespace Purple_Umbrella
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js",
-                        "~/Scripts/test.js"
+                        "~/Scripts/jquery-{version}.js"
                         ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
+                        "~/Scripts/jquery.validate*"
+                        //,
+                        //"~/Scripts/Iteration3/datevalidation.js"
+                        ));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
@@ -70,7 +72,8 @@ namespace Purple_Umbrella
                        "~/Content/Iteration3/css/Site.css",
                        "~/Content/Iteration3/css/hero-slider.css",
                        "~/Content/Iteration3/css/tooplate-style.css",
-                       "~/Content/Iteration3/css/fontAwesome.css"
+                       "~/Content/Iteration3/css/fontAwesome.css",
+                       "~/Content/Iteration3/css/bootstrap-datetimepicker.css"
                        ));
 
             bundles.Add(new ScriptBundle("~/bundles/Iteration3Defer").Include(
@@ -79,6 +82,12 @@ namespace Purple_Umbrella
                       "~/Scripts/Iteration3/map.js",
                       "~/Scripts/Iteration3/customizedmap.js",
                       "~/Scripts/Iteration3/popover.js"
+                      ));
+
+            bundles.Add(new ScriptBundle("~/bundles/datetimepicker").Include(
+                      "~/Scripts/Iteration3/moment.js",
+                      "~/Scripts/Iteration3/datetimepicker.js",
+                      "~/Scripts/Iteration3/bootstrap-datetimepicker.js"
                       ));
         }
     }

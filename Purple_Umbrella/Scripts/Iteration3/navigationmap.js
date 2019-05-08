@@ -1,7 +1,19 @@
 ﻿
 
 const TOKEN = 'pk.eyJ1Ijoia2VvbnlhbWF0byIsImEiOiJjamw4cXR0MjcxZ24yM2txa2VhazJ2MmY5In0.b3cxVs4DdITNSJYZGzt9pA';
-
+const proxyurl = "https://cors-anywhere.herokuapp.com/";
+//const url = "https://wanderdrone.appspot.com/";
+const url = "http://ec2-54-206-81-253.ap-southeast-2.compute.amazonaws.com/json";
+function getPedestrainCount(callback) {
+    $.ajax({
+        type: "Get",
+        url: proxyurl+url,
+        success: function (data) {
+            //var json = jQuery.parseJSON(data);//JSON.parse(data);
+            callback(json);
+        }
+    });
+}
 //function () {
 //    var xhr = new XMLHttpRequest();
 //    xhr.open('GET', "../Content/Iteration3/json/bars.json");
@@ -32,23 +44,49 @@ const TOKEN = 'pk.eyJ1Ijoia2VvbnlhbWF0byIsImEiOiJjamw4cXR0MjcxZ24yM2txa2VhazJ2Mm
 //    xhr.send();
 //}
 $(document).ready(function () {
-    document.cookie = "username=John Smith; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
-    var ck = document.cookie;
-    document.getElementById('safetymap').innerHTML = "Current cookie"+ck;
-   
-    //mapboxgl.accessToken = TOKEN;
-    //var bounds = [
-    //    [144.9134, -37.8415], // Southwest coordinates
-    //    [145.0087, -37.7871]  // Northeast coordinates
-    //];
-    //var map = new mapboxgl.Map({
-    //    container: 'safetymap',
-    //    style: 'mapbox://styles/mapbox/dark-v10',
-    //    zoom: 14,
-    //    center: [144.958429, -37.815858]
-    //    //maxBounds: bounds
-    //});
+    //document.cookie = "username=John Smith; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+    //var ck = document.cookie;
+    //document.getElementById('safetymap').innerHTML = "Current cookie" + ck;
 
+    mapboxgl.accessToken = TOKEN;
+    var bounds = [
+        [144.9134, -37.8415], // Southwest coordinates
+        [145.0087, -37.7871]  // Northeast coordinates
+    ];
+    var map = new mapboxgl.Map({
+        container: 'safetymap',
+        style: 'mapbox://styles/mapbox/dark-v10',
+        zoom: 14,
+        center: [144.958429, -37.815858]
+        //maxBounds: bounds
+    });
+
+    //map.on("load", getPedestrainCount(function (pede_data) {
+    //    // create a Road source 
+
+    //    map.addSource('sensors', {
+    //        type: 'geojson', data: {
+    //            'type': 'FeatureCollection',
+    //            'features': [pede_data]
+    //        }
+    //    });
+    //    map.addLayer({
+    //        "id": "sensors",
+    //        "type": "symbol",
+    //        "source": "sensors",
+    //        "paint": {
+    //            "circle-color": '#ffffff',
+    //            "circle-opacity": ["case",
+    //                ["boolean", ["feature-state", "hover"], false],
+    //                2,
+    //                0.7],
+    //            "circle-radius": 16
+    //        },
+    //        "layout": {
+    //            "icon-image": "rocket-15"
+    //        }
+    //    });
+    //}));
     //map.on('load', function () {
     //    var xhr = new XMLHttpRequest();
     //    xhr.open('GET', "../Content/Iteration3/json/bars.json");

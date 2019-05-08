@@ -1,0 +1,82 @@
+﻿@model Purple_Umbrella.Models.Report
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Report</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Longitude)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Longitude)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Latitude)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Latitude)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.IncidentType)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.IncidentType)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.IncidentTime)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.IncidentTime)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ReportedTime)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ReportedTime)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.UserCookie)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.UserCookie)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ConfirmationNum)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ConfirmationNum)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

@@ -16,10 +16,11 @@
     <script src='https://api.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js'></script>
     @*<script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZcoH455V_6-Ojz4J3o_6-GwxTiNBqaxw&libraries=places&callback=initMap"></script>*@
 </head>
-<body class="body_fullscreen">
+<body class="body_fullscreen" onload="checkCookie()">
     <div id="safetymap">daaf</div>
-    
+
     @Scripts.Render("~/Scripts/Iteration3/navigationmap.js")
+    @Scripts.Render("~/Scripts/Iteration3/cookie.js")
 
     @*<div id="safetymap">
         </div>

@@ -1,4 +1,5 @@
-﻿
+﻿@model Purple_Umbrella.Models.Report
+
 @{
     Layout = null;
 }
@@ -9,21 +10,111 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>NavigationMap</title>
-    @Styles.Render("~/Content/Iteration3/css/style")
-    @Scripts.Render("~/bundles/Iteration1")
+
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
-    <script src='https://api.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js'></script>
-    @*<script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZcoH455V_6-Ojz4J3o_6-GwxTiNBqaxw&libraries=places&callback=initMap"></script>*@
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
+    <link defer rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css' type='text/css' />
+    @Scripts.Render("~/bundles/Iteration1")
+    @Styles.Render("~/Content/Iteration3/css/style")
+    @Styles.Render("~/Content/Iteration3/css/datebox/jtsage-datebox.min.css")
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.0/mapbox-gl-directions.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.0/mapbox-gl-directions.css' type='text/css' />
+    <link href="~/Content/Iteration3/css/bootstrap-tour.min.css" rel="stylesheet" />
+    @Styles.Render("~/Content/Iteration3/css/Site.css")
+    
 </head>
+
 <body class="body_fullscreen" onload="checkCookie()">
-    <div id="safetymap">daaf</div>
-
-    @Scripts.Render("~/Scripts/Iteration3/navigationmap.js")
-    @Scripts.Render("~/Scripts/Iteration3/cookie.js")
-
-    @*<div id="safetymap">
+    <div id="mySidenav" class="sidenav">
+        @Html.ActionLink("Home Page", "Index", "Iteration3")
+        <a href="#">Support</a>
+    </div>
+    <div class="modal fade" id="Information" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
         </div>
-        @Scripts.Render("~/Scripts/Iteration3/navigationmap.js")*@
+    </div>
+    <div id="safetymap"></div>
+    <nav id='filter-group' class='filter-group'></nav>
+    <div class="modal fade" id="report-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="display:flex;">
+                    <h3 class="modal-title">Report</h3>
+                </div>
+                <div class="modal-body">
+                    <div id="reportmap"></div>
+                </div>
+                <div class="modal-footer">
+                    <form>
+                        <div hidden>
+                            @Html.Editor("Longitude", new { htmlAttributes = new { @readonly = "readonly", @class = "form-control", @id = "longitude" } })
+                            @Html.ValidationMessageFor(model => model.Longitude, "", new { @class = "text-danger" })
+                        </div>
+                        <div hidden>
+                            @Html.Editor("Latitude", new { htmlAttributes = new { @readonly = "readonly", @class = "form-control", @id = "latitude" } })
+                            @Html.ValidationMessageFor(model => model.Latitude, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+
+                            @Html.Label("What's going on?", htmlAttributes: new { @class = "control-label col-md-12 col-sm-12 col-xs-12", @style = "text-align: left;" })
+
+                            <div>
+                                @Html.DropDownList("IncidentType", ViewBag.IncidentTypes as SelectList, "--Select what happened--", htmlAttributes: new { @class = "form-control", @id = "incidenttype", @style = "font-size:16px;" })
+                                @Html.ValidationMessage("IncidentType", "", new { @class = "text-danger", @id = "typeerror" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.Label("When it happened?", htmlAttributes: new { @class = "control-label col-md-12 col-sm-12 col-xs-12", @style = "text-align: left;" })
+                            <div>
+                                @Html.Editor("IncidentTime", new { htmlAttributes = new { @readonly = "readonly", @class = "form-control", @id = "dateTimePicker" } })
+                            </div>
+                        </div>
+                        <div hidden>
+                            @Html.Editor("UserCookie", new { htmlAttributes = new { @readonly = "readonly", @class = "form-control", @id = "user-cookie" } })
+                            @Html.ValidationMessageFor(model => model.UserCookie, "", new { @class = "text-danger" })
+                        </div>
+                    </form>
+
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button id="save-report" type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    @Scripts.Render("~/Scripts/Iteration3/turf.min.js")
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/datebox?id=1")
+    @Scripts.Render("~/Scripts/Iteration3/cookie.js?id=1")
+    @Scripts.Render("~/Scripts/Iteration3/bootstrap-tour.min.js")
+    @Scripts.Render("~/Scripts/Iteration3/mapControl.js?id=1")
+    @Scripts.Render("~/Scripts/Iteration3/navigationmap.js?id=1")
+
+
+
+
 </body>
 </html>

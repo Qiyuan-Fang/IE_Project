@@ -1,0 +1,232 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2019-05-11T05:50:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/548557922",
+        "amenity": "cinema",
+        "fixme": "Switching this way from construction to open cinema, but the whole area needs some love as there are a few new businesses starting to open here.",
+        "name": "Hoyts"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9361346,
+              -37.8118571
+            ],
+            [
+              144.936429,
+              -37.8117952
+            ],
+            [
+              144.9366919,
+              -37.8117952
+            ],
+            [
+              144.9368677,
+              -37.8118349
+            ],
+            [
+              144.9369982,
+              -37.8117119
+            ],
+            [
+              144.937174,
+              -37.8115916
+            ],
+            [
+              144.937385,
+              -37.8115122
+            ],
+            [
+              144.9375319,
+              -37.8114704
+            ],
+            [
+              144.9374027,
+              -37.81144
+            ],
+            [
+              144.937068,
+              -37.811367
+            ],
+            [
+              144.9368917,
+              -37.8113745
+            ],
+            [
+              144.9366916,
+              -37.8114219
+            ],
+            [
+              144.9365158,
+              -37.8114674
+            ],
+            [
+              144.9362069,
+              -37.8115492
+            ],
+            [
+              144.9361524,
+              -37.8117394
+            ],
+            [
+              144.9361346,
+              -37.8118571
+            ]
+          ]
+        ]
+      },
+      "id": "way/548557922"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/291210034",
+        "amenity": "cinema",
+        "floor": "3",
+        "name": "Hoyts Melbourne Central",
+        "website": "https://www.hoyts.com.au",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9634038,
+          -37.8100694
+        ]
+      },
+      "id": "node/291210034"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/302129361",
+        "amenity": "cinema",
+        "name": "Cinema Nova",
+        "website": "https://www.cinemanova.com.au/",
+        "wheelchair": "yes",
+        "wikidata": "Q47000853"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9680124,
+          -37.7978092
+        ]
+      },
+      "id": "node/302129361"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/368393200",
+        "amenity": "cinema",
+        "name": "IMAX",
+        "website": "https://imaxmelbourne.com.au/",
+        "wikidata": "Q47000854"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9706364,
+          -37.8035056
+        ]
+      },
+      "id": "node/368393200"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/496943527",
+        "addr:city": "Southbank",
+        "addr:housenumber": "8",
+        "addr:postcode": "3006",
+        "addr:street": "Whiteman Street",
+        "addr:unit": "Shop 50",
+        "amenity": "cinema",
+        "name": "Village Cinemas Crown",
+        "toilets:wheelchair": "yes",
+        "website": "https://villagecinemas.com.au/cinemas/crown",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9577541,
+          -37.8242677
+        ]
+      },
+      "id": "node/496943527"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/594819685",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "200",
+        "addr:postcode": "3000",
+        "addr:street": "Bourke Street",
+        "amenity": "cinema",
+        "name": "Chinatown Cinema",
+        "website": "http://www.heroic-cinema.com/chinatown/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9672583,
+          -37.8123424
+        ]
+      },
+      "id": "node/594819685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2960610433",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "45",
+        "addr:postcode": "3000",
+        "addr:street": "Collins Street",
+        "amenity": "cinema",
+        "name": "Kino Cinemas",
+        "phone": "+61 3 9650 2100",
+        "website": "https://www.palacecinemas.com.au/cinemas/kino/",
+        "wikidata": "Q7126164",
+        "wikipedia": "en:Palace Films and Cinemas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9725926,
+          -37.814253
+        ]
+      },
+      "id": "node/2960610433"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5826125038",
+        "amenity": "cinema",
+        "name": "ACMI-X",
+        "source:geometry": "approxiamate",
+        "website": "https://www.acmi.net.au/acmi-x/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9689234,
+          -37.8177335
+        ]
+      },
+      "id": "node/5826125038"
+    }
+  ]
+}

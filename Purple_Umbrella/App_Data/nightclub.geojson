@@ -1,0 +1,160 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2019-05-11T05:44:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/247010552",
+        "amenity": "nightclub",
+        "created_by": "JOSM",
+        "name": "Bennetts Lane Jazz Club",
+        "wikidata": "Q4889777"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9676407,
+          -37.8089838
+        ]
+      },
+      "id": "node/247010552"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/597923771",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "18",
+        "addr:postcode": "3000",
+        "addr:street": "Market Lane",
+        "amenity": "nightclub",
+        "name": "Ding Dong Lounge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9694036,
+          -37.8117442
+        ]
+      },
+      "id": "node/597923771"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/612741105",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "14",
+        "addr:postcode": "3000",
+        "addr:street": "McKillop Street",
+        "amenity": "nightclub",
+        "name": "CBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9618789,
+          -37.8152834
+        ]
+      },
+      "id": "node/612741105"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/626256104",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "54-60",
+        "addr:postcode": "3000",
+        "addr:street": "King Street",
+        "amenity": "nightclub",
+        "name": "Inflation",
+        "phone": "0396146122",
+        "website": "http://www.inflation.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9572129,
+          -37.8189262
+        ]
+      },
+      "id": "node/626256104"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2296865049",
+        "addr:city": "Melbourne",
+        "addr:housename": "Banana Alley Vaults",
+        "addr:housenumber": "375",
+        "addr:postcode": "3000",
+        "addr:street": "Flinders Street",
+        "addr:unit": "8",
+        "amenity": "nightclub",
+        "name": "Platform One"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.962116,
+          -37.819244
+        ]
+      },
+      "id": "node/2296865049"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2472825521",
+        "amenity": "nightclub",
+        "name": "Roxanne Parlour"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.968554,
+          -37.81213
+        ]
+      },
+      "id": "node/2472825521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3375917194",
+        "amenity": "nightclub",
+        "name": "All Smiles"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.941359,
+          -37.815368
+        ]
+      },
+      "id": "node/3375917194"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5156152328",
+        "addr:housenumber": "170",
+        "addr:street": "Russell Street",
+        "amenity": "nightclub",
+        "name": "The Billboard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9679369,
+          -37.8120109
+        ]
+      },
+      "id": "node/5156152328"
+    }
+  ]
+}

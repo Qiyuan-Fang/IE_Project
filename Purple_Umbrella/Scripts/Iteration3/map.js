@@ -23,7 +23,7 @@ function getAllRoadData(callback) {
             var light_Index = parseFloat(data[i].Light_Index);
             var index = camera_Index + light_Index + cafe_Index + bar_Index;
             //NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
-            var new_index = ((index + 1.360181178) * (4.8 - 0.2) / (121.9326 + 1.360181178)) + 0.2;
+            var new_index = (index + 1.360181178) * (4.8 - 0.2) / (121.9326 + 1.360181178) + 0.2;
             if (name.includes("lane")) {
                 let roadSegment = {
                     'id': id,
@@ -599,7 +599,7 @@ $(document).ready(getAllRoadData(function (road_data) {
     // Make a Map Matching request
     function getMatch(coordinates, radius, profile) {
         // Separate the radiuses with semicolons
-        var radiuses = radius.join(';')
+        var radiuses = radius.join(';');
         // Create the query
         var query = 'https://api.mapbox.com/matching/v5/mapbox/' + profile + '/' + coordinates + '?geometries=geojson&radiuses=' + radiuses + '&steps=true&access_token=' + mapboxgl.accessToken;
 
@@ -642,7 +642,7 @@ $(document).ready(getAllRoadData(function (road_data) {
                     "line-opacity": 0.8
                 }
             });
-        };
+        }
     }
 
     // If the user clicks the delete draw button, remove the layer if it exists

@@ -1,0 +1,2445 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2019-05-11T05:39:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/22963353",
+        "amenity": "pub",
+        "building": "yes",
+        "layer": "2",
+        "name": "Transport Hotel",
+        "website": "https://www.transporthotel.com.au/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9685475,
+              -37.8183744
+            ],
+            [
+              144.9683745,
+              -37.818243
+            ],
+            [
+              144.9683182,
+              -37.8182663
+            ],
+            [
+              144.9683665,
+              -37.8183362
+            ],
+            [
+              144.9682511,
+              -37.8183574
+            ],
+            [
+              144.9682297,
+              -37.8183214
+            ],
+            [
+              144.9681586,
+              -37.8183458
+            ],
+            [
+              144.9682257,
+              -37.8184867
+            ],
+            [
+              144.9682431,
+              -37.8184814
+            ],
+            [
+              144.9682458,
+              -37.8185693
+            ],
+            [
+              144.9683222,
+              -37.8185661
+            ],
+            [
+              144.9683182,
+              -37.818511
+            ],
+            [
+              144.9683852,
+              -37.818511
+            ],
+            [
+              144.9683852,
+              -37.8185057
+            ],
+            [
+              144.9685448,
+              -37.8184835
+            ],
+            [
+              144.9686025,
+              -37.8184634
+            ],
+            [
+              144.9685583,
+              -37.8184061
+            ],
+            [
+              144.9685555,
+              -37.818398
+            ],
+            [
+              144.9685475,
+              -37.8183744
+            ]
+          ]
+        ]
+      },
+      "id": "way/22963353"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/32782268",
+        "amenity": "pub",
+        "building": "yes",
+        "name": "The Clyde Hotel"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9656811,
+              -37.7970875
+            ],
+            [
+              144.9656713,
+              -37.7971425
+            ],
+            [
+              144.9656888,
+              -37.7971444
+            ],
+            [
+              144.9656778,
+              -37.7972058
+            ],
+            [
+              144.965659,
+              -37.7972037
+            ],
+            [
+              144.9656263,
+              -37.7973861
+            ],
+            [
+              144.965831,
+              -37.7974091
+            ],
+            [
+              144.9658384,
+              -37.7973681
+            ],
+            [
+              144.965743,
+              -37.7973574
+            ],
+            [
+              144.9657549,
+              -37.7972912
+            ],
+            [
+              144.9658479,
+              -37.7973016
+            ],
+            [
+              144.9658798,
+              -37.7971242
+            ],
+            [
+              144.965859,
+              -37.7971071
+            ],
+            [
+              144.9656811,
+              -37.7970875
+            ]
+          ]
+        ]
+      },
+      "id": "way/32782268"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/42181782",
+        "amenity": "pub",
+        "building": "yes",
+        "building:levels": "3",
+        "layer": "1",
+        "name": "Young & Jackson",
+        "source": "nearmap",
+        "website": "https://www.youngandjacksons.com.au/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9672317,
+              -37.8173677
+            ],
+            [
+              144.967166,
+              -37.8172236
+            ],
+            [
+              144.9668355,
+              -37.8173162
+            ],
+            [
+              144.9669071,
+              -37.81748
+            ],
+            [
+              144.9672183,
+              -37.8173889
+            ],
+            [
+              144.9672317,
+              -37.8173677
+            ]
+          ]
+        ]
+      },
+      "id": "way/42181782"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/46225910",
+        "amenity": "pub",
+        "building": "yes",
+        "layer": "1",
+        "name": "Waterside Hotel",
+        "website": "http://www.watersidehotel.com.au/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9570956,
+              -37.8203134
+            ],
+            [
+              144.9573102,
+              -37.8202485
+            ],
+            [
+              144.9573186,
+              -37.8202228
+            ],
+            [
+              144.957217,
+              -37.820001
+            ],
+            [
+              144.9569914,
+              -37.8200664
+            ],
+            [
+              144.9570956,
+              -37.8203134
+            ]
+          ]
+        ]
+      },
+      "id": "way/46225910"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/48840344",
+        "addr:city": "Melbourne",
+        "addr:country": "AU",
+        "addr:housenumber": "5",
+        "addr:postcode": "3000",
+        "addr:state": "Victoria",
+        "addr:street": "Bank Place",
+        "amenity": "pub",
+        "building": "yes",
+        "building:levels": "2",
+        "building:levels:underground": "1",
+        "cuisine": "steak_house",
+        "email": "info@mitretavern.com.au",
+        "name": "Mitre Tavern",
+        "opening_hours": "Mo-Fr 11:00-24:00; Sa 12:00-24:00; Su 12:00-23:00",
+        "phone": "+61-3-96705644",
+        "website": "https://www.mitretavern.com.au/",
+        "wikidata": "Q55907910"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9604546,
+              -37.8168216
+            ],
+            [
+              144.9604111,
+              -37.8167108
+            ],
+            [
+              144.960203,
+              -37.8167619
+            ],
+            [
+              144.9602465,
+              -37.8168727
+            ],
+            [
+              144.9604546,
+              -37.8168216
+            ]
+          ]
+        ]
+      },
+      "id": "way/48840344"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/52094486",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "146",
+        "addr:postcode": "3000",
+        "addr:street": "Flinders Street",
+        "amenity": "pub",
+        "building": "yes",
+        "building:levels": "2",
+        "food": "yes",
+        "name": "Duke of Wellington Hotel",
+        "phone": "+61 3 98100066",
+        "website": "https://dukeofwellington.com.au/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9701307,
+              -37.8165334
+            ],
+            [
+              144.9700852,
+              -37.8164435
+            ],
+            [
+              144.9699817,
+              -37.8164717
+            ],
+            [
+              144.9700195,
+              -37.816549
+            ],
+            [
+              144.97004,
+              -37.8165594
+            ],
+            [
+              144.9701307,
+              -37.8165334
+            ]
+          ]
+        ]
+      },
+      "id": "way/52094486"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/61532894",
+        "amenity": "pub",
+        "building": "yes",
+        "name": "Railway Hotel"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9419939,
+              -37.805933
+            ],
+            [
+              144.9419629,
+              -37.8060644
+            ],
+            [
+              144.9419777,
+              -37.806091
+            ],
+            [
+              144.9422229,
+              -37.80619
+            ],
+            [
+              144.9422657,
+              -37.8059684
+            ],
+            [
+              144.9419939,
+              -37.805933
+            ]
+          ]
+        ]
+      },
+      "id": "way/61532894"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/161615824",
+        "amenity": "pub",
+        "building": "industrial",
+        "cuisine": "irish",
+        "name": "Last Jar"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9587525,
+              -37.8039431
+            ],
+            [
+              144.9590623,
+              -37.8039696
+            ],
+            [
+              144.9590086,
+              -37.8038488
+            ],
+            [
+              144.9589832,
+              -37.803799
+            ],
+            [
+              144.958719,
+              -37.80387
+            ],
+            [
+              144.9587525,
+              -37.8039431
+            ]
+          ]
+        ]
+      },
+      "id": "way/161615824"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/176329975",
+        "addr:city": "Flemington",
+        "addr:country": "AU",
+        "addr:housenumber": "271",
+        "addr:postcode": "3031",
+        "addr:state": "Victoria",
+        "addr:street": "Racecourse Road",
+        "amenity": "pub",
+        "building": "yes",
+        "fax": "+61-3-93762404",
+        "name": "The Quiet Man Irish Pub",
+        "note": "open 7 days, unknown opening hours",
+        "phone": "+61-3-93766232",
+        "website": "http://www.thequietman.com.au/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9322225,
+              -37.7884847
+            ],
+            [
+              144.9321937,
+              -37.7884914
+            ],
+            [
+              144.9321779,
+              -37.7885066
+            ],
+            [
+              144.9321505,
+              -37.7886813
+            ],
+            [
+              144.9323674,
+              -37.7886957
+            ],
+            [
+              144.9323741,
+              -37.7886353
+            ],
+            [
+              144.9324738,
+              -37.7886445
+            ],
+            [
+              144.9324921,
+              -37.7885131
+            ],
+            [
+              144.9322225,
+              -37.7884847
+            ]
+          ]
+        ]
+      },
+      "id": "way/176329975"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/189156082",
+        "amenity": "pub",
+        "building": "yes",
+        "name": "Queensberry Hotel",
+        "source": "Bing",
+        "source:building": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9628099,
+              -37.8046575
+            ],
+            [
+              144.9627951,
+              -37.8047331
+            ],
+            [
+              144.9628313,
+              -37.8047375
+            ],
+            [
+              144.9628168,
+              -37.8048115
+            ],
+            [
+              144.963043,
+              -37.8048392
+            ],
+            [
+              144.9630724,
+              -37.8046897
+            ],
+            [
+              144.9628099,
+              -37.8046575
+            ]
+          ]
+        ]
+      },
+      "id": "way/189156082"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/272992239",
+        "addr:city": "East Melbourne",
+        "addr:housenumber": "62",
+        "addr:postcode": "3002",
+        "addr:street": "Wellington Parade",
+        "amenity": "pub",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "Eastbourne House"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9880068,
+              -37.8163432
+            ],
+            [
+              144.9879659,
+              -37.8165679
+            ],
+            [
+              144.98825,
+              -37.8166002
+            ],
+            [
+              144.9882634,
+              -37.8165262
+            ],
+            [
+              144.9881468,
+              -37.816513
+            ],
+            [
+              144.9881742,
+              -37.8163622
+            ],
+            [
+              144.9880068,
+              -37.8163432
+            ]
+          ]
+        ]
+      },
+      "id": "way/272992239"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/314944266",
+        "addr:city": "West Melbourne",
+        "addr:housenumber": "519",
+        "addr:postcode": "3003",
+        "addr:street": "Spencer Street",
+        "amenity": "pub",
+        "building": "yes",
+        "name": "The Royal Mail",
+        "phone": "+61 3 9329 6955",
+        "website": "http://www.theroyalmail.com.au/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9484087,
+              -37.8084509
+            ],
+            [
+              144.9482751,
+              -37.8083206
+            ],
+            [
+              144.9480456,
+              -37.808466
+            ],
+            [
+              144.948182,
+              -37.8085942
+            ],
+            [
+              144.9484087,
+              -37.8084509
+            ]
+          ]
+        ]
+      },
+      "id": "way/314944266"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/314945026",
+        "addr:city": "West Melbourne",
+        "addr:housenumber": "575",
+        "addr:postcode": "3000",
+        "addr:street": "Spencer Street",
+        "amenity": "pub",
+        "building": "yes",
+        "name": "McMahon's Hotel",
+        "phone": "+61 3 9328 2423",
+        "website": "http://www.bevandmicks.com.au/mcmahons.htm"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.946773,
+              -37.8074583
+            ],
+            [
+              144.9468569,
+              -37.807514
+            ],
+            [
+              144.9469129,
+              -37.8074626
+            ],
+            [
+              144.9469022,
+              -37.8074547
+            ],
+            [
+              144.9469397,
+              -37.8074224
+            ],
+            [
+              144.9469759,
+              -37.8074478
+            ],
+            [
+              144.9470631,
+              -37.8073694
+            ],
+            [
+              144.9471058,
+              -37.8073991
+            ],
+            [
+              144.9471275,
+              -37.80738
+            ],
+            [
+              144.9469679,
+              -37.8072655
+            ],
+            [
+              144.946773,
+              -37.8074583
+            ]
+          ]
+        ]
+      },
+      "id": "way/314945026"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/315127168",
+        "addr:city": "West Melbourne",
+        "addr:housenumber": "475",
+        "addr:postcode": "3003",
+        "addr:street": "Spencer Street",
+        "amenity": "pub",
+        "building": "yes",
+        "name": "Hotel Spencer",
+        "phone": "+61 3 9329 9116",
+        "website": "https://www.hotelspencer.com.au/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9493601,
+              -37.8095733
+            ],
+            [
+              144.9492889,
+              -37.8094702
+            ],
+            [
+              144.9490705,
+              -37.8095745
+            ],
+            [
+              144.9491411,
+              -37.8096729
+            ],
+            [
+              144.9493601,
+              -37.8095733
+            ]
+          ]
+        ]
+      },
+      "id": "way/315127168"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/315149998",
+        "addr:city": "West Melbourne",
+        "addr:housenumber": "365",
+        "addr:street": "Victoria Street",
+        "amenity": "pub",
+        "building": "yes",
+        "name": "The Three Crowns",
+        "opening_hours": "Tu-Su 12:00-22:00; Mo off",
+        "outdoor_seating": "yes",
+        "phone": "+61 3 9326 5033",
+        "smoking": "outside",
+        "website": "https://www.threecrownshotel.com.au/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9493892,
+              -37.8052893
+            ],
+            [
+              144.9493728,
+              -37.8052986
+            ],
+            [
+              144.9493307,
+              -37.8055295
+            ],
+            [
+              144.9493962,
+              -37.8055199
+            ],
+            [
+              144.9494004,
+              -37.8054943
+            ],
+            [
+              144.949519,
+              -37.8055038
+            ],
+            [
+              144.9495236,
+              -37.8054721
+            ],
+            [
+              144.9495171,
+              -37.8054714
+            ],
+            [
+              144.9495329,
+              -37.8053836
+            ],
+            [
+              144.9495413,
+              -37.8053828
+            ],
+            [
+              144.9495539,
+              -37.8053067
+            ],
+            [
+              144.9493892,
+              -37.8052893
+            ]
+          ]
+        ]
+      },
+      "id": "way/315149998"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/326173634",
+        "addr:housenumber": "191",
+        "addr:postcode": "3053",
+        "addr:street": "Grattan Street",
+        "addr:suburb": "Carlton",
+        "amenity": "pub",
+        "building": "hotel",
+        "building:levels": "2",
+        "levels": "2",
+        "name": "Prince Alfred Hotel",
+        "website": "www.princealfredhotelcarlton.com"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9622903,
+              -37.8005347
+            ],
+            [
+              144.9623117,
+              -37.800377
+            ],
+            [
+              144.9621387,
+              -37.8003587
+            ],
+            [
+              144.9621122,
+              -37.8005119
+            ],
+            [
+              144.9622903,
+              -37.8005347
+            ]
+          ]
+        ]
+      },
+      "id": "way/326173634"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/378594632",
+        "addr:city": "Carlton",
+        "addr:country": "AU",
+        "addr:housenumber": "225",
+        "addr:postcode": "3053",
+        "addr:state": "Victoria",
+        "addr:street": "Canning Street",
+        "amenity": "pub",
+        "building": "yes",
+        "email": "mail@thedan.com.au",
+        "name": "Dan O'Connell Hotel",
+        "opening_hours": "Mo-Th 16:00+; Fr-Su 12:00+",
+        "phone": "+61-3-9347-1502",
+        "real_fire": "yes",
+        "website": "https://www.thedan.com.au/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.973537,
+              -37.7929687
+            ],
+            [
+              144.9735337,
+              -37.7929561
+            ],
+            [
+              144.9735224,
+              -37.7929506
+            ],
+            [
+              144.9733363,
+              -37.7929303
+            ],
+            [
+              144.973263,
+              -37.7929223
+            ],
+            [
+              144.973255,
+              -37.7929951
+            ],
+            [
+              144.9732824,
+              -37.7929958
+            ],
+            [
+              144.9732807,
+              -37.79302
+            ],
+            [
+              144.9732961,
+              -37.7930199
+            ],
+            [
+              144.9732839,
+              -37.7930705
+            ],
+            [
+              144.9732721,
+              -37.7930699
+            ],
+            [
+              144.9732632,
+              -37.7931384
+            ],
+            [
+              144.9735114,
+              -37.7931197
+            ],
+            [
+              144.973537,
+              -37.7929687
+            ]
+          ]
+        ]
+      },
+      "id": "way/378594632"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/480358290",
+        "addr:city": "North Melbourne",
+        "addr:country": "AU",
+        "addr:housenumber": "33",
+        "addr:postcode": "3051",
+        "addr:state": "VIC",
+        "addr:street": "Errol Street",
+        "amenity": "pub",
+        "building": "yes",
+        "name": "Town Hall Hotel",
+        "opening_hours": "Mo-Th 16:00-01:00; Fr-Sa 12:00-01:00; Su 12:00-23:00",
+        "outdoor_seating": "yes",
+        "phone": "+61 3 9328-1983",
+        "smoking": "outside",
+        "takeaway": "no",
+        "website": "http://www.townhallhotelnorthmelbourne.com.au/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9492043,
+              -37.8042543
+            ],
+            [
+              144.9492157,
+              -37.8041915
+            ],
+            [
+              144.9492187,
+              -37.8041775
+            ],
+            [
+              144.9490836,
+              -37.8041632
+            ],
+            [
+              144.9490823,
+              -37.8041756
+            ],
+            [
+              144.9490802,
+              -37.8041865
+            ],
+            [
+              144.9489468,
+              -37.8041714
+            ],
+            [
+              144.9489454,
+              -37.8041815
+            ],
+            [
+              144.9488217,
+              -37.8041669
+            ],
+            [
+              144.948815,
+              -37.804209
+            ],
+            [
+              144.9488784,
+              -37.8042178
+            ],
+            [
+              144.9492043,
+              -37.8042543
+            ]
+          ]
+        ]
+      },
+      "id": "way/480358290"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/628208890",
+        "addr:housenumber": "161",
+        "addr:postcode": "3051",
+        "addr:state": "VIC",
+        "addr:street": "Errol Street",
+        "addr:suburb": "North Melbourne",
+        "amenity": "pub",
+        "building": "yes",
+        "name": "Limerick Castle Hotel"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9495926,
+              -37.8010573
+            ],
+            [
+              144.9495829,
+              -37.8011409
+            ],
+            [
+              144.9496916,
+              -37.8011493
+            ],
+            [
+              144.9496889,
+              -37.8011647
+            ],
+            [
+              144.9497801,
+              -37.8011711
+            ],
+            [
+              144.9497898,
+              -37.8010791
+            ],
+            [
+              144.9495926,
+              -37.8010573
+            ]
+          ]
+        ]
+      },
+      "id": "way/628208890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/256993102",
+        "addr:housenumber": "191",
+        "addr:postcode": "3053",
+        "addr:street": "Grattan Street",
+        "addr:suburb": "Carlton",
+        "amenity": "pub",
+        "name": "Prince Alfred Hotel",
+        "website": "www.princealfredhotelcarlton.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9622254,
+          -37.8004316
+        ]
+      },
+      "id": "node/256993102"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/256993177",
+        "amenity": "pub",
+        "created_by": "Potlatch 0.8a",
+        "name": "The Clyde Hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9658811,
+          -37.7971745
+        ]
+      },
+      "id": "node/256993177"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282825869",
+        "amenity": "pub",
+        "name": "Metropolitan Hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9540832,
+          -37.8018994
+        ]
+      },
+      "id": "node/282825869"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282825870",
+        "amenity": "pub",
+        "name": "Castle Hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9532429,
+          -37.8009602
+        ]
+      },
+      "id": "node/282825870"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282825871",
+        "amenity": "pub",
+        "name": "Courthouse Hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9498171,
+          -37.8029347
+        ]
+      },
+      "id": "node/282825871"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/302131370",
+        "addr:city": "Carlton",
+        "addr:housenumber": "171-175",
+        "addr:postcode": "3053",
+        "addr:street": "Elgin Street",
+        "amenity": "pub",
+        "cuisine": "irish",
+        "food": "yes",
+        "name": "The Shaw Davey Slum",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "website": "http://theshawdaveyslum.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.968768,
+          -37.79747
+        ]
+      },
+      "id": "node/302131370"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/305540648",
+        "addr:city": "Carlton",
+        "addr:housenumber": "421",
+        "addr:postcode": "3053",
+        "addr:street": "Rathdowne Street",
+        "amenity": "pub",
+        "name": "Clare Castle Hotel",
+        "phone": "+61393478171",
+        "website": "http://www.theclarecastle.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9704476,
+          -37.7965118
+        ]
+      },
+      "id": "node/305540648"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/312646202",
+        "addr:city": "Carlton",
+        "addr:housenumber": "418",
+        "addr:postcode": "3053",
+        "addr:street": "Lygon Street",
+        "amenity": "pub",
+        "food": "yes",
+        "name": "Percy's Bar",
+        "phone": "+61 3 93471715"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.967816,
+          -37.7969492
+        ]
+      },
+      "id": "node/312646202"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/364868650",
+        "amenity": "pub",
+        "name": "Hotel Lincoln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9645277,
+          -37.804512
+        ]
+      },
+      "id": "node/364868650"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/369135444",
+        "addr:city": "Melbourne",
+        "addr:housename": "Federation Square",
+        "addr:housenumber": "1-9",
+        "addr:postcode": "3000",
+        "addr:street": "Federation Wharf",
+        "amenity": "pub",
+        "food": "yes",
+        "name": "Riverland",
+        "outdoor_seating": "yes",
+        "phone": "+61 3 96621771",
+        "smoking": "outside",
+        "website": "http://www.riverlandbar.com/",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.96849,
+          -37.818726
+        ]
+      },
+      "id": "node/369135444"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/387704652",
+        "addr:housenumber": "5",
+        "addr:postcode": "3006",
+        "addr:street": "Riverside Quay",
+        "amenity": "pub",
+        "name": "Belgian Beer Cafe",
+        "website": "https://www.belgianbeercafemelbourne.com.au/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9644575,
+          -37.8214816
+        ]
+      },
+      "id": "node/387704652"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/471340955",
+        "amenity": "pub",
+        "name": "Bar Centrale",
+        "phone": "+61396636562"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.966687,
+          -37.803391
+        ]
+      },
+      "id": "node/471340955"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/493880561",
+        "amenity": "pub",
+        "name": "Hardimans Hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9284282,
+          -37.7943792
+        ]
+      },
+      "id": "node/493880561"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/574126202",
+        "amenity": "pub",
+        "name": "Victoria Hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9557059,
+          -37.805652
+        ]
+      },
+      "id": "node/574126202"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/588178960",
+        "addr:housenumber": "629",
+        "addr:street": "Bourke Street",
+        "amenity": "pub",
+        "name": "Royal Melbourne Hotel",
+        "phone": "0396292400",
+        "website": "https://www.rmh.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9552063,
+          -37.8167994
+        ]
+      },
+      "id": "node/588178960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/589255880",
+        "addr:housenumber": "127",
+        "addr:postcode": "3000",
+        "addr:street": "Russell Street",
+        "amenity": "pub",
+        "name": "Portland Hotel",
+        "website": "http://www.portlandhotel.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9682102,
+          -37.8136466
+        ]
+      },
+      "id": "node/589255880"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/595480844",
+        "amenity": "pub",
+        "building": "retail",
+        "food": "yes",
+        "internet_access": "wlan",
+        "level": "0",
+        "name": "Charles Dickens Tavern",
+        "outdoor_seating": "no",
+        "takeaway": "no",
+        "website": "http://www.urbanspoon.com/r/71/1436176/restaurant/CBD/Charles-Dickens-Tavern-Melbourne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9645231,
+          -37.8158387
+        ]
+      },
+      "id": "node/595480844"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/595564226",
+        "amenity": "pub",
+        "name": "Elms Family Hotel (Permanently closed)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9714756,
+          -37.80857
+        ]
+      },
+      "id": "node/595564226"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/595786166",
+        "amenity": "pub",
+        "name": "Coopers Inn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9694847,
+          -37.809164
+        ]
+      },
+      "id": "node/595786166"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/595792884",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "94-96",
+        "addr:postcode": "3000",
+        "addr:street": "Bourke Street",
+        "amenity": "pub",
+        "food": "yes",
+        "name": "Elephant & Wheelbarrow",
+        "outdoor_seating": "yes",
+        "phone": "0396398444",
+        "website": "http://bourkest.elephantandwheelbarrow.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.970217,
+          -37.811917
+        ]
+      },
+      "id": "node/595792884"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/595793567",
+        "amenity": "pub",
+        "building": "retail",
+        "name": "Welcome Stranger"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9693506,
+          -37.8122218
+        ]
+      },
+      "id": "node/595793567"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/597465577",
+        "amenity": "pub",
+        "name": "Three Degrees"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9659594,
+          -37.8105317
+        ]
+      },
+      "id": "node/597465577"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/598019076",
+        "amenity": "pub",
+        "name": "Clocks at Flinders"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.967527,
+          -37.81869
+        ]
+      },
+      "id": "node/598019076"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/598056735",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "2-8",
+        "addr:postcode": "3000",
+        "addr:street": "Bourke Street",
+        "amenity": "pub",
+        "food": "yes",
+        "name": "Imperial Hotel",
+        "outdoor_seating": "yes",
+        "phone": "+61398100062",
+        "website": "https://bourkestreetimperial.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.972707,
+          -37.81127
+        ]
+      },
+      "id": "node/598056735"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/598404512",
+        "addr:housenumber": "168",
+        "addr:postcode": "3000",
+        "addr:street": "Elizabeth Street",
+        "amenity": "pub",
+        "name": "Melbourne Bar & Bistro"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.963662,
+          -37.8144712
+        ]
+      },
+      "id": "node/598404512"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/600744878",
+        "addr:housenumber": "199",
+        "addr:postcode": "3000",
+        "addr:street": "Russell Street",
+        "amenity": "pub",
+        "name": "Exford Hotel",
+        "website": "https://www.exfordhotel.com.au/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9673475,
+          -37.8117876
+        ]
+      },
+      "id": "node/600744878"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/603441424",
+        "amenity": "pub",
+        "name": "Public Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.958518,
+          -37.8060078
+        ]
+      },
+      "id": "node/603441424"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/607612350",
+        "amenity": "pub",
+        "food": "yes",
+        "name": "Black Opal Tabaret",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "website": "http://www.erdigroup.com.au/page/Businesses/Black_Opal_Tabaret/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.965246,
+          -37.813182
+        ]
+      },
+      "id": "node/607612350"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/614502473",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "401",
+        "addr:postcode": "3000",
+        "addr:street": "Little Bourke Street",
+        "amenity": "pub",
+        "name": "The Apartment",
+        "phone": "0396704020",
+        "website": "http://www.theapartment.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9610097,
+          -37.8138494
+        ]
+      },
+      "id": "node/614502473"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/621048441",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "131",
+        "addr:postcode": "3000",
+        "addr:street": "Queen Street",
+        "amenity": "pub",
+        "name": "Turf Bar",
+        "phone": "+61 3 9670 1271",
+        "website": "https://www.turfbar.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9606724,
+          -37.8153884
+        ]
+      },
+      "id": "node/621048441"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/624940912",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "502-504",
+        "addr:postcode": "3000",
+        "addr:street": "Flinders Street",
+        "amenity": "pub",
+        "name": "Insignia on Flinders",
+        "phone": "0396297405"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9576664,
+          -37.8200264
+        ]
+      },
+      "id": "node/624940912"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/633833872",
+        "addr:housenumber": "204",
+        "addr:postcode": "3000",
+        "addr:street": "King Street",
+        "amenity": "pub",
+        "name": "Great Western Hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9554829,
+          -37.8152173
+        ]
+      },
+      "id": "node/633833872"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/634757176",
+        "addr:housenumber": "263",
+        "addr:street": "William Street",
+        "amenity": "pub",
+        "name": "Metropolitan Hotel",
+        "phone": "0396701385",
+        "website": "http://www.themetropolitanhotel.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9566006,
+          -37.812927
+        ]
+      },
+      "id": "node/634757176"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/634778962",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "585",
+        "addr:postcode": "3000",
+        "addr:street": "Lonsdale Street",
+        "amenity": "pub",
+        "name": "Colonial Hotel",
+        "phone": "0396708599",
+        "website": "http://www.colonialhotel.info"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9552495,
+          -37.8146155
+        ]
+      },
+      "id": "node/634778962"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/639371090",
+        "amenity": "pub",
+        "name": "UBar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9551436,
+          -37.8206967
+        ]
+      },
+      "id": "node/639371090"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/642431951",
+        "amenity": "pub",
+        "name": "Platform 66"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9545464,
+          -37.8193137
+        ]
+      },
+      "id": "node/642431951"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/659636271",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "582",
+        "addr:postcode": "3000",
+        "addr:street": "Little Collins Street",
+        "amenity": "pub",
+        "name": "Saint & Rogue",
+        "phone": "0396209720",
+        "website": "http://www.saintandrogue.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9553584,
+          -37.8174116
+        ]
+      },
+      "id": "node/659636271"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/660120300",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "103",
+        "addr:postcode": "3000",
+        "addr:street": "Flinders Lane",
+        "amenity": "pub",
+        "name": "Cherry Bar",
+        "phone": "0396398122",
+        "website": "http://melbourne.citysearch.com.au/E/V/MELBO/0090/59/18/",
+        "wikidata": "Q5092279"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9710017,
+          -37.8156348
+        ]
+      },
+      "id": "node/660120300"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/667222174",
+        "addr:housenumber": "287",
+        "addr:postcode": "3000",
+        "addr:street": "King Street",
+        "amenity": "pub",
+        "name": "The Golden Age",
+        "website": "https://www.hotelsophia.com.au/the_golden_age"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9541782,
+          -37.8136605
+        ]
+      },
+      "id": "node/667222174"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/667680167",
+        "amenity": "pub",
+        "name": "Bridie O'Reilly's Irish Pub"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9714582,
+          -37.8128066
+        ]
+      },
+      "id": "node/667680167"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/667680168",
+        "addr:housenumber": "120",
+        "addr:postcode": "3000",
+        "addr:street": "Exhibition Street",
+        "amenity": "pub",
+        "name": "European Bier Cafe",
+        "website": "http://www.europeanbiercafe.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9712356,
+          -37.812902
+        ]
+      },
+      "id": "node/667680168"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/676561325",
+        "addr:city": "Carlton",
+        "addr:housenumber": "29",
+        "addr:postcode": "3053",
+        "addr:street": "Lygon Street",
+        "amenity": "pub",
+        "name": "John Curtin Hotel",
+        "website": "http://www.johncurtinhotel.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.965711,
+          -37.806201
+        ]
+      },
+      "id": "node/676561325"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/676626108",
+        "addr:city": "Carlton",
+        "addr:housenumber": "200",
+        "addr:postcode": "3053",
+        "addr:street": "Lygon Street",
+        "amenity": "pub",
+        "atm": "yes",
+        "name": "Players on Lygon",
+        "outdoor_seating": "yes",
+        "smoking": "outside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.966865,
+          -37.802374
+        ]
+      },
+      "id": "node/676626108"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/752604202",
+        "amenity": "pub",
+        "name": "Waterfront"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9445896,
+          -37.8163195
+        ]
+      },
+      "id": "node/752604202"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/962499829",
+        "addr:housenumber": "688",
+        "addr:street": "Bourke Street",
+        "amenity": "pub",
+        "name": "Mail Exchange Hotel",
+        "website": "https://www.mailexchangehotel.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.953527,
+          -37.816779
+        ]
+      },
+      "id": "node/962499829"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/968357117",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "427",
+        "addr:postcode": "3000",
+        "addr:street": "Swanston Street",
+        "amenity": "pub",
+        "description": "Closed due to Metro Tunnel works ",
+        "name": "Oxford Scholar Hotel (Closed)",
+        "phone": "+61 3 96631619",
+        "website": "http://www.theoxfordscholar.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9630615,
+          -37.8084515
+        ]
+      },
+      "id": "node/968357117"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1072708816",
+        "amenity": "pub",
+        "name": "Central Club Hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9581986,
+          -37.8059519
+        ]
+      },
+      "id": "node/1072708816"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1474872900",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "19-25",
+        "addr:postcode": "3000",
+        "addr:street": "Little Bourke Street",
+        "amenity": "pub",
+        "contact:email": "mrsparmas@bigpond.com",
+        "cuisine": "chicken",
+        "email": "info@mrsparmas.com.au",
+        "food": "yes",
+        "name": "Mrs. Parma's",
+        "opening_hours": "Mo-Fr 11:00+; Sa,Su 12:00+",
+        "phone": "+61 3 9639 2269",
+        "source": "local knowledge",
+        "website": "http://www.mrsparmas.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.971905,
+          -37.810656
+        ]
+      },
+      "id": "node/1474872900"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1931428928",
+        "addr:housenumber": "18-38",
+        "addr:postcode": "3005",
+        "addr:street": "Siddeley",
+        "amenity": "pub",
+        "name": "The Wharf Hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9545418,
+          -37.8229566
+        ]
+      },
+      "id": "node/1931428928"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2035852421",
+        "amenity": "pub",
+        "atm": "yes",
+        "food": "yes",
+        "name": "Turf Club Hotel",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.956489,
+          -37.801267
+        ]
+      },
+      "id": "node/2035852421"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2215598766",
+        "amenity": "pub",
+        "name": "Beer De Luxe",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.969256,
+          -37.817432
+        ]
+      },
+      "id": "node/2215598766"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2296798888",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "310",
+        "addr:street": "Flinders Lane",
+        "amenity": "pub",
+        "cuisine": "drinks",
+        "food": "yes",
+        "name": "Hakou",
+        "outdoor_seating": "no",
+        "smoking": "no",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.963707,
+          -37.817333
+        ]
+      },
+      "id": "node/2296798888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2296815142",
+        "amenity": "pub",
+        "name": "Vapiano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.962904,
+          -37.81749
+        ]
+      },
+      "id": "node/2296815142"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2345089322",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "577",
+        "addr:postcode": "3000",
+        "addr:street": "Little Collins Street",
+        "amenity": "pub",
+        "name": "The Bottom End",
+        "outdoor_seating": "no",
+        "smoking": "no",
+        "takeaway": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9555369,
+          -37.8176673
+        ]
+      },
+      "id": "node/2345089322"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2421610148",
+        "amenity": "pub",
+        "name": "PJ O'Brien's Irish Pub",
+        "website": "http://www.pjobriens.com.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9654728,
+          -37.8203756
+        ]
+      },
+      "id": "node/2421610148"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2643285286",
+        "amenity": "pub",
+        "name": "Melbourne Central Hotel",
+        "website": "www.acemelbourne.com.au/mclion/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.962674,
+          -37.8103619
+        ]
+      },
+      "id": "node/2643285286"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2666388874",
+        "addr:city": "Carlton",
+        "addr:housenumber": "184",
+        "addr:postcode": "3053",
+        "addr:street": "Rathdowne Street",
+        "amenity": "pub",
+        "name": "Rathdowne Tavern",
+        "phone": "0393481133"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9712293,
+          -37.7947575
+        ]
+      },
+      "id": "node/2666388874"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2670991670",
+        "amenity": "pub",
+        "food": "yes",
+        "name": "Menzies Tavern",
+        "phone": "+61 3 96024005"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.959327,
+          -37.817329
+        ]
+      },
+      "id": "node/2670991670"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3881388130",
+        "amenity": "pub",
+        "name": "Match Day Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9828026,
+          -37.8158908
+        ]
+      },
+      "id": "node/3881388130"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3970811104",
+        "addr:city": "West Melbourne",
+        "addr:housenumber": "333",
+        "addr:postcode": "3003",
+        "addr:province": "Vic",
+        "addr:street": "William Street",
+        "amenity": "pub",
+        "email": "info@royalstandardhotel.com.au",
+        "name": "Royal Standard Hotel",
+        "opening_hours": "Tu-Su 11:00-23:00",
+        "website": "http://www.royalstandardhotel.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9543692,
+          -37.8077834
+        ]
+      },
+      "id": "node/3970811104"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4065854692",
+        "addr:city": "Docklands",
+        "addr:housenumber": "757",
+        "addr:postcode": "3008",
+        "addr:street": "Bourke Street",
+        "amenity": "pub",
+        "name": "Nixon Hotel",
+        "phone": "+613 9642 3272",
+        "website": "https://www.nixonhotel.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9482517,
+          -37.818769
+        ]
+      },
+      "id": "node/4065854692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4308263765",
+        "amenity": "pub",
+        "name": "Longhorn Saloon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9708201,
+          -37.7973287
+        ]
+      },
+      "id": "node/4308263765"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4481200889",
+        "amenity": "pub",
+        "name": "Whisky + Alement",
+        "name:en": "Whisky + Alement"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9670658,
+          -37.810124
+        ]
+      },
+      "id": "node/4481200889"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4671692590",
+        "amenity": "pub",
+        "name": "Father's Office",
+        "name:en": "Father's Office"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9645958,
+          -37.8105398
+        ]
+      },
+      "id": "node/4671692590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5085529434",
+        "addr:city": "West Melbourne",
+        "addr:housenumber": "65",
+        "addr:postcode": "3051",
+        "addr:province": "Vic",
+        "addr:street": "Peel Street",
+        "amenity": "pub",
+        "name": "The Drunken Poet",
+        "opening_hours": "Tu-Sa 12:00-01:00, Su 12:00-23:00",
+        "phone": "613 9348 9797",
+        "smoking": "no",
+        "website": "http://www.thedrunkenpoet.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9555505,
+          -37.8066642
+        ]
+      },
+      "id": "node/5085529434"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5087808759",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "415",
+        "addr:postcode": "3000",
+        "addr:province": "vic",
+        "addr:street": "Collins Street",
+        "amenity": "pub",
+        "name": "The Sherlock Holmes",
+        "outdoor_seating": "no",
+        "phone": "61 3 9629 1146",
+        "website": "https://thesherlockholmes.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9608421,
+          -37.8172843
+        ]
+      },
+      "id": "node/5087808759"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5965841703",
+        "addr:housenumber": "12",
+        "addr:postcode": "3008",
+        "addr:state": "VIC",
+        "addr:street": "Star Circus",
+        "addr:suburb": "Docklands",
+        "addr:unit": "G09",
+        "amenity": "pub",
+        "email": "info@urbanalley.com.au",
+        "name": "Urban Alley Brewery",
+        "opening_hours": "Mo-Fr 11:00-00:00; Sa-Su 11:00-01:00",
+        "outdoor_seating": "yes",
+        "phone": "+61 3 8080 9800",
+        "website": "https://urbanalley.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9368031,
+          -37.8120561
+        ]
+      },
+      "id": "node/5965841703"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6060217799",
+        "amenity": "pub",
+        "name": "Lustre Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9656477,
+          -37.8166856
+        ]
+      },
+      "id": "node/6060217799"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6241052923",
+        "amenity": "pub",
+        "name": "Asado Togo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9639956,
+          -37.8209861
+        ]
+      },
+      "id": "node/6241052923"
+    }
+  ]
+}

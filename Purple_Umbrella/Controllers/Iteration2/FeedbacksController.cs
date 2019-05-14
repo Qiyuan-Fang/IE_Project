@@ -178,26 +178,7 @@ namespace Purple_Umbrella.Controllers.Iteration2
                 result = ex.Message;
             }
             return Json(result, JsonRequestBehavior.AllowGet);
-            //db.Configuration.ProxyCreationEnabled = false;
-            //Feedback feedback = db.Feedbacks.Find(id);
-            //switch (choice)
-            //{
-            //    case 1:
-            //        feedback.Negative += 1;
-            //        break;
-            //    case 2:
-            //        feedback.Neutral += 1;
-            //        break;
-            //    case 3:
-            //        feedback.Positive += 1;
-            //        break;
-            //    default:
-            //        break;
-            //}
-            ////db.Entry(feedback).State = EntityState.Modified;
-            ////db.SaveChanges();
-            //Console.Write(feedback.Negative.ToString(), feedback.Neutral.ToString(), feedback.Positive.ToString());
-            //return Json(feedback, JsonRequestBehavior.AllowGet);
+
         }
     }
 }

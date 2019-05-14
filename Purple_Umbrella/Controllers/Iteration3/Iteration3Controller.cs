@@ -11,7 +11,11 @@ namespace Purple_Umbrella.Controllers.Iteration3
         // GET: Iteration3
         public ActionResult Index()
         {
-            return View();
+            if (User.Identity.IsAuthenticated)
+            {
+                return View();
+            }
+            return RedirectToAction("../Account/Login");
         }
 
         // GET: Map
@@ -20,10 +24,19 @@ namespace Purple_Umbrella.Controllers.Iteration3
             return View();
         }
 
+        // GET: NavigationMap
         public ActionResult NavigationMap()
+        {
+            List<string> IncidentTypes = new List<string>() { "There's a suspicious person.", "Someone harassed me." };
+            ViewBag.IncidentTypes = new SelectList(IncidentTypes);
+            return View();
+        }
+
+        // GET: Support
+        public ActionResult Support()
         {
             return View();
         }
-       
+
     }
 }

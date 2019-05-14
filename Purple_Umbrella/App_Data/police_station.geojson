@@ -1,0 +1,231 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2019-05-11T05:53:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/224318302",
+        "addr:city": "North Melbourne",
+        "addr:country": "AU",
+        "addr:housenumber": "36",
+        "addr:postcode": "3051",
+        "addr:street": "Wreckyn Street",
+        "amenity": "police",
+        "building": "yes",
+        "name": "Melbourne North Police Station",
+        "operator": "Victoria Police",
+        "phone": "+61 3 83790800",
+        "website": "https://www.police.vic.gov.au/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9544187,
+              -37.8002972
+            ],
+            [
+              144.9548255,
+              -37.80062
+            ],
+            [
+              144.9550557,
+              -37.8004389
+            ],
+            [
+              144.9546488,
+              -37.8001161
+            ],
+            [
+              144.9544187,
+              -37.8002972
+            ]
+          ]
+        ]
+      },
+      "id": "way/224318302"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/335138618",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "263-313",
+        "addr:postcode": "3000",
+        "addr:street": "Spencer Street",
+        "amenity": "police",
+        "building": "yes",
+        "building:levels": "3",
+        "name": "Spencer Street Police Complex",
+        "name_1": "City West Police Complex",
+        "operator": "Victoria Police"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9512683,
+              -37.8133658
+            ],
+            [
+              144.9504548,
+              -37.8136145
+            ],
+            [
+              144.9505963,
+              -37.8139033
+            ],
+            [
+              144.9507101,
+              -37.8141351
+            ],
+            [
+              144.9507737,
+              -37.8142608
+            ],
+            [
+              144.9515877,
+              -37.8140038
+            ],
+            [
+              144.9513725,
+              -37.8135785
+            ],
+            [
+              144.9512683,
+              -37.8133658
+            ]
+          ]
+        ]
+      },
+      "id": "way/335138618"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/613987395",
+        "amenity": "police",
+        "name": "Flinders Street Station Police Booth",
+        "website": "https://www.police.vic.gov.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.96732,
+          -37.817967
+        ]
+      },
+      "id": "node/613987395"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1973352751",
+        "addr:housenumber": "226",
+        "addr:postcode": "3000",
+        "addr:street": "Flinders Lane",
+        "amenity": "police",
+        "fax": "+61 3 9637 1299",
+        "name": "Melbourne East Police Station",
+        "opening_hours": "24/7",
+        "phone": "+61 3 9637 1100",
+        "website": "https://www.police.vic.gov.au"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.966461,
+          -37.81647
+        ]
+      },
+      "id": "node/1973352751"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1973352758",
+        "amenity": "police",
+        "level": "-1",
+        "name": "Melbourne Custody Centre",
+        "wikidata": "Q6811763",
+        "wikipedia": "en:Melbourne Custody Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.957,
+          -37.8134
+        ]
+      },
+      "id": "node/1973352758"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1973352760",
+        "addr:housenumber": "456",
+        "addr:street": "Lonsdale Street",
+        "amenity": "police",
+        "level": "1",
+        "name": "Melbourne Prosecutions",
+        "website": "https://www.police.vic.gov.au/content.asp?Document_ID=14658"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.958,
+          -37.8132
+        ]
+      },
+      "id": "node/1973352760"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2689428958",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "637",
+        "addr:postcode": "3008",
+        "addr:street": "Flinders Street",
+        "amenity": "police",
+        "name": "Victoria Police Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9534143,
+          -37.8219341
+        ]
+      },
+      "id": "node/2689428958"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3511426088",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "313",
+        "addr:postcode": "3000",
+        "addr:street": "Spencer Street",
+        "amenity": "police",
+        "name": "Melbourne West Police Station",
+        "operator": "Victoria Police",
+        "phone": "+61 3 86904444",
+        "website": "https://www.police.vic.gov.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9512028,
+          -37.8135266
+        ]
+      },
+      "id": "node/3511426088"
+    }
+  ]
+}

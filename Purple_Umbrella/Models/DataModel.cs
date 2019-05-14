@@ -16,6 +16,7 @@ namespace Purple_Umbrella.Models
         public virtual DbSet<Report> Reports { get; set; }
         public virtual DbSet<Road_Segments> Road_Segments { get; set; }
         public virtual DbSet<Safetypoint> Safetypoints { get; set; }
+        public virtual DbSet<Json> Jsons { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

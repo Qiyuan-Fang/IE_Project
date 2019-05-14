@@ -33,10 +33,10 @@ namespace Purple_Umbrella
 
             bundles.Add(new StyleBundle("~/Content/Iteration1/css/style").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/Iteration1/css/Site.css", 
                       "~/Content/Iteration1/css/hero-slider.css",
                       "~/Content/Iteration1/css/tooplate-style.css",
-                      "~/Content/Iteration1/css/fontAwesome.css"
+                      "~/Content/Iteration1/css/fontAwesome.css",
+                      "~/Content/Iteration1/css/Site.css"
                       ));
 
             bundles.Add(new ScriptBundle("~/bundles/Iteration1").Include(
@@ -88,6 +88,17 @@ namespace Purple_Umbrella
                       "~/Scripts/Iteration3/moment.js",
                       "~/Scripts/Iteration3/datetimepicker.js",
                       "~/Scripts/Iteration3/bootstrap-datetimepicker.js"
+                      ));
+
+            bundles.Add(new ScriptBundle("~/bundles/datebox").Include(
+                      "~/Scripts/Iteration3/jqueryui/jquery-ui.min.js",
+                      "~/Scripts/Iteration3/datebox/jtsage-datebox.min.js",
+                      "~/Scripts/Iteration3/dateTimePicker.js"
+                      ));
+
+            bundles.Add(new ScriptBundle("~/bundles/navigationmap").Include(
+                      "~/Scripts/Iteration3/mapControl.js",
+                      "~/Scripts/Iteration3/navigationmap.js"
                       ));
         }
     }

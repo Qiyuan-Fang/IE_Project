@@ -1,0 +1,760 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2019-05-11T05:52:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/14498315",
+        "addr:city": "Southbank",
+        "addr:housenumber": "113",
+        "addr:postcode": "3006",
+        "addr:street": "Sturt Street",
+        "amenity": "theatre",
+        "building": "yes",
+        "name": "Coopers Malthouse Theatre",
+        "phone": "+61 3 96855111",
+        "website": "https://www.malthousetheatre.com.au/",
+        "wikidata": "Q6744899"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9665104,
+              -37.8269032
+            ],
+            [
+              144.9664691,
+              -37.8270448
+            ],
+            [
+              144.9668159,
+              -37.827108
+            ],
+            [
+              144.9667682,
+              -37.8272713
+            ],
+            [
+              144.9671639,
+              -37.8273434
+            ],
+            [
+              144.9672008,
+              -37.827217
+            ],
+            [
+              144.9674321,
+              -37.8272592
+            ],
+            [
+              144.9674843,
+              -37.8270805
+            ],
+            [
+              144.9665104,
+              -37.8269032
+            ]
+          ]
+        ]
+      },
+      "id": "way/14498315"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/17037612",
+        "amenity": "theatre",
+        "building": "hall",
+        "building:levels": "3",
+        "name": "Athenaeum Theatre",
+        "toilets:wheelchair": "yes",
+        "wikidata": "Q12122406"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9670766,
+              -37.8146579
+            ],
+            [
+              144.9673028,
+              -37.8151567
+            ],
+            [
+              144.9675004,
+              -37.8150986
+            ],
+            [
+              144.9672724,
+              -37.8146007
+            ],
+            [
+              144.9670766,
+              -37.8146579
+            ]
+          ]
+        ]
+      },
+      "id": "way/17037612"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/22664488",
+        "amenity": "theatre",
+        "building": "yes",
+        "layer": "1",
+        "name": "Hamer Hall",
+        "old_name": "Melbourne Concert Hall",
+        "website": "https://www.artscentremelbourne.com.au/discover/venues/hamer-hall.aspx",
+        "wikidata": "Q4801443",
+        "wikipedia": "en:The Arts Centre (Melbourne)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9682727,
+              -37.8203057
+            ],
+            [
+              144.9683458,
+              -37.8202032
+            ],
+            [
+              144.9683614,
+              -37.8200985
+            ],
+            [
+              144.9683304,
+              -37.8200013
+            ],
+            [
+              144.9682267,
+              -37.819896
+            ],
+            [
+              144.9680845,
+              -37.8198417
+            ],
+            [
+              144.96799,
+              -37.8198345
+            ],
+            [
+              144.9678998,
+              -37.8198462
+            ],
+            [
+              144.967813,
+              -37.8198771
+            ],
+            [
+              144.9677201,
+              -37.8199429
+            ],
+            [
+              144.9676571,
+              -37.8200405
+            ],
+            [
+              144.9676413,
+              -37.8201068
+            ],
+            [
+              144.9676516,
+              -37.8201782
+            ],
+            [
+              144.9676788,
+              -37.8202434
+            ],
+            [
+              144.9677208,
+              -37.8202942
+            ],
+            [
+              144.967784,
+              -37.8203434
+            ],
+            [
+              144.9678947,
+              -37.8203889
+            ],
+            [
+              144.9679944,
+              -37.820402
+            ],
+            [
+              144.9680812,
+              -37.820396
+            ],
+            [
+              144.9681753,
+              -37.8203673
+            ],
+            [
+              144.9682727,
+              -37.8203057
+            ]
+          ]
+        ]
+      },
+      "id": "way/22664488"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/22930831",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "219",
+        "addr:postcode": "3000",
+        "addr:street": "Exhibition Street",
+        "amenity": "theatre",
+        "building": "yes",
+        "building:levels": "3",
+        "landmark:name": "Her Majesty's Theatre",
+        "name": "Her Majesty's Theatre",
+        "name:fr": "Théâtre de Sa Majesté",
+        "phone": "+61 3 86433300",
+        "website": "https://www.hmt.com.au/",
+        "wikidata": "Q5732319"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9697555,
+              -37.8106942
+            ],
+            [
+              144.9693317,
+              -37.810815
+            ],
+            [
+              144.9695114,
+              -37.8112049
+            ],
+            [
+              144.9699271,
+              -37.8110841
+            ],
+            [
+              144.9697555,
+              -37.8106942
+            ]
+          ]
+        ]
+      },
+      "id": "way/22930831"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/22930866",
+        "amenity": "theatre",
+        "building": "yes",
+        "name": "Comedy Theatre",
+        "name:fr": "Théâtre de la comédie",
+        "wikidata": "Q5151480"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9698808,
+              -37.8101992
+            ],
+            [
+              144.9699961,
+              -37.8104559
+            ],
+            [
+              144.9705088,
+              -37.8103122
+            ],
+            [
+              144.9703936,
+              -37.8100555
+            ],
+            [
+              144.9698808,
+              -37.8101992
+            ]
+          ]
+        ]
+      },
+      "id": "way/22930866"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/27008376",
+        "addr:housenumber": "300",
+        "addr:postcode": "3003",
+        "addr:state": "VIC",
+        "addr:street": "Dudley Street",
+        "addr:suburb": "West Melbourne",
+        "amenity": "theatre",
+        "building": "yes",
+        "name": "Festival Hall",
+        "owner": "Stadiums Limited",
+        "source": "nearmap",
+        "website": "http://www.festivalhall.com.au/",
+        "website:tourism": "http://www.onlymelbourne.com.au/melbourne_details.php?id=6183",
+        "wikidata": "Q5445710",
+        "wikipedia": "en:Festival Hall (Melbourne)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9457294,
+              -37.8112074
+            ],
+            [
+              144.9459761,
+              -37.8115189
+            ],
+            [
+              144.9461679,
+              -37.8114256
+            ],
+            [
+              144.9461773,
+              -37.8114352
+            ],
+            [
+              144.9468706,
+              -37.8111703
+            ],
+            [
+              144.946581,
+              -37.8107921
+            ],
+            [
+              144.9457294,
+              -37.8112074
+            ]
+          ]
+        ]
+      },
+      "id": "way/27008376"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/46194494",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "163",
+        "addr:postcode": "3000",
+        "addr:street": "Spring Street",
+        "amenity": "theatre",
+        "building": "yes",
+        "name": "Princess Theatre",
+        "operator": "Marriner Group",
+        "website": "http://www.marrinergroup.com.au/theatre-princess.php",
+        "wheelchair": "limited",
+        "wikidata": "Q7244850"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9724528,
+              -37.8104627
+            ],
+            [
+              144.9720287,
+              -37.8105847
+            ],
+            [
+              144.9721361,
+              -37.8108183
+            ],
+            [
+              144.9722032,
+              -37.8107989
+            ],
+            [
+              144.972278,
+              -37.8109605
+            ],
+            [
+              144.9726354,
+              -37.8108571
+            ],
+            [
+              144.9724528,
+              -37.8104627
+            ]
+          ]
+        ]
+      },
+      "id": "way/46194494"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/480615323",
+        "addr:city": "North Melbourne",
+        "addr:country": "AU",
+        "addr:housenumber": "14",
+        "addr:postcode": "3051",
+        "addr:state": "VIC",
+        "addr:street": "Raglan Street",
+        "amenity": "theatre",
+        "building": "yes",
+        "building:levels": "4",
+        "email": "admin@acopa.com.au",
+        "height": "15",
+        "name": "Voltaire",
+        "operator": "Acopa",
+        "phone": "+61 3 9326 3006",
+        "website": "http://acopa.com.au/voltaire"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              144.9500766,
+              -37.8041634
+            ],
+            [
+              144.9500493,
+              -37.8043182
+            ],
+            [
+              144.9501428,
+              -37.8043289
+            ],
+            [
+              144.9501706,
+              -37.8041733
+            ],
+            [
+              144.9500766,
+              -37.8041634
+            ]
+          ]
+        ]
+      },
+      "id": "way/480615323"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/176729780",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "191",
+        "addr:postcode": "3000",
+        "addr:street": "Collins Street",
+        "amenity": "theatre",
+        "name": "Regent Theatre",
+        "operator": "Marriner Group",
+        "website": "http://www.marrinergroup.com.au/theatre-regent.php",
+        "wikidata": "Q7308110"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.967598,
+          -37.815497
+        ]
+      },
+      "id": "node/176729780"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/302559944",
+        "amenity": "theatre",
+        "name": "Courthouse Theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9687111,
+          -37.7977034
+        ]
+      },
+      "id": "node/302559944"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/304169365",
+        "amenity": "theatre",
+        "created_by": "Potlatch 0.10e",
+        "name": "Playhouse Theatre",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9683971,
+          -37.8217162
+        ]
+      },
+      "id": "node/304169365"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/331165028",
+        "amenity": "theatre",
+        "created_by": "Potlatch 0.10f",
+        "name": "La Mama Theatre",
+        "wikidata": "Q6463660"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9676917,
+          -37.7990994
+        ]
+      },
+      "id": "node/331165028"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/531280053",
+        "amenity": "theatre",
+        "name": "St Martin's Youth Arts Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.981223,
+          -37.8351739
+        ]
+      },
+      "id": "node/531280053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/585344628",
+        "amenity": "theatre",
+        "name": "RMIT Capitol Theatre",
+        "operator": "RMIT University"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.965733,
+          -37.814989
+        ]
+      },
+      "id": "node/585344628"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/589175911",
+        "addr:city": "Melbourne",
+        "addr:housenumber": "20-30",
+        "addr:postcode": "3000",
+        "addr:street": "Bourke Street",
+        "amenity": "theatre",
+        "fax": "+61 3 96503225",
+        "name": "Palace Theatre",
+        "phone": "+61 3 96500180",
+        "website": "http://www.palace.com.au/",
+        "wikidata": "Q7126198"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.972166,
+          -37.811183
+        ]
+      },
+      "id": "node/589175911"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/847533152",
+        "amenity": "theatre",
+        "name": "State Theatre",
+        "wheelchair": "limited",
+        "wikidata": "Q3527609"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9685371,
+          -37.8211694
+        ]
+      },
+      "id": "node/847533152"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2164767688",
+        "addr:city": "Melbourne",
+        "addr:housename": "The Forum",
+        "addr:housenumber": "154",
+        "addr:postcode": "3000",
+        "addr:street": "Flinders Street",
+        "amenity": "theatre",
+        "name": "The Forum",
+        "operator": "Marriner Group",
+        "website": "https://forummelbourne.com.au/",
+        "wikidata": "Q5473086"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.96947,
+          -37.816565
+        ]
+      },
+      "id": "node/2164767688"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3207161470",
+        "addr:housenumber": "26",
+        "addr:street": "Errol Street",
+        "amenity": "theatre",
+        "name": "The Comic's Lounge",
+        "opening_hours": "Mo-Sa 18:30-23:00; Su, PH off",
+        "phone": "+61 3 9348 9488",
+        "website": "https://www.thecomicslounge.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9495319,
+          -37.8044987
+        ]
+      },
+      "id": "node/3207161470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3463257237",
+        "amenity": "theatre",
+        "name": "Sunderland Theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9588369,
+          -37.7995525
+        ]
+      },
+      "id": "node/3463257237"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4406450292",
+        "amenity": "theatre",
+        "name": "Plenary",
+        "operator": "Plenary Group",
+        "website": "https://mcec.com.au/plenary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9522941,
+          -37.8253572
+        ]
+      },
+      "id": "node/4406450292"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4408019790",
+        "amenity": "theatre",
+        "name": "Old Geology Theatre 1",
+        "name:en": "Old Geology Theatre 1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9630733,
+          -37.7980529
+        ]
+      },
+      "id": "node/4408019790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4437004694",
+        "amenity": "theatre",
+        "name": "Iwaki auditorium",
+        "theatre": "genre:philharmonic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9664137,
+          -37.8237944
+        ]
+      },
+      "id": "node/4437004694"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4464271092",
+        "addr:housenumber": "252",
+        "addr:street": "Swanston Street",
+        "amenity": "theatre",
+        "name": "Rooftop Cinema",
+        "name:en": "Rooftop Cinema",
+        "wikidata": "Q45307475"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9651427,
+          -37.8119844
+        ]
+      },
+      "id": "node/4464271092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5177916182",
+        "amenity": "theatre",
+        "name": "Melba Hall",
+        "operator": "The University of Melbourne",
+        "start_date": "1913",
+        "theatre:genre": "philharmonic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9585681,
+          -37.7977016
+        ]
+      },
+      "id": "node/5177916182"
+    }
+  ]
+}

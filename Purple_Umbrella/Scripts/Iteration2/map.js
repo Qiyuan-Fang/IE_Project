@@ -237,7 +237,7 @@ $(document).ready(getData(function (data) {
         var light_Index = parseFloat(data[i].Light_Index);
         var index = camera_Index + light_Index + cafe_Index + bar_Index;
         //NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
-        var new_index = ((index + 1.360181178) * (4.8 - 0.2) / (121.9326 + 1.360181178)) + 0.2;
+        var new_index = (index + 1.360181178) * (4.8 - 0.2) / (121.9326 + 1.360181178) + 0.2;
         if (!name.includes("lane")) {
             var roadSegment = {
                 'id': id,
@@ -563,7 +563,7 @@ $(document).ready(getData(function (data) {
                     "line-opacity": 0.8
                 }
             });
-        };
+        }
     }
 
     // If the user clicks the delete draw button, remove the layer if it exists

@@ -176,7 +176,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="App_Start\CustomViewEngine.cs" />
+    <Compile Include="Controllers\CookieController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Iteration1\Iteration1Controller.cs" />
     <Compile Include="Controllers\Iteration1\SafetypointsController.cs" />
@@ -184,6 +184,7 @@
     <Compile Include="Controllers\Iteration2\Iteration2Controller.cs" />
     <Compile Include="Controllers\Iteration2\Road_SegmentsController.cs" />
     <Compile Include="Controllers\Iteration3\Iteration3Controller.cs" />
+    <Compile Include="Controllers\Iteration3\JsonsController.cs" />
     <Compile Include="Controllers\Iteration3\ReportsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -193,6 +194,7 @@
     <Compile Include="Models\DataModel.cs" />
     <Compile Include="Models\Feedback.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Json.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Report.cs" />
     <Compile Include="Models\Road_Segments.cs" />
@@ -275,6 +277,9 @@
     <Content Include="Content\Iteration2\css\tooplate-style.css" />
     <Content Include="Content\Iteration3\css\bootstrap-datetimepicker.css" />
     <Content Include="Content\Iteration3\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="Content\Iteration3\css\bootstrap-tour.min.css" />
+    <Content Include="Content\Iteration3\css\datebox\jtsage-datebox.css" />
+    <Content Include="Content\Iteration3\css\datebox\jtsage-datebox.min.css" />
     <Content Include="Content\Iteration3\css\fontAwesome.css" />
     <Content Include="Content\Iteration3\css\hero-slider.css" />
     <Content Include="Content\Iteration3\css\img\aboutus01.png" />
@@ -283,6 +288,7 @@
     <Content Include="Content\Iteration3\css\img\blog-bg.png" />
     <Content Include="Content\Iteration3\css\img\close.png" />
     <Content Include="Content\Iteration3\css\img\contact-bg.png" />
+    <Content Include="Content\Iteration3\css\img\evil.png" />
     <Content Include="Content\Iteration3\css\img\first-service-main.png" />
     <Content Include="Content\Iteration3\css\img\first-service-white.png" />
     <Content Include="Content\Iteration3\css\img\fourth-service-main.png" />
@@ -292,36 +298,59 @@
     <Content Include="Content\Iteration3\css\img\icon_cafe.png" />
     <Content Include="Content\Iteration3\css\img\icon_camera.png" />
     <Content Include="Content\Iteration3\css\img\icon_light.png" />
+    <Content Include="Content\Iteration3\css\img\IMG_2232.jpg" />
     <Content Include="Content\Iteration3\css\img\loading.gif" />
     <Content Include="Content\Iteration3\css\img\map.jpg" />
+    <Content Include="Content\Iteration3\css\img\menu.svg" />
     <Content Include="Content\Iteration3\css\img\netural.png" />
     <Content Include="Content\Iteration3\css\img\next.png" />
     <Content Include="Content\Iteration3\css\img\pedestrain.png" />
     <Content Include="Content\Iteration3\css\img\prev.png" />
     <Content Include="Content\Iteration3\css\img\question.png" />
+    <Content Include="Content\Iteration3\css\img\report.png" />
     <Content Include="Content\Iteration3\css\img\safe.png" />
     <Content Include="Content\Iteration3\css\img\second-service-main.png" />
     <Content Include="Content\Iteration3\css\img\second-service-white.png" />
     <Content Include="Content\Iteration3\css\img\slide_01.jpg" />
     <Content Include="Content\Iteration3\css\img\slide_02.jpg" />
+    <Content Include="Content\Iteration3\css\img\spy.png" />
     <Content Include="Content\Iteration3\css\img\team-logo.png" />
     <Content Include="Content\Iteration3\css\img\third-service-main.png" />
     <Content Include="Content\Iteration3\css\img\third-service-white.png" />
+    <Content Include="Content\Iteration3\css\img\unconfirmed.png" />
     <Content Include="Content\Iteration3\css\img\unhappy.png" />
     <Content Include="Content\Iteration3\css\img\what-we-do-bg.png" />
     <Content Include="Content\Iteration3\css\img\what-we-do-right-image.png" />
     <Content Include="Content\Iteration3\css\img\white_logo.png" />
+    <Content Include="Content\Iteration3\css\jtsage-datebox.min.css" />
     <Content Include="Content\Iteration3\css\Site.css" />
     <Content Include="Content\Iteration3\css\tooplate-style.css" />
+    <Content Include="Content\Iteration3\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\jquery-ui.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Content\Iteration3\json\bars.json" />
-    <Content Include="Content\Iteration3\json\stripclub.json" />
+    <Content Include="App_Data\bar.geojson" />
+    <Content Include="App_Data\casino.geojson" />
+    <Content Include="App_Data\cinema.geojson" />
+    <Content Include="App_Data\nightclub.geojson" />
+    <Content Include="App_Data\police_station.geojson" />
+    <Content Include="App_Data\pub.geojson" />
+    <Content Include="App_Data\restaurant.geojson" />
+    <Content Include="App_Data\stripclub.geojson" />
+    <Content Include="App_Data\theatre.geojson" />
+    <None Include="bars.json" />
+    <Content Include="Content\stripclub.json" />
+    <Content Include="Content\Iteration3\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\Iteration3\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\Iteration3\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\Iteration3\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Properties\PublishProfiles\PurpleUmbrella - Web Deploy.pubxml" />
+    <Content Include="Scripts\Iteration3\bootstrap-tour.min.js" />
+    <Content Include="Scripts\Iteration3\datebox\jtsage-datebox.js.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\Iteration1\dragbar.js" />
     <Content Include="Scripts\Iteration1\main.js" />
@@ -339,23 +368,33 @@
     <Content Include="Scripts\Iteration3\datetimepicker.js" />
     <Content Include="Scripts\Iteration3\datevalidation.js" />
     <Content Include="Scripts\Iteration3\drawroutes.js" />
+    <Content Include="Scripts\Iteration3\datebox\jtsage-datebox.js" />
+    <Content Include="Scripts\Iteration3\datebox\jtsage-datebox.min.js" />
+    <Content Include="Scripts\Iteration3\jqueryui\jquery-ui.js" />
+    <Content Include="Scripts\Iteration3\jqueryui\jquery-ui.min.js" />
+    <Content Include="Scripts\Iteration3\jtsage-datebox.min.js" />
     <Content Include="Scripts\Iteration3\map.js" />
     <Content Include="Scripts\Iteration3\mapControl.js" />
     <Content Include="Scripts\Iteration3\moment.js" />
     <Content Include="Scripts\Iteration3\navigationmap.js" />
     <Content Include="Scripts\Iteration3\popover.js" />
+    <Content Include="Scripts\Iteration3\turf.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\test.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -404,13 +443,16 @@
     <Content Include="Views\Iteration3\Index.cshtml" />
     <Content Include="Views\Iteration3\Map.cshtml" />
     <Content Include="Views\Iteration3\NavigationMap.cshtml" />
-    <Content Include="Views\Iteration3\Reports\Create.cshtml" />
-    <Content Include="Views\Iteration3\Reports\Delete.cshtml" />
-    <Content Include="Views\Iteration3\Reports\Details.cshtml" />
-    <Content Include="Views\Iteration3\Reports\Edit.cshtml" />
-    <Content Include="Views\Iteration3\Reports\Index.cshtml" />
+    <Content Include="Views\Reports\Create.cshtml" />
+    <Content Include="Views\Reports\Delete.cshtml" />
+    <Content Include="Views\Reports\Details.cshtml" />
+    <Content Include="Views\Reports\Edit.cshtml" />
+    <Content Include="Views\Reports\Index.cshtml" />
+    <Content Include="Views\Iteration3\Support.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Jsons\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

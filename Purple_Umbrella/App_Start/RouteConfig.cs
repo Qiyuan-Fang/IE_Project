@@ -28,7 +28,7 @@ namespace Purple_Umbrella
             routes.MapRoute(
                 name: "Iteration3",
                 url: "Iteration3/{action}",
-                defaults: new { controller = "Iteration3", action = "Index" }
+                defaults: new { controller = "Iteration3", action = "NavigationMap" }
             );
 
             //routes.MapRoute(

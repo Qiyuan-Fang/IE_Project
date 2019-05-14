@@ -91,15 +91,20 @@ function openMenu(event) {
     if (!sidenav_status) {
         document.getElementById("mySidenav").style.width = "250px";
         document.getElementById("safetymap").style.marginLeft = "250px";
-        //document.getElementById("safetymap").style.backgroundColor = "rgba(0,0,0,0.4)";
+        document.getElementById("safetymap").style.backgroundColor = "rgba(0,0,0,0.4)";
         sidenav_status = true;
     }
     else {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("safetymap").style.marginLeft = "0";
-        //document.getElementById("safetymap").style.backgroundColor = "white";
+        document.getElementById("safetymap").style.backgroundColor = "white";
         sidenav_status = false;
     }
+    main_map.on("click", function (e) {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("safetymap").style.marginLeft = "0";
+        sidenav_status = false;
+    });
 }
 
 function report(event) {
@@ -140,7 +145,7 @@ function report(event) {
                     }
                 }]
             };
-            
+
             map.on('load', function () {
                 if (map.getLayer('position')) {
                     main_map.getSource('position').setData(position);
@@ -208,25 +213,14 @@ function report(event) {
             draggable: true
         });
         geocoder.on('result', function (result) {
-            if (reportmarker !== null) {
-                reportmarker.remove();
-                let longitude = result.result.geometry.coordinates[0];
-                let latitude = result.result.geometry.coordinates[1];
-                reportmarker.setLngLat([longitude, latitude])
-                    .addTo(map);
-                document.getElementById("longitude").value = longitude;
-                document.getElementById("latitude").value = latitude;
-                reportmarker.on('dragend', onDragEnd);
-            }
-            else {
-                let longitude = result.result.geometry.coordinates[0];
-                let latitude = result.result.geometry.coordinates[1];
-                reportmarker.setLngLat([longitude, latitude])
-                    .addTo(map);
-                document.getElementById("longitude").value = longitude;
-                document.getElementById("latitude").value = latitude;
-                reportmarker.on('dragend', onDragEnd);
-            }
+            reportmarker.remove();
+            let longitude = result.result.geometry.coordinates[0];
+            let latitude = result.result.geometry.coordinates[1];
+            reportmarker.setLngLat([longitude, latitude])
+                .addTo(map);
+            document.getElementById("longitude").value = longitude;
+            document.getElementById("latitude").value = latitude;
+            reportmarker.on('dragend', onDragEnd);
 
             function onDragEnd() {
                 let lngLat = reportmarker.getLngLat();
@@ -292,7 +286,7 @@ function geolocate() {
                 }
             });
 
-            
+
 
             // D3 will insert a svg into the map container
             var container = main_map.getCanvasContainer();
@@ -476,7 +470,7 @@ var tour = new Tour({
             title: "Too many information?",
             content: "Try these filter button."
         }
-        
+
     ]
 });
 function displayTutorial() {

@@ -581,7 +581,46 @@ textarea {
                     margin-right: 5px;
                 }
 
-#start-button li {
-    display: inline-block;
-    margin-left: 10px;
+.btn-group button {
+    background-color: mediumpurple; /* Green background */
+    border: 1px solid pink; /* Green border */
+    color: white; /* White text */
+    padding: 10px 12px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+    .btn-group button:not(:last-child) {
+        border-right: none; /* Prevent double borders */
+    }
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #D7CCE9;
+}
+
+.direction-popup .mapboxgl-popup-content {
+    background: none;
+}
+
+.direction-popup .mapboxgl-ctrl-geocoder {
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .direction-popup .mapboxgl-popup-content {
+        background: none;
+        max-width: 280px;
+    }
+
+    .direction-popup button{
+       
+    }
 }

@@ -1,16 +1,21 @@
 ﻿const TOKEN = 'pk.eyJ1Ijoia2VvbnlhbWF0byIsImEiOiJjamw4cXR0MjcxZ24yM2txa2VhazJ2MmY5In0.b3cxVs4DdITNSJYZGzt9pA';
 
 //Create marker when user enter value 
-const first_marker_popup_content = "<ul id='start-button'><li><button onclick='setAsStart()'>Start from here</button></li><li><button onclick='goThere()'>Go there</button></li></ul>";
-const first_marker_popup = new mapboxgl.Popup({ offset: 35.30,close:false })
+const first_marker_popup_content = "<div id='btn-group' class='btn-group'>"
+    + "<button id='setAsStart' onclick='setAsStart()'>Start from here</button>"
+    + "<button id='setAsDestination' onclick='setAsDestination()'>Go there</button>"
+    + "<button onclick='goFromCurrentPosition()'>From your position</button>"
+    + "</div>"
+    +"<div id='address-input'></div>";
+const first_marker_popup = new mapboxgl.Popup({ className: 'direction-popup', offset: 35.30, closeButton: false })
     .setHTML(first_marker_popup_content);
 const first_marker = new mapboxgl.Marker({
     color: 'red',
     draggable: true
-});
+}).setPopup(first_marker_popup);
 
 const second_marker = new mapboxgl.Marker({
-    color: 'Green',
+    color: 'red',
     draggable: true
 });
 
@@ -57,29 +62,11 @@ $(document).ready(function () {
     main_map.addControl(reportControl, 'top-right');
 
     geocoder.on('result', function (result) {
-        if (first_marker !== null) {
-            first_marker.remove();
-            let longitude = result.result.geometry.coordinates[0];
-            let latitude = result.result.geometry.coordinates[1];
-            first_marker.setLngLat([longitude, latitude]).setPopup(first_marker_popup)
-                .addTo(main_map);
-            first_marker_popup.setLngLat([longitude, latitude]).addTo(main_map);
-            first_marker.on('dragend', onDragEnd);
-        }
-        else {
-            let longitude = result.result.geometry.coordinates[0];
-            let latitude = result.result.geometry.coordinates[1];
-            first_marker.setLngLat([longitude, latitude])
-                .addTo(main_map);
-            first_marker.on('dragend', onDragEnd);
-        }
-
-        function onDragEnd() {
-            let lngLat = first_marker.getLngLat();
-            let longitude = lngLat.lng;
-            let latitude = lngLat.lat;
-            first_marker_popup.setLngLat([longitude, latitude]).addTo(main_map);
-        }
+        let longitude = result.result.geometry.coordinates[0];
+        let latitude = result.result.geometry.coordinates[1];
+        first_marker.setLngLat([longitude, latitude])
+            .addTo(main_map);
+        first_marker_popup.setLngLat([longitude, latitude]).addTo(main_map);
     });
 
     // initialize the map canvas to interact with later
@@ -190,12 +177,14 @@ $(document).ready(function () {
     //    //});
     //});
     main_map.on("load", function () {
-
+        getRoute([0,0],[0,0]);
         getPedestrainCount();
         addBarsLayer();
         addReportsLayer();
         addNightClubsLayer();
         getAllRoadData();
+
+
         createFilter("sensors", "Pedestrain");
         createFilter("bars", "Bars");
         createFilter("nightclubs", "Night Clubs");
@@ -326,7 +315,9 @@ function getAllRoadData() {
                     0.7,
                     0.95]
             },
-            "filter": ["==", ["get", "type"], 'Road']
+            "filter": ["==", ["get", "type"], 'Road'],
+            "layout": { "visibility": 'none' }
+
         }, firstSymbolId);
 
         //map.addLayer({
@@ -748,21 +739,62 @@ function confirmReport(id) {
 }
 
 function setAsStart() {
+    let geocoder = new MapboxGeocoder({
+        accessToken: 'pk.eyJ1Ijoia2VvbnlhbWF0byIsImEiOiJjamw4cXR0MjcxZ24yM2txa2VhazJ2MmY5In0.b3cxVs4DdITNSJYZGzt9pA',
+        countries: 'au',
+        placeholder: "Search a place",
+        marker: false,
+        bbox: [144.9200, -37.8310, 144.9998, -37.7879],
+        mapboxgl: mapboxgl
+    });
+    var el = document.getElementById('address-input');
+    if (el.childNodes.length < 1) {
+        el.appendChild(geocoder.onAdd(main_map));
+    }
+    
 
+    geocoder.on('result', function (result) {
+        //Get start point's coordinates
+        let lngLat = first_marker_popup.getLngLat();
+        let s_lng = lngLat.lng;
+        let s_lat = lngLat.lat;
+        let start = [s_lng, s_lat];
+
+        //Get destination's coordinates
+        let d_lng = result.result.geometry.coordinates[0];
+        let d_lat = result.result.geometry.coordinates[1];
+        let destination = [d_lng, d_lat];
+        second_marker.setLngLat([d_lng, d_lat])
+            .addTo(main_map);
+        second_marker.on('dragend', onDragEnd);
+
+        getRoute(start, destination);
+        el.removeChild(el.childNodes[0]);
+        first_marker_popup.remove();
+        function onDragEnd() {
+            let lngLat = second_marker.getLngLat();
+            let d_lng = lngLat.lng;
+            let d_lat = lngLat.lat;
+            let destination = [d_lng, d_lat];
+            getRoute(start, destination);
+        }
+    });
+    
+    
 }
 
-function goThere() {
+function goFromCurrentPosition() {
     let lngLat = first_marker_popup.getLngLat();
     let longitude = lngLat.lng;
     let latitude = lngLat.lat;
     let destination = [longitude, latitude];
-    navigator.geolocation.getCurrentPosition(success,error);
-    navigator.geolocation.getCurrentPosition(success,error);
+    navigator.geolocation.getCurrentPosition(success, error);
     function success(pos) {
         let lat = pos.coords.latitude;
         let lng = pos.coords.longitude;
         var start = [lng, lat];
-        getRoute(start, destination);        
+        second_marker.remove();
+        getRoute(start, destination);
     }
 
     function error(err) {
@@ -772,7 +804,8 @@ function goThere() {
 
 function getRoute(start, end) {
     // make a directions request using walking profile
-    var url = 'https://api.mapbox.com/directions/v5/mapbox/walking/' + start[0] + ',' + start[1] + ';' + end[0] + ',' + end[1] + '?steps=true&geometries=geojson&access_token=' + mapboxgl.accessToken;
+    var new_start = [start[0], start[1]];
+    var url = 'https://api.mapbox.com/directions/v5/mapbox/walking/' + new_start[0] + ',' + new_start[1] + ';' + end[0] + ',' + end[1] + '?steps=true&geometries=geojson&access_token=' + mapboxgl.accessToken;
 
     // make an XHR request https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
     var req = new XMLHttpRequest();
@@ -850,7 +883,8 @@ function createFilter(layerID, text) {
     var input = document.createElement('input');
     input.type = 'checkbox';
     input.id = layerID;
-    input.checked = true;
+    if (layerID === "roads") { input.checked = false; }
+    else { input.checked = true; }
     filterGroup.appendChild(input);
 
     var label = document.createElement('label');
@@ -865,3 +899,10 @@ function createFilter(layerID, text) {
     });
 }
 
+function displayInformation() {
+    $('#information').modal('show');
+}
+
+function displaySupport() {
+    $('#support').modal('show');
+}

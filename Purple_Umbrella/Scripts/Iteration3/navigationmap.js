@@ -4,9 +4,9 @@
 const first_marker_popup_content = "<div id='btn-group' class='btn-group'>"
     + "<button id='setAsStart' onclick='setAsStart()'>Start from here</button>"
     + "<button id='setAsDestination' onclick='setAsDestination()'>Go there</button>"
-    + "<button onclick='goFromCurrentPosition()'>From your position</button>"
+    + "<button onclick='startFromCurrentPosition()'>From your position</button>"
     + "</div>"
-    +"<div id='address-input'></div>";
+    + "<div id='address-input'></div>";
 const first_marker_popup = new mapboxgl.Popup({ className: 'direction-popup', offset: 35.30, closeButton: false })
     .setHTML(first_marker_popup_content);
 const first_marker = new mapboxgl.Marker({
@@ -57,9 +57,10 @@ $(document).ready(function () {
     main_map.addControl(menuControl, "top-left");
     main_map.addControl(geocoder, "top-left");
     main_map.addControl(tutorialControl, "top-right");
-    main_map.addControl(new mapboxgl.NavigationControl());
+    main_map.addControl(new mapboxgl.NavigationControl({ id: "Nav-ctrl" }));
     main_map.addControl(geoLocateControl, "top-right");
     main_map.addControl(reportControl, 'top-right');
+    main_map.addControl(emergencyControl, 'bottom-left');
 
     geocoder.on('result', function (result) {
         let longitude = result.result.geometry.coordinates[0];
@@ -69,124 +70,18 @@ $(document).ready(function () {
         first_marker_popup.setLngLat([longitude, latitude]).addTo(main_map);
     });
 
-    // initialize the map canvas to interact with later
-    //var canvas = main_map.getCanvasContainer();
-    //var start = [144.9134, -37.8415];
-    // create a function to make a directions request
-
-    //main_map.on('load', function () {
-    //    // make an initial directions request that
-    //    // starts and ends at the same location
-    //    getRoute(start);
-
-    //    // Add starting point to the map
-    //    main_map.addLayer({
-    //        id: 'start',
-    //        type: 'circle',
-    //        source: {
-    //            type: 'geojson',
-    //            data: {
-    //                type: 'FeatureCollection',
-    //                features: [{
-    //                    type: 'Feature',
-    //                    properties: {},
-    //                    geometry: {
-    //                        type: 'Point',
-    //                        coordinates: start
-    //                    }
-    //                }
-    //                ]
-    //            }
-    //        },
-    //        paint: {
-    //            'circle-radius': 10,
-    //            'circle-color': '#3887be'
-    //        }
-    //    });
-    //    main_map.addLayer({
-    //        "id": "start_label",
-    //        "type": "symbol",
-    //        "source": "start",
-    //        "layout": {
-    //            "text-field": "A",
-    //            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-    //            "text-size": 12
-    //        },
-    //        "paint": {
-    //            "text-color": "White"
-    //        }
-    //    });
-    //    //main_map.on('click', function (e) {
-    //    //    var coordsObj = e.lngLat;
-    //    //    canvas.style.cursor = '';
-    //    //    var coords = Object.keys(coordsObj).map(function (key) {
-    //    //        return coordsObj[key];
-    //    //    });
-    //    //    var end = {
-    //    //        type: 'FeatureCollection',
-    //    //        features: [{
-    //    //            type: 'Feature',
-    //    //            properties: {},
-    //    //            geometry: {
-    //    //                type: 'Point',
-    //    //                coordinates: coords
-    //    //            }
-    //    //        }
-    //    //        ]
-    //    //    };
-    //    //    if (main_map.getLayer('end') && main_map.getLayer('end_label')) {
-    //    //        main_map.getSource('end').setData(end);
-    //    //    } else {
-    //    //        main_map.addLayer({
-    //    //            id: 'end',
-    //    //            type: 'circle',
-    //    //            source: {
-    //    //                type: 'geojson',
-    //    //                data: {
-    //    //                    type: 'FeatureCollection',
-    //    //                    features: [{
-    //    //                        type: 'Feature',
-    //    //                        properties: {},
-    //    //                        geometry: {
-    //    //                            type: 'Point',
-    //    //                            coordinates: coords
-    //    //                        }
-    //    //                    }]
-    //    //                }
-    //    //            },
-    //    //            paint: {
-    //    //                'circle-radius': 10,
-    //    //                'circle-color': '#f30'
-    //    //            }
-    //    //        });
-    //    //        main_map.addLayer({
-    //    //            "id": "end_label",
-    //    //            "type": "symbol",
-    //    //            "source": "end",
-    //    //            "layout": {
-    //    //                "text-field": "B",
-    //    //                "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-    //    //                "text-size": 12
-    //    //            },
-    //    //            "paint": {
-    //    //                "text-color": "White"
-    //    //            }
-    //    //        });
-    //    //    }
-    //    //    getRoute(coords);
-    //    //});
-    //});
     main_map.on("load", function () {
-        getRoute([0,0],[0,0]);
+        getRoute([0, 0], [0, 0]);
         getPedestrainCount();
         addBarsLayer();
         addReportsLayer();
         addNightClubsLayer();
+        addConstructionSitessLayer()
         getAllRoadData();
-
 
         createFilter("sensors", "Pedestrain");
         createFilter("bars", "Bars");
+        createFilter("constructions", "Construction Sites");
         createFilter("nightclubs", "Night Clubs");
         createFilter("roads", "OUR Safety index");
     });
@@ -561,10 +456,10 @@ function getPedestrainCount() {
                 var count = json[i].properties.count;
                 if (count !== 0) {
                     var radius = json[i].properties.count / 20000;
-                    var options = { steps: 25, units: 'kilometers', properties: { name: json[i].properties.name, count: json[i].properties.count, center: center } };
+                    var options = { steps: 25, units: 'kilometers', properties: { name: json[i].properties.name, count: count, center: center } };
                     var circle = turf.circle(center, radius, options);
+                    sensors.push(circle);
                 }
-                sensors.push(circle);
             }
             main_map.addSource("sensors", {
                 "type": "geojson",
@@ -612,23 +507,39 @@ function addBarsLayer() {
         dataType: "json",
         success: function (jsonString) {
             var data = JSON.parse(jsonString);
+            main_map.addSource("bars", {
+                "type": "geojson",
+                "data": data
+            });
+
             main_map.addLayer({
                 "id": "bars",
                 "type": "symbol",
-                "source": {
-                    "type": "geojson",
-                    "data": data
-                },
+                "source": "bars",
                 "layout": {
                     "icon-image": "alcohol-shop-15",
+                    "icon-size": 1.2,
                     "text-field": "{name}",
-                    "text-size": 8,
+                    "text-size": 10,
                     "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-                    "text-offset": [0, 0.6],
+                    "text-offset": [0, 1.2],
                     "text-anchor": "top"
                 },
                 "paint": {
                     "text-color": "White"
+                }
+            });
+            main_map.addLayer({
+                "id": "bars_bg",
+                "type": "circle",
+                "source": "bars",
+                "paint": {
+                    'circle-radius': 12,
+                    'circle-color': "Red",
+                    'circle-opacity': 0,
+                    'circle-stroke-width': 1,
+                    'circle-stroke-color': '#fff',
+                    'circle-stroke-opacity': 0
                 }
             });
 
@@ -674,6 +585,64 @@ function addNightClubsLayer() {
     });
 }
 
+function addConstructionSitessLayer() {
+    $.ajax({
+        type: "Get",
+        url: "/Jsons/ReturnJson",
+        data: { name: "construction" }, // passing the parameter 
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (jsonString) {
+            var data = JSON.parse(jsonString);
+            data.features.forEach(function (d) {
+                Object.defineProperty(d.properties, 'id', {
+                    value: parseInt(d["id"]),
+                    writable: true,
+                    enumerable: true,
+                    configurable: true
+                });
+            });
+            main_map.loadImage('https://img.icons8.com/metro/52/ffffff/road-worker.png', function (error, image) {
+                if (error) throw error;
+                main_map.addImage('construction', image);
+                main_map.addLayer({
+                    "id": "constructions",
+                    "type": "symbol",
+                    "source": {
+                        "type": "geojson",
+                        "data": data
+                    },
+                    "layout": {
+                        "icon-image": "construction",
+                        "icon-size": 0.35,
+                        "text-field": "{name}",
+                        "text-size": 8,
+                        "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+                        "text-offset": [0, 0.6],
+                        "text-anchor": "top"
+                    },
+                    "paint": {
+                        "text-color": "White"
+                    }
+                });
+                main_map.addLayer({
+                    "id": "constructions_bg",
+                    "type": "circle",
+                    "source": "constructions",
+                    "paint": {
+                        'circle-radius': 12,
+                        'circle-color': "Yellow",
+                        'circle-opacity': 0,
+                        'circle-stroke-width': 1,
+                        'circle-stroke-color': '#fff',
+                        'circle-stroke-opacity': 0
+                    }
+                });
+            });
+
+        }
+    });
+}
 
 function trackUser() {
     let options = {
@@ -742,7 +711,7 @@ function setAsStart() {
     let geocoder = new MapboxGeocoder({
         accessToken: 'pk.eyJ1Ijoia2VvbnlhbWF0byIsImEiOiJjamw4cXR0MjcxZ24yM2txa2VhazJ2MmY5In0.b3cxVs4DdITNSJYZGzt9pA',
         countries: 'au',
-        placeholder: "Search a place",
+        placeholder: "Search a destination",
         marker: false,
         bbox: [144.9200, -37.8310, 144.9998, -37.7879],
         mapboxgl: mapboxgl
@@ -750,8 +719,11 @@ function setAsStart() {
     var el = document.getElementById('address-input');
     if (el.childNodes.length < 1) {
         el.appendChild(geocoder.onAdd(main_map));
+    } else {
+        el.removeChild(el.childNodes[0]);
+        el.appendChild(geocoder.onAdd(main_map));
     }
-    
+
 
     geocoder.on('result', function (result) {
         //Get start point's coordinates
@@ -779,11 +751,65 @@ function setAsStart() {
             getRoute(start, destination);
         }
     });
-    
-    
 }
 
-function goFromCurrentPosition() {
+function setAsDestination() {
+    let geocoder = new MapboxGeocoder({
+        accessToken: 'pk.eyJ1Ijoia2VvbnlhbWF0byIsImEiOiJjamw4cXR0MjcxZ24yM2txa2VhazJ2MmY5In0.b3cxVs4DdITNSJYZGzt9pA',
+        countries: 'au',
+        placeholder: "Search an origin",
+        marker: false,
+        bbox: [144.9200, -37.8310, 144.9998, -37.7879],
+        mapboxgl: mapboxgl
+    });
+    var el = document.getElementById('address-input');
+    if (el.childNodes.length < 1) {
+        el.appendChild(geocoder.onAdd(main_map));
+    } else {
+        el.removeChild(el.childNodes[0]);
+        el.appendChild(geocoder.onAdd(main_map));
+    }
+
+
+    geocoder.on('result', function (result) {
+        //Get start point's coordinates
+        let lngLat = first_marker_popup.getLngLat();
+        let d_lng = lngLat.lng;
+        let d_lat = lngLat.lat;
+        let destination = [d_lng, d_lat];
+
+        //Get destination's coordinates
+        let s_lng = result.result.geometry.coordinates[0];
+        let s_lat = result.result.geometry.coordinates[1];
+        let start = [s_lng, s_lat];
+        second_marker.setLngLat([s_lng, s_lat])
+            .addTo(main_map);
+        second_marker.on('dragend', secondOnDragEnd);
+        first_marker.on('dragend', firstOnDragEnd);
+        getRoute(start, destination);
+        el.removeChild(el.childNodes[0]);
+        first_marker_popup.remove();
+
+        function firstOnDragEnd() {
+            let lngLat = first_marker.getLngLat();
+            let d_lng = lngLat.lng;
+            let d_lat = lngLat.lat;
+            let destination = [d_lng, d_lat];
+            getRoute(start, destination);
+        }
+        function secondOnDragEnd() {
+            let lngLat = second_marker.getLngLat();
+            let s_lng = lngLat.lng;
+            let s_lat = lngLat.lat;
+            let start = [s_lng, s_lat];
+            getRoute(start, destination);
+        }
+    });
+
+
+}
+
+function startFromCurrentPosition() {
     let lngLat = first_marker_popup.getLngLat();
     let longitude = lngLat.lng;
     let latitude = lngLat.lat;
@@ -795,6 +821,16 @@ function goFromCurrentPosition() {
         var start = [lng, lat];
         second_marker.remove();
         getRoute(start, destination);
+        document.getElementById('map-geolocate').click();
+        first_marker.on('dragend', onDragEnd);
+
+        function onDragEnd() {
+            let lngLat = first_marker.getLngLat();
+            let d_lng = lngLat.lng;
+            let d_lat = lngLat.lat;
+            let new_destination = [d_lng, d_lat];
+            getRoute(start, new_destination);
+        }
     }
 
     function error(err) {
@@ -804,8 +840,7 @@ function goFromCurrentPosition() {
 
 function getRoute(start, end) {
     // make a directions request using walking profile
-    var new_start = [start[0], start[1]];
-    var url = 'https://api.mapbox.com/directions/v5/mapbox/walking/' + new_start[0] + ',' + new_start[1] + ';' + end[0] + ',' + end[1] + '?steps=true&geometries=geojson&access_token=' + mapboxgl.accessToken;
+    var url = 'https://api.mapbox.com/directions/v5/mapbox/walking/' + start[0] + ',' + start[1] + ';' + end[0] + ',' + end[1] + '?steps=true&geometries=geojson&access_token=' + mapboxgl.accessToken;
 
     // make an XHR request https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
     var req = new XMLHttpRequest();
@@ -852,6 +887,54 @@ function getRoute(start, end) {
             });
         }
         // add turn instructions here at the end
+        main_map.addLayer({
+            id: 'routearrows',
+            type: 'symbol',
+            source: 'route',
+            layout: {
+                'symbol-placement': 'line',
+                'text-field': '▶',
+                'text-size': [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    12, 24,
+                    22, 60
+                ],
+                'symbol-spacing': [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    12, 30,
+                    22, 160
+                ],
+                'text-keep-upright': false
+            },
+            paint: {
+                'text-color': '#3887be',
+                'text-halo-color': 'hsl(55, 11%, 96%)',
+                'text-halo-width': 3
+            }
+        }, 'waterway-label');
+
+        // Pass the first coordinates in the LineString to `lngLatBounds` &
+        // wrap each coordinate pair in `extend` to include them in the bounds
+        // result. A variation of this technique could be applied to zooming
+        // to the bounds of multiple Points or Polygon geomteries - it just
+        // requires wrapping all the coordinates with the extend method.
+        if (start[0] !== end[0] && start[1] !== end[1]) {
+            var bounds = route.reduce(function (bounds, coord) {
+                return bounds.extend(coord);
+            }, new mapboxgl.LngLatBounds(route[0], route[0]));
+
+            main_map.fitBounds(bounds, {
+                padding: 100
+            });
+        }
+        showBarsAroundRoute(route);
+
+        showConstructionAroundRoute(route);
+
     };
     req.send();
 }
@@ -871,6 +954,7 @@ main_map.on('click', function (e) {
     });
     if (geomarkers.length) {
         main_map.flyTo({
+            zoom: 14,
             center: geomarkers[0].geometry.coordinates
         });
     }
@@ -896,8 +980,65 @@ function createFilter(layerID, text) {
     input.addEventListener('change', function (e) {
         main_map.setLayoutProperty(layerID, 'visibility',
             e.target.checked ? 'visible' : 'none');
+        main_map.setLayoutProperty(layerID + "_bg", 'visibility',
+            e.target.checked ? 'visible' : 'none');
     });
 }
+
+function showBarsAroundRoute(route) {
+    var bars = main_map.querySourceFeatures('bars');
+    //var bars = main_map.getLayer('bars');
+    var options = { units: 'miles' };
+    var filters = ['in', '@id'];
+    bars.forEach(function (bar) {
+        if (bar.geometry.type === "Polygon" || bar.geometry.coordinates.length > 2) {
+            return;
+        }
+        else {
+            let lng = bar.geometry.coordinates[0];
+            let lat = bar.geometry.coordinates[1];
+            let point = turf.point([lng, lat]);
+            let line = turf.lineString(route);
+            let distance = turf.pointToLineDistance(point, line, options);
+            //console.log(distance);
+            if (distance < 0.05) {
+                filters.push(bar.properties["@id"]);
+            }
+        }
+    });
+
+    main_map.setFilter('bars', filters);
+    main_map.setFilter('bars_bg', filters);
+    main_map.setPaintProperty('bars_bg', 'circle-opacity', 0.5);
+    main_map.setPaintProperty('bars', 'text-color', "Red");
+    main_map.setPaintProperty('bars_bg', 'circle-stroke-opacity', 0.5);
+}
+
+function showConstructionAroundRoute(route) {
+    var constructions = main_map.querySourceFeatures('constructions');
+    var options = { units: 'miles' };
+    var filters = ['in', 'id'];
+    constructions.forEach(function (construction) {
+
+        let lng = construction.geometry.coordinates[0];
+        let lat = construction.geometry.coordinates[1];
+        let point = turf.point([lng, lat]);
+        let line = turf.lineString(route);
+        let distance = turf.pointToLineDistance(point, line, options);
+        //console.log(distance);
+        if (distance < 0.05) {
+            filters.push(construction.properties["id"]);
+        }
+    });
+
+    main_map.setFilter('constructions', filters);
+    main_map.setFilter('constructions_bg', filters);
+    main_map.setPaintProperty('constructions_bg', 'circle-opacity', 0.5);
+    main_map.setPaintProperty('constructions_bg', 'circle-stroke-opacity', 0.5);
+}
+
+
+
 
 function displayInformation() {
     $('#information').modal('show');
@@ -906,3 +1047,131 @@ function displayInformation() {
 function displaySupport() {
     $('#support').modal('show');
 }
+
+var filternav_status = false;
+function openFilter() {
+    if (!filternav_status) {
+        document.getElementById("filter-group").style.marginBottom = "-255px";
+        filternav_status = true;
+    }
+    else {
+        document.getElementById("filter-group").style.marginBottom = "0";
+        filternav_status = false;
+    }
+
+}
+
+$('#intro-modal').on('click', function () {
+    $('#intro-modal').fadeOut('quick');
+    setTimeout(function () {
+        $('#intro-modal').modal("hide");
+    }, 500);
+});
+
+    // initialize the map canvas to interact with later
+    //var canvas = main_map.getCanvasContainer();
+    //var start = [144.9134, -37.8415];
+    // create a function to make a directions request
+
+    //main_map.on('load', function () {
+    //    // make an initial directions request that
+    //    // starts and ends at the same location
+    //    getRoute(start);
+
+    //    // Add starting point to the map
+    //    main_map.addLayer({
+    //        id: 'start',
+    //        type: 'circle',
+    //        source: {
+    //            type: 'geojson',
+    //            data: {
+    //                type: 'FeatureCollection',
+    //                features: [{
+    //                    type: 'Feature',
+    //                    properties: {},
+    //                    geometry: {
+    //                        type: 'Point',
+    //                        coordinates: start
+    //                    }
+    //                }
+    //                ]
+    //            }
+    //        },
+    //        paint: {
+    //            'circle-radius': 10,
+    //            'circle-color': '#3887be'
+    //        }
+    //    });
+    //    main_map.addLayer({
+    //        "id": "start_label",
+    //        "type": "symbol",
+    //        "source": "start",
+    //        "layout": {
+    //            "text-field": "A",
+    //            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+    //            "text-size": 12
+    //        },
+    //        "paint": {
+    //            "text-color": "White"
+    //        }
+    //    });
+    //    //main_map.on('click', function (e) {
+    //    //    var coordsObj = e.lngLat;
+    //    //    canvas.style.cursor = '';
+    //    //    var coords = Object.keys(coordsObj).map(function (key) {
+    //    //        return coordsObj[key];
+    //    //    });
+    //    //    var end = {
+    //    //        type: 'FeatureCollection',
+    //    //        features: [{
+    //    //            type: 'Feature',
+    //    //            properties: {},
+    //    //            geometry: {
+    //    //                type: 'Point',
+    //    //                coordinates: coords
+    //    //            }
+    //    //        }
+    //    //        ]
+    //    //    };
+    //    //    if (main_map.getLayer('end') && main_map.getLayer('end_label')) {
+    //    //        main_map.getSource('end').setData(end);
+    //    //    } else {
+    //    //        main_map.addLayer({
+    //    //            id: 'end',
+    //    //            type: 'circle',
+    //    //            source: {
+    //    //                type: 'geojson',
+    //    //                data: {
+    //    //                    type: 'FeatureCollection',
+    //    //                    features: [{
+    //    //                        type: 'Feature',
+    //    //                        properties: {},
+    //    //                        geometry: {
+    //    //                            type: 'Point',
+    //    //                            coordinates: coords
+    //    //                        }
+    //    //                    }]
+    //    //                }
+    //    //            },
+    //    //            paint: {
+    //    //                'circle-radius': 10,
+    //    //                'circle-color': '#f30'
+    //    //            }
+    //    //        });
+    //    //        main_map.addLayer({
+    //    //            "id": "end_label",
+    //    //            "type": "symbol",
+    //    //            "source": "end",
+    //    //            "layout": {
+    //    //                "text-field": "B",
+    //    //                "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+    //    //                "text-size": 12
+    //    //            },
+    //    //            "paint": {
+    //    //                "text-color": "White"
+    //    //            }
+    //    //        });
+    //    //    }
+    //    //    getRoute(coords);
+    //    //});
+    //});

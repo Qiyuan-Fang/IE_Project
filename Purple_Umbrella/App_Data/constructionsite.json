@@ -1,0 +1,1205 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "172-192 Flinders Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9685651, -37.81660689 ]
+      },
+      "id": 0
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "697 Collins Street DOCKLANDS VIC 3008",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9517627, -37.82077675 ]
+      },
+      "id": 1
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "535-541 Royal Parade PARKVILLE VIC 3052",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9591657, -37.77940246 ]
+      },
+      "id": 2
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "464-466 Collins Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9585918, -37.81746293 ]
+      },
+      "id": 3
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "386-392 Lonsdale Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9607943, -37.81236935 ]
+      },
+      "id": 4
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "262-304 Albert Street EAST MELBOURNE VIC 3002",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9817267, -37.80962534 ]
+      },
+      "id": 5
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "76-84 Collins Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9706696, -37.81357256 ]
+      },
+      "id": 6
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "224-252 La Trobe Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.962281, -37.80965321 ]
+      },
+      "id": 7
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "244-276 Spencer Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9526397, -37.81446556 ]
+      },
+      "id": 8
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "244-276 Spencer Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9526397, -37.81446556 ]
+      },
+      "id": 9
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "The Royal Victorian Eye & Ear Hospital 126-142 Victoria Parade EAST MELBOURNE VIC 3002",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9762631, -37.8088703 ]
+      },
+      "id": 10
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "65-67 Arden Street NORTH MELBOURNE VIC 3051",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9488441, -37.80117284 ]
+      },
+      "id": 11
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "68-82 Southbank Boulevard SOUTHBANK VIC 3006",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9639239, -37.8232151 ]
+      },
+      "id": 12
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "187-189 Adderley Street WEST MELBOURNE VIC 3003",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9457517, -37.80909844 ]
+      },
+      "id": 13
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "267-271 Spring Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9714444, -37.80860845 ]
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "65-67 Park Street SOUTH YARRA VIC 3141",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9817051, -37.83595338 ]
+      },
+      "id": 15
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "54-68 Kavanagh Street SOUTHBANK VIC 3006",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9637302, -37.82409516 ]
+      },
+      "id": 16
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "156-172 Victoria Street CARLTON VIC 3053",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9619402, -37.80614542 ]
+      },
+      "id": 17
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "433-455 Collins Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9598761, -37.81797807 ]
+      },
+      "id": 18
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "471-485 Collins Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9585472, -37.8184163 ]
+      },
+      "id": 19
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "134-160 Spencer Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.953752, -37.81738965 ]
+      },
+      "id": 20
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "179-191 Flemington Road NORTH MELBOURNE VIC 3051",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9486491, -37.79527188 ]
+      },
+      "id": 21
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "33-43 Sturt Street SOUTHBANK VIC 3006",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9674047, -37.8245458 ]
+      },
+      "id": 22
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "614-616 Queensberry Street NORTH MELBOURNE VIC 3051",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9469518, -37.80250584 ]
+      },
+      "id": 23
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "63 Manningham Street PARKVILLE VIC 3052",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.941666, -37.78659441 ]
+      },
+      "id": 24
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "109-133 Rosslyn Street WEST MELBOURNE VIC 3003",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9506402, -37.80905673 ]
+      },
+      "id": 25
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "263-283 Spencer Street DOCKLANDS VIC 3008",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9511859, -37.81433178 ]
+      },
+      "id": 26
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "69-73 Flemington Road NORTH MELBOURNE VIC 3051",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9537916, -37.79930819 ]
+      },
+      "id": 27
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "684-688 Elizabeth Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9583041, -37.80236558 ]
+      },
+      "id": 28
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Wesley Uniting Church 118-148 Lonsdale Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9681694, -37.80994515 ]
+      },
+      "id": 29
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "18-24 Moray Street SOUTHBANK VIC 3006",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.960196, -37.82675738 ]
+      },
+      "id": 30
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "614-666 Flinders Street DOCKLANDS VIC 3008",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9534171, -37.82111519 ]
+      },
+      "id": 31
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "26-34 Powlett Street EAST MELBOURNE VIC 3002",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9857462, -37.81550232 ]
+      },
+      "id": 32
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "614-666 Flinders Street DOCKLANDS VIC 3008",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9534171, -37.82111519 ]
+      },
+      "id": 33
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "93-119 Kavanagh Street SOUTHBANK VIC 3006",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9635897, -37.82570384 ]
+      },
+      "id": 34
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "93-119 Kavanagh Street SOUTHBANK VIC 3006",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9635897, -37.82570384 ]
+      },
+      "id": 35
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "RMIT Village 5-17 Flemington Road NORTH MELBOURNE VIC 3051",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.955841, -37.80142395 ]
+      },
+      "id": 36
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "111-149 Nicholson Street CARLTON VIC 3053",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.974439, -37.79730914 ]
+      },
+      "id": 37
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "83-113 Batman Street WEST MELBOURNE VIC 3003",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9499131, -37.81159519 ]
+      },
+      "id": 38
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "83-113 Batman Street WEST MELBOURNE VIC 3003",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9499131, -37.81159519 ]
+      },
+      "id": 39
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "1-23 Millswyn Street SOUTH YARRA VIC 3141",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9797998, -37.83724239 ]
+      },
+      "id": 40
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "123-127 Bouverie Street CARLTON VIC 3053",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9614617, -37.80349578 ]
+      },
+      "id": 41
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "252 Collins Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9654066, -37.81548303 ]
+      },
+      "id": 42
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "15-27 Wreckyn Street NORTH MELBOURNE VIC 3051",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9535211, -37.80040732 ]
+      },
+      "id": 43
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "109-111 Little Lonsdale Street, MELBOURNE 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9686039, -37.80945966 ]
+      },
+      "id": 44
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "332-346 La Trobe Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9592344, -37.81004116 ]
+      },
+      "id": 45
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "332-346 La Trobe Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9592344, -37.81004116 ]
+      },
+      "id": 46
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "374-380 Lonsdale Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9611142, -37.81202605 ]
+      },
+      "id": 47
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "35-41 City Road SOUTHBANK VIC 3006",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9666706, -37.82185275 ]
+      },
+      "id": 48
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "405-411 Bourke Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.961933, -37.81485801 ]
+      },
+      "id": 49
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Harbour Town East Car Park 82-94 Waterfront Way DOCKLANDS VIC 3008",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9392679, -37.81234217 ]
+      },
+      "id": 50
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "3-11 Howard Street WEST MELBOURNE VIC 3003",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9529789, -37.80701505 ]
+      },
+      "id": 51
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "560-566 Lonsdale Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9555806, -37.81374316 ]
+      },
+      "id": 52
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "71 Manningham Street PARKVILLE VIC 3052",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9416009, -37.78615766 ]
+      },
+      "id": 53
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "141-149 La Trobe Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9674791, -37.8087754 ]
+      },
+      "id": 54
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "25-29 Coventry Street SOUTHBANK VIC 3006",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9700371, -37.82937789 ]
+      },
+      "id": 55
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "49-59 Southbank Boulevard SOUTHBANK VIC 3006",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9648113, -37.82262347 ]
+      },
+      "id": 56
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "River View House 274-282 Flinders Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9650858, -37.81765999 ]
+      },
+      "id": 57
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "233-239 Dryburgh Street NORTH MELBOURNE VIC 3051",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9434578, -37.80086079 ]
+      },
+      "id": 58
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "177-231 Rosslyn Street WEST MELBOURNE VIC 3003",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9485731, -37.81022097 ]
+      },
+      "id": 59
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "177-231 Rosslyn Street WEST MELBOURNE VIC 3003",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9485731, -37.81022097 ]
+      },
+      "id": 60
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "177-231 Rosslyn Street WEST MELBOURNE VIC 3003",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9485731, -37.81022097 ]
+      },
+      "id": 61
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "177-231 Rosslyn Street WEST MELBOURNE VIC 3003",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9485731, -37.81022097 ]
+      },
+      "id": 62
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "177-231 Rosslyn Street WEST MELBOURNE VIC 3003",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9485731, -37.81022097 ]
+      },
+      "id": 63
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "1-5 Queen Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9620226, -37.81878499 ]
+      },
+      "id": 64
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "52-66 Dorcas Street SOUTHBANK VIC 3006",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9680095, -37.83047511 ]
+      },
+      "id": 65
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "52-66 Dorcas Street SOUTHBANK VIC 3006",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9680095, -37.83047511 ]
+      },
+      "id": 66
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "93-119 Kavanagh Street SOUTHBANK VIC 3006",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9635897, -37.82570384 ]
+      },
+      "id": 67
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "The District Docklands 420-454 Docklands Drive DOCKLANDS VIC 3008",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9377585, -37.81317308 ]
+      },
+      "id": 68
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "114-152 Grattan Street CARLTON VIC 3053",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9648073, -37.79996957 ]
+      },
+      "id": 69
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "114-152 Grattan Street CARLTON VIC 3053",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9648073, -37.79996957 ]
+      },
+      "id": 70
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "114-152 Grattan Street CARLTON VIC 3053",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9648073, -37.79996957 ]
+      },
+      "id": 71
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Victorian College Of The Arts 234 St Kilda Road SOUTHBANK VIC 3006",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9693876, -37.82445562 ]
+      },
+      "id": 72
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "557-591 Swanston Street CARLTON VIC 3053",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9628177, -37.80518048 ]
+      },
+      "id": 73
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "498-504 Swanston Street CARLTON VIC 3053",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9637188, -37.80521719 ]
+      },
+      "id": 74
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "552-578 Lorimer Street PORT MELBOURNE VIC 3207",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9153361, -37.82272568 ]
+      },
+      "id": 75
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "580-600 Lorimer Street PORT MELBOURNE VIC 3207",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9163806, -37.82254848 ]
+      },
+      "id": 76
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "271 Royal Parade, Parkville, 3052",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9582816, -37.78723883 ]
+      },
+      "id": 77
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "206-218 Bourke Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9668682, -37.81267467 ]
+      },
+      "id": 78
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "80-82 Lothian Street NORTH MELBOURNE VIC 3051",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9450609, -37.80118215 ]
+      },
+      "id": 79
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Equity Chambers 472-478 Bourke Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9595997, -37.81486058 ]
+      },
+      "id": 80
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "47-55 Little Bourke Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.971109, -37.81102419 ]
+      },
+      "id": 81
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "39-43 Leveson Street NORTH MELBOURNE VIC 3051",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.950513, -37.80392261 ]
+      },
+      "id": 82
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "97-111 Franklin Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9613369, -37.80829207 ]
+      },
+      "id": 83
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "33-35 King Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9568891, -37.81962535 ]
+      },
+      "id": 84
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "15-31 Batman Street WEST MELBOURNE VIC 3003",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9523177, -37.81089699 ]
+      },
+      "id": 85
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "245-261 City Road SOUTHBANK VIC 3006",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9598181, -37.82674968 ]
+      },
+      "id": 86
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "91-93 Millswyn Street SOUTH YARRA VIC 3141",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9800981, -37.83519381 ]
+      },
+      "id": 87
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "480-488 Elizabeth Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9604777, -37.80751631 ]
+      },
+      "id": 88
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "89-97 Haines Street NORTH MELBOURNE VIC 3051",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9449144, -37.79867725 ]
+      },
+      "id": 89
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "199-217 Peel Street NORTH MELBOURNE VIC 3051",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.956185, -37.80277758 ]
+      },
+      "id": 90
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "256-258 City Road SOUTHBANK VIC 3006",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9594925, -37.82591571 ]
+      },
+      "id": 91
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "172-192 Lorimer Street DOCKLANDS VIC 3008",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9334673, -37.8216735 ]
+      },
+      "id": 92
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "The Celtic Club 316-322 Queen Street MELBOURNE VIC 3000",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.959303, -37.81120176 ]
+      },
+      "id": 93
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Ridley College 168-180 The Avenue PARKVILLE VIC 3052",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9577256, -37.78363441 ]
+      },
+      "id": 94
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "Freemasons Hospital 162-198 Clarendon Street EAST MELBOURNE VIC 3002",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9841889, -37.81107986 ]
+      },
+      "id": 95
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "3-43 Waterfront Way DOCKLANDS VIC 3008",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9391355, -37.8137222 ]
+      },
+      "id": 96
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "450-454 Queensberry Street NORTH MELBOURNE VIC 3051",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9523781, -37.80306546 ]
+      },
+      "id": 97
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "101-133 Canning Street NORTH MELBOURNE VIC 3051",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9406804, -37.79624077 ]
+      },
+      "id": 98
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "address": "101-133 Canning Street NORTH MELBOURNE VIC 3051",
+        "status": "UnderConstruction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 144.9406804, -37.79624077 ]
+      },
+      "id": 99
+    }
+  ]
+}

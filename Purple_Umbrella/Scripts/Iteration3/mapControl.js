@@ -286,8 +286,6 @@ function geolocate() {
                 }
             });
 
-
-
             // D3 will insert a svg into the map container
             var container = main_map.getCanvasContainer();
             console.log(container);
@@ -482,6 +480,23 @@ function displayTutorial() {
     tour.restart();
 }
 
+var emergency_status = false;
+var audio = new Audio("/Content/Iteration3/audio/police.mp3");
+function emergency() {
+    if (!emergency_status) {
+        var r = confirm("This will play a Police Siren audio and call the police.\n(Turn off the silent mode of your mobile.)\nAre you sure?");
+        if (r === true) {
+            window.open('tel:0422989757');
+            audio.play();
+            emergency_status = true;
+        }
+    } else {
+        audio.load();
+        emergency_status = false;
+    }
+
+}
+
 
 /* Instantiate new controls with custom event handlers */
 const tutorialControl = new MapboxGLButtonControl({
@@ -493,7 +508,7 @@ const tutorialControl = new MapboxGLButtonControl({
 
 const menuControl = new MapboxGLButtonControl({
     className: "mapbox-gl-menu",
-    title: "Menu",
+    title: "More information",
     id: "map-menu",
     eventHandler: openMenu
 });
@@ -511,6 +526,16 @@ const geoLocateControl = new MapboxGLButtonControl({
     id: "map-geolocate",
     eventHandler: geolocate
 });
+
+const emergencyControl = new MapboxGLButtonControl({
+    className: "mapbox-gl-emergency",
+    title: "Emergency",
+    id: "map-emergency",
+    eventHandler: emergency
+});
+
+
+
 /* Add Controls to the Map */
 //map.addControl(new mapboxgl.NavigationControl(), "top-left");
 //map.addControl(new PitchToggle({ minpitchzoom: 11 }), "top-left");
@@ -555,4 +580,28 @@ function postReport() {
         }
 
     };
+}
+
+function createTooltips(el, side) {
+    let data_toggle = document.createAttribute("data-toggle");
+    data_toggle.value = "tooltip";
+    let data_placement = document.createAttribute("data-placement");
+    if (side === "right") {
+        data_placement.value = "right";
+    } else {
+        data_placement.value = "left";
+    }
+    el.setAttributeNode(data_toggle);
+    el.setAttributeNode(data_placement);
+}
+
+function displayTooltips() {
+    //$("#map-menu").tooltip({ 'animation': true, 'title': 'My Tooltip' });
+    let menu_button = document.getElementById('map-menu');
+    let zoom_in = document.getElementsByClassName("mapboxgl-ctrl-zoom-in")[0];
+    let zoom_out = document.getElementsByClassName("mapboxgl-ctrl-zoom-out")[0];
+    createTooltips(menu_button, "right");
+    createTooltips(zoom_in, "left");
+
+    $('[data-toggle="tooltip"]').tooltip('show');
 }

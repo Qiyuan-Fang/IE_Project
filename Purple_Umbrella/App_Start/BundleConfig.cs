@@ -41,6 +41,7 @@ namespace Purple_Umbrella
 
             bundles.Add(new ScriptBundle("~/bundles/Iteration1").Include(
                        "~/Scripts/jquery-{version}.js",
+                       "~/Scripts/Iteration3/jqueryui/jquery-ui.min.js",
                        "~/Scripts/bootstrap.js",
                        "~/Scripts/modernizr-*",
                        "~/Scripts/Iteration1/main.js",
@@ -91,7 +92,6 @@ namespace Purple_Umbrella
                       ));
 
             bundles.Add(new ScriptBundle("~/bundles/datebox").Include(
-                      "~/Scripts/Iteration3/jqueryui/jquery-ui.min.js",
                       "~/Scripts/Iteration3/datebox/jtsage-datebox.min.js",
                       "~/Scripts/Iteration3/dateTimePicker.js"
                       ));

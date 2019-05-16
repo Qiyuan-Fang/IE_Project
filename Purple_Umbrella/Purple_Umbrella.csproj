@@ -275,6 +275,7 @@
     <Content Include="Content\Iteration2\css\img\white_logo.png" />
     <Content Include="Content\Iteration2\css\Site.css" />
     <Content Include="Content\Iteration2\css\tooplate-style.css" />
+    <Content Include="Content\Iteration3\audio\police.mp3" />
     <Content Include="Content\Iteration3\css\bootstrap-datetimepicker.css" />
     <Content Include="Content\Iteration3\css\bootstrap-datetimepicker.min.css" />
     <Content Include="Content\Iteration3\css\bootstrap-tour.min.css" />
@@ -288,6 +289,7 @@
     <Content Include="Content\Iteration3\css\img\blog-bg.png" />
     <Content Include="Content\Iteration3\css\img\close.png" />
     <Content Include="Content\Iteration3\css\img\contact-bg.png" />
+    <Content Include="Content\Iteration3\css\img\cover.png" />
     <Content Include="Content\Iteration3\css\img\evil.png" />
     <Content Include="Content\Iteration3\css\img\first-service-main.png" />
     <Content Include="Content\Iteration3\css\img\first-service-white.png" />
@@ -305,6 +307,7 @@
     <Content Include="Content\Iteration3\css\img\netural.png" />
     <Content Include="Content\Iteration3\css\img\next.png" />
     <Content Include="Content\Iteration3\css\img\pedestrain.png" />
+    <Content Include="Content\Iteration3\css\img\police.png" />
     <Content Include="Content\Iteration3\css\img\prev.png" />
     <Content Include="Content\Iteration3\css\img\question.png" />
     <Content Include="Content\Iteration3\css\img\report.png" />
@@ -342,6 +345,7 @@
     <Content Include="App_Data\restaurant.geojson" />
     <Content Include="App_Data\stripclub.geojson" />
     <Content Include="App_Data\theatre.geojson" />
+    <Content Include="App_Data\constructionsite.json" />
     <None Include="bars.json" />
     <Content Include="Content\stripclub.json" />
     <Content Include="Content\Iteration3\fonts\glyphicons-halflings-regular.eot" />

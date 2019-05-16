@@ -28,6 +28,7 @@ function checkCookie() {
         return uuid;
     } else {
         initiateCookie();
+        $('#intro-modal').modal({ show: true });
         //user = createUuid();
         //user = prompt("Please enter your name:", "");
         //setCookie("username", user, 30);
@@ -57,10 +58,4 @@ function createUuid() {
     return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
         (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
     );
-}
-
-
-function checkUser() {
-    var uuid = getCookie();
-
 }

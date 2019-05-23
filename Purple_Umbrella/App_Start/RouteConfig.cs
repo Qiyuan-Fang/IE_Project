@@ -36,12 +36,17 @@ namespace Purple_Umbrella
             //    url: "Iteration3/Reports/{action}",
             //    defaults: new { controller = "Reports"}
             //);
-
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Account", action = "Login", id = UrlParameter.Optional }
+                url: "{controller}/{action}",
+                defaults: new { controller = "Iteration3", action = "NavigationMap" }
             );
+
+            //routes.MapRoute(
+            //    name: "Default",
+            //    url: "{controller}/{action}/{id}",
+            //    defaults: new { controller = "Account", action = "Login", id = UrlParameter.Optional }
+            //);
 
         }
     }

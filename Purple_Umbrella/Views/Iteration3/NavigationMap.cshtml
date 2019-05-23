@@ -9,7 +9,7 @@
 <html class="html_fullscreen">
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>NavigationMap</title>
+    <title>Purple Umbrella</title>
 
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
@@ -31,73 +31,97 @@
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
+                <div style="text-align:center;position:absolute;top:50px;left:50%;width:100%;">
+                    <img style="max-height:120px; max-width:120px;position:relative;left:-50%;" src="~/Content/Iteration3/css/img/logo.png" />
+                    <br>
+                    <br>
+                    <div style="position:relative;left:-50%;width:100%;"> A carefully curated map <br><br>for female pedestrian<br><br> to avoid street harassment</div>
+                    <br>
+                    <br>
+                    <div class="row" style="position:relative;left:-50%">
+                        <img style="max-height:25px; max-width:25px" src="~/Content/Iteration3/css/img/1-visual.png" />
+                        <span class="fctlist"> Visualize What You Care</span>
+                    </div>
+                    <br>
+                    <div class="row" style="position:relative;left:-50%">
+                        <span class="icon-box">
+                            <img style="max-height:30px; max-width:30px;" src="~/Content/Iteration3/css/img/2-route.png" />
+                        </span>
+                        <span class="fctlist"> Plan Your Route</span>
+                    </div>
+                    <br>
+                    <div class="row" style="position:relative;left:-50%">
+                        <span class="icon-box">
+                            <img style="max-height:25px; max-width:25px" src="~/Content/Iteration3/css/img/3-report.png" />
+                        </span>
+                        <span class="fctlist"> Report an Incident</span>
+                    </div>
+                    <br>
+                    <div class="row" style="position:relative;left:-50%">
+                        <span class="icon-box">
+                            <img style="max-height:20px; max-width:20px;" src="~/Content/Iteration3/css/img/4-emergency.png" />
+                        </span>
+                        <span class="fctlist"> Emergency Alarm</span>
+                    </div>
+                    <br>
+                    <div class="row" style="position:relative;left:-50%">
+                        <span class="icon-box">
+                            <img style="max-height:25px; max-width:25px;" src="~/Content/Iteration3/css/img/5-support.png" />
+                        </span>
+                        <span class="fctlist"> Get Support Information</span>
+                    </div>
+
+                </div>
+
+                <br>
+                <br>
                 <div class="primary-button" style="text-align:center;position:absolute;bottom:50px;left:50%;">
                     <a href="#" style="position:relative;left:-50%">Try Now</a>
                 </div>
+
             </div>
         </div>
     </div>
 
     <div id="mySidenav" class="sidenav">
-        <a href="#" onclick="displayInformation()">Information</a>
+        <div id="product-logo"></div>
+        <hr style="border-color:#2c045d; border-width:3px;">
+        <a href="#" onclick="displayInformation()">Instructions</a>
         <a href="#" onclick="displaySupport()">Support</a>
+        <a href="#" onclick="displayTerms()">Terms of Use</a>
     </div>
 
     <div id="safetymap">
-
         <nav id='filter-group' class='filter-group'>
-            <div id="filter-button" class="arrow-down" onclick="openFilter();this.classList.toggle('active')"></div>
+            <div id="filter-button" onclick="openFilter()">Hide filters</div>
         </nav>
-
-
     </div>
 
     <div class="modal fade" id="information" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                @*<div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div class="modal-header">
+                        <h3 class="modal-title" style="color:rgb(176,123,215)">Instructions</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position:absolute;right:25px;top:25px;">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                    </div>*@
+                    </div>
                 <div class="modal-body">
-                    <ul class="cd-hero-slider autoplay">
-
-                        <li class="selected first-slide">
-                            <div class="cd-full-width">
-                                <div class="tm-slide-content-div slide-caption">
-                                    <br>
-                                    <h3 class="animated fadeInUp">Preventing street harassment</h3>
-                                    <h4 class="animated fadeInUp"> A carefully curated map for women pedestrians to avoid being harassed at night in Melbourne CBD </h4>
-                                    <br>
-                                    <br>
-                                    <div class="primary-button">
-                                        @Html.ActionLink("Getting started", "NavigationMap", "Iteration3", new { area = "" })
-                                    </div>
-                                </div>
-                            </div> <!-- .cd-full-width -->
-                        </li>
-
-                        <li class="selected second-slide">
-                            <div class="cd-full-width">
-                                <div class="tm-slide-content-div slide-caption">
-                                    <h3 class="animated fadeInUp">Dealing with street harassment</h3>
-                                    <h4 class="animated fadeInUp">A list of organizations may help</h4>
-                                    <br>
-                                    <br>
-
-                                    <div class="primary-button">
-                                        @Html.ActionLink("Getting started", "NavigationMap", "Iteration3", new { area = "" })
-                                    </div>
-                                </div>
-                            </div> <!-- .cd-full-width -->
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <h4>1. Safety Index</h4>
+                    <div id="route-exp"></div>
+                    <p>The color we assigned to the roads means the safety level. Green indicates higher safe index and red means lower safe index. We calculated the safety index based on street lights, surrounding bars, strip clubs, etc. The safety index are distributed between 0 to 5. Higher score means more safe route.(For now, we only focus on Melbourne CBD area. We will extend our service site in the future.)</p>
+                    <br>
+                    <h4>2. Surrounding Risks</h4>
+                    <div id="near-route"></div>
+                    <p>After you searched a direction, we will display all the bars and construction sites on your way to the destination. It's up to you whether avoid them or not. (Don't forget to turn on the filter before search.)</p>
+                    <br>
+                    <h4>3. Reports</h4>
+                    <div id="report-icons"></div>
+                    <p>Our users can report what happened to them in past three months to the map so that the other users can notice the potential danger on their way. There will be two types of report. One is past incidents, another one is potential risks. The reports will only be confirmed by another users(the owner of the report cannot confirm their own report). Once be confirmed, the puzzled icon will change to the other two icons.</p>
+                    <br>
+                    <h4>4. Emergency</h4>
+                    <div id="police-icon"></div>
+                    <p>This is an emergency button only should be pressed when you are in danger. It will play a siren audio and dial to the police at the same time.</p>
                 </div>
             </div>
         </div>
@@ -106,16 +130,15 @@
     <div class="modal fade" id="support" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                @*<div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>*@
-                <div class="modal-body">
-
-                    <div id="news" class="services news" style="padding-top:100px; text-align: center">
-                        <h2>Support</h2>
+                <button onclick="topFunction()" id="b2t-button" title="Go to top">Top</button>
+                <div class="modal-header">
+                    <h3 class="modal-title" style="color:rgb(176,123,215)">Support</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position:absolute;right:25px;top:25px;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="support-body">
+                    <div id="news" class="services news" style=" text-align: center">
                         <p>
                             Whatever your situation, it is important to know that help and support are available. <br>
                             This page include information on a range of help and support options for people experiencing sexual violence.<br>
@@ -123,215 +146,121 @@
                         </p>
 
                         <div class="container-fluid">
-                            <h5 class="agileits-title">Governmental organization</h5>
+                            <h3 class="agileits-title">Governmental organization</h3>
                             <div class="news-agileinfo">
                                 <!--1-->
                                 <div class="col-sm-6 news-w3lgrids">
                                     <div class="news-gridtext">
+                                        <h4 style="padding-top:30px"><strong>Victims of Crime</strong></h4>
+                                        <img style="max-height:15px; max-width:20px" src="~/Content/Iteration3/css/img/scroll-arrow-to-down.png" />
                                         <div class="news-w3img">
-                                            <a href="#myModal1" data-toggle="modal"><img src="~/images/1vc.png" class="img-responsive zoom-img" alt="" /></a>
+                                            <a href="#myModal1" data-toggle="modal"><img src="~/Content/Iteration3/css/img/1vc.png" class="img-responsive zoom-img" alt="" /></a>
                                         </div>
                                         <div class="news-w3imgtext">
                                             <!--<h5 class="w3-agilep">Governmental organization</h5>-->
-                                            <h4><a href="#myModal1" data-toggle="modal">Victims of Crime</a></h4>
+
                                             <p>
                                                 The official Victorian Government website.<br>
-                                                They provide info on managing the effects of crime and guidance through any legal proceedings.
+                                                They provide info on managing the effects of crime and guidance through any legal proceedings.<br>
+                                                Phone: 1800 819 817<br>
+                                                Email: vsa@justice.vic.gov.au<br>
+                                                <a href="https://www.victimsofcrime.vic.gov.au/" target="_blank">victimsofcrime.vic.gov.au</a>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                                 <!--modal 1-->
-                                <div class="modal about-modal w3-agileits fade" id="myModal1" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            </div>
-                                            <div class="modal-body" style="text-align:left">
-                                                <img src="~/images/1vc-modal.png">
-                                                <p>
-                                                    <strong>1.	The Victims of Crime Helpline can organise a support worker to help you with:</strong><br>
-                                                    •	your day to day needs<br>
-                                                    •	emergency home security<br>
-                                                    •	managing your personal safety<br>
-                                                    •	communicating with police and making a report<br>
-                                                    •	organising counselling, transport and medical services<br>
-                                                    <strong>Legal service:</strong> <br>
-                                                    •	Community legal centres provide free legal services to people who can’t get legal aid and cannot afford a private lawyer<br>
-                                                    <br>
-                                                    Phone: 1800 819 817<br>
-                                                    Email: vsa@justice.vic.gov.au<br>
-                                                    <a href="https://www.victimsofcrime.vic.gov.au/" target="_blank">victimsofcrime.vic.gov.au</a>
-                                                </p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                                 <!--2-->
                                 <div class="col-sm-6 news-w3lgrids">
                                     <div class="news-gridtext">
+                                        <h4 style="padding-top:30px"><strong>Victoria Legal Aid</strong></h4>
+                                        <img style="max-height:15px; max-width:20px" src="~/Content/Iteration3/css/img/scroll-arrow-to-down.png" />
                                         <div class="news-w3img">
-                                            <a href="#myModal2" data-toggle="modal"><img src="~/images/2legal.png" class="img-responsive zoom-img" alt="" /></a>
+                                            <a href="#myModal2" data-toggle="modal"><img src="~/Content/Iteration3/css/img/2legal.png" class="img-responsive zoom-img" alt="" /></a>
                                         </div>
                                         <div class="news-w3imgtext">
-                                            <h4><a href="#myModal2" data-toggle="modal">Victoria Legal Aid</a></h4>
+
                                             <p>
                                                 Victoria Legal Aid help people with legal problems.<br>
-                                                They focus on protecting the rights of Victorians and representing those who need it the most
+                                                They focus on protecting the rights of Victorians and representing those who need it the most.<br>
+                                                Phone: legal assistance:1300792387<br>
+                                                Business enquiries: 0392690234<br>
+                                                Email address: Sophie.Griffin@vla.vic.gov.au<br>
+                                                Address: 570 bourke st Melbourne vic 3000<br>
+                                                <a href="http://www.legalaid.vic.gov.au/" target="_blank">legalaid.vic.gov.au</a>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!--modal 2-->
-                                <div class="modal about-modal w3-agileits fade" id="myModal2" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            </div>
-                                            <div class="modal-body" style="text-align:left">
-                                                <img src="img/2legal-modal.png" alt="">
-                                                <p>
-                                                    Free legal service and advice<br>
-                                                    •Lawyers who can talk to you about how the law applies to your legal problem <br>
-                                                    Provide and diagnose treatment for mental illness<br>
-                                                    •	Lawyers regularly visit the mental health inpatient units of hospitals in Melbourne<br>
-                                                    •	For some matters they can provide you with a lawyer to help you run your case<br>
-                                                    Tryonline chat for general information and referrals. Depending on availability, a chat window will appear 9 am to 5 pm, Monday to Friday. <br>
-                                                    <br>
-                                                    Phone: legal assistance:1300792387<br>
-                                                    Business enquiries: 0392690234<br>
-                                                    Email address: Sophie.Griffin@vla.vic.gov.au<br>
-                                                    Address: 570 bourke st Melbourne vic 3000<br>
-                                                    <a href="http://www.legalaid.vic.gov.au/" target="_blank">legalaid.vic.gov.au</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
 
                         <!--non govermental -->
-                        <div class="container-fluid">
-                            <h5 class="agileits-title" style="padding: 100px">Non-governmental organization</h5>
+                        <div class="container--fluid">
+                            <h3 class="agileits-title" style="padding: 100px">Non-governmental organization</h3>
                             <div class="news-agileinfo">
                                 <!--3 Vss-->
                                 <div class="col-sm-4 news-w3lgrids">
                                     <div class="news-gridtext">
+                                        <h4><strong>Victim Support Service</strong></h4>
+                                        <img style="max-height:15px; max-width:20px" src="~/Content/Iteration3/css/img/scroll-arrow-to-down.png" />
+
                                         <div class="news-w3img">
-                                            <a href="#myModal3" data-toggle="modal"><img src="~/images/3vss.png" class="img-responsive zoom-img" alt="" /></a>
+                                            <a href="#myModal3" data-toggle="modal"><img src="~/Content/Iteration3/css/img/3vss.png" class="img-responsive zoom-img" alt="" /></a>
                                         </div>
                                         <div class="news-w3imgtext">
-                                            <h4><a href="#myModal3" data-toggle="modal">Victim Support Service</a></h4>
-                                            <p>Victim Support Service provides free and confidential help to adult victims. </p>
+
+                                            <p>
+                                                Victim Support Service provides free and confidential help to adult victims.
+                                                Phone:1800 842 846 <br>
+                                                Email: helpdesk@victimsa.org<br>
+                                                <a href="https://www.victimsa.org/" target="_blank">Victimsa.org/</a>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                                 <!--modal 3-->
-                                <div class="modal about-modal w3-agileits fade" id="myModal3" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            </div>
-                                            <div class="modal-body" style="text-align:left">
-                                                <img src="~/images/3vss-modal.png" alt="">
-                                                <p>
-                                                    Victim Support Service is a Redress Support Service provider.<br>
-                                                    VSS provides free and confidential help to adult victims of crime, witnesses, their family, and friends across Australia. <br>
-                                                    They work in partnership with other organisations, They are not a government agency or part of the police and you don't have to report a crime to get our help. It doesn’t matter when the crime happened and you can call them any time after the crime, whether it was yesterday, last week or several years ago.
-                                                    Phone:1800 842 846 <br>
-                                                    Email: helpdesk@victimsa.org<br>
-                                                    <a href="https://www.victimsa.org/" target="_blank">Victimsa.org/</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                                 <!--4 tw -->
                                 <div class="col-sm-4 news-w3lgrids">
                                     <div class="news-gridtext">
+                                        <h4 style="padding-top:30px"><strong>The women’s</strong></h4>
+                                        <img style="max-height:15px; max-width:20px" src="~/Content/Iteration3/css/img/scroll-arrow-to-down.png" />
                                         <div class="news-w3img">
-                                            <a href="#myModal4" data-toggle="modal"><img src="~/images/4tw.png" class="img-responsive zoom-img" alt="" /></a>
+                                            <a href="#myModal4" data-toggle="modal"><img src="~/Content/Iteration3/css/img/4tw.png" class="img-responsive zoom-img" alt="" /></a>
                                         </div>
                                         <div class="news-w3imgtext">
-
-                                            <h4><a href="#myModal4" data-toggle="modal">The women’s </a></h4>
                                             <p>
                                                 The Women’s provides a 24 hour, seven day a week service to survivors of past and recent sexual assault through the Centre Against Sexual Assault (CASA House) during business hours and after hours via the Sexual Assault Crisis Line (SACL)<br>
+                                                Address: 20 Flemington Rd, Parkville Victoria<br>
+                                                Phone number: (03) 8345 2000<br>
+                                                <a href="https://www.thewomens.org.au/" target="_blank">thewomens.org.au</a>
+
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <!--modal 4-->
-                                <div class="modal about-modal w3-agileits fade" id="myModal4" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            </div>
-                                            <div class="modal-body" style="text-align:left">
-                                                <img src="~/images/4tw-modal.png" alt="">
-                                                <p>
-                                                    Crisis care is available for people who have been experienced recent sexual assault within the last two weeks, and may include:<br>
-                                                    Linkage to an on-call Counsellor/Advocate in your area for immediate support<br>
-                                                    Assistance with exploring your legal and medical options (including access to a forensic medical examination)<br>
-                                                    <br>
-                                                    Address: 20 Flemington Rd, Parkville Victoria<br>
-                                                    Phone number: (03) 8345 2000<br>
-                                                    <a href="https://www.thewomens.org.au/" target="_blank">thewomens.org.au</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                                 <!--5 1800-->
                                 <div class="col-sm-4 news-w3lgrids">
                                     <div class="news-gridtext">
+                                        <h4 style="padding-top:30px"><strong>1800RESPECT</strong></h4>
+                                        <img style="max-height:15px; max-width:20px" src="~/Content/Iteration3/css/img/scroll-arrow-to-down.png" />
                                         <div class="news-w3img">
-                                            <a href="#myModal5" data-toggle="modal"><img src="~/images/51800.png" class="img-responsive zoom-img" alt="" /></a>
+                                            <a href="#myModal5" data-toggle="modal"><img src="~/Content/Iteration3/css/img/51800.png" class="img-responsive zoom-img" alt="" /></a>
                                         </div>
                                         <div class="news-w3imgtext">
-                                            <h4><a href="#myModal5" data-toggle="modal">1800RESPECT</a></h4>
                                             <p>
                                                 Open 24 hours to support people impacted by sexual assault. <br>
                                                 When you contact 1800RESPECT, you will talk to a trained counsellor who will listen and support you in what feels right for you and your situation.
+                                                Phone: 1800737732<br>
+                                                <a href="https://www.1800respect.org.au" target="_blank">1800respect.org.au</a>
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <!--modal 5-->
-                                <div class="modal about-modal w3-agileits fade" id="myModal5" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            </div>
-                                            <div class="modal-body" style="text-align:left">
-                                                <img src="~/images/51800-modal.png" alt="">
-                                                <p>
-                                                    Help and support:<br>
-                                                    <strong>•	Telephone and online counselling:</strong><br>
-                                                    When you contact 1800RESPECT, you will talk to a trained counsellor who will listen and support you in what feels right for you and your situation. We can be contacted by phone or online chat, 24 hours a day, seven days a week.<br>
-                                                    <strong>•	Mental health support</strong><br>
-                                                    If you have worries about your mental health there are a range of services that can support you<br>
-                                                    If you are experiencing psychological distress as a result of an experience of sexual assault or domestic and family violence, 1800RESPECT can provide initial support to you and refer you to more specialist support.<br>
-                                                    <strong>•	Training and professional development</strong><br>
-                                                    Frontline workers and professionals within the health, community and human services sectors have extra responsibilities. These responsibilities will depend on their qualifications, training and experience in being able to:
-                                                    Respond to disclosure, Identify violence,Provide support and refer people experiencing violence to further specialist support<br>
-                                                    <br>
-                                                    Phone: 1800737732<br>
-                                                    <a href="https://www.1800respect.org.au" target="_blank">1800respect.org.au</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
                                 <div class="clearfix"> </div>
 
@@ -345,129 +274,66 @@
                                     <!--6 casa-->
                                     <div class="col-sm-4 news-w3lgrids">
                                         <div class="news-gridtext">
+                                            <h4 style="padding-top:30px"><strong>CASA House</strong></h4>
+                                            <img style="max-height:15px; max-width:20px" src="~/Content/Iteration3/css/img/scroll-arrow-to-down.png" />
                                             <div class="news-w3img">
-                                                <a href="#myModal6" data-toggle="modal"><img src="~/images/6casa.png" class="img-responsive zoom-img" alt="" /></a>
+                                                <a href="#myModal6" data-toggle="modal"><img src="~/Content/Iteration3/css/img/6casa.png" class="img-responsive zoom-img" alt="" /></a>
                                             </div>
                                             <div class="news-w3imgtext">
-                                                <h4><a href="#myModal6" data-toggle="modal">CASA House</a></h4>
-                                                <p>CASA House provides 24-hour services They is committed to ensuring that the silence which surrounds sexual assault continues to be broken and that victim/survivors are provided with necessary support.</p>
+                                                <p>
+                                                    CASA House provides 24-hour services They is committed to ensuring that the silence which surrounds sexual assault continues to be broken and that victim/survivors are provided with necessary support.
+                                                    Address: CASA House 3rd Floor, Queen Victoria Women's Centre 210 Lonsdale Street Melbourne<br />
+                                                    Phone: 0396353610<br />
+                                                    Email: casa@thewomens.org.au
+                                                    <a href="http://www.casahouse.com.au/index.php?page_id=129" target="_blank">www.casahouse.com.au</a>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                     <!--Modal 6 casa-->
-                                    <div class="modal about-modal w3-agileits fade" id="myModal6" tabindex="-1" role="dialog">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                </div>
-                                                <div class="modal-body" style="text-align: left">
-                                                    <img src="~/images/6casa-modal.png">
-                                                    <p>
-                                                        CASA House is a department of the Royal Women's Hospital in Melbourne, Victoria. It is a government funded organisation which provides services on a 24 hour basis. CASA House is committed to ensuring that the silence which surrounds sexual assault continues to be broken and that victim/survivors are provided with necessary support.<br>
-                                                        CASA House offers<br />
-                                                        •	24 hour crisis care support following a sexual assault in the last 2 weeks short to medium term counselling and advocacy support support groups<br>
-                                                        •	24 hour telephone counselling and support secondary consultation and debriefing for health and other professionals community and professional education<br>
-                                                        <br>
-                                                        <br>
-
-                                                        Address: CASA House 3rd Floor, Queen Victoria Women's Centre 210 Lonsdale Street Melbourne<br />
-                                                        Phone: 0396353610<br />
-                                                        Email: casa@thewomens.org.au
-                                                        <a href="http://www.casahouse.com.au/index.php?page_id=129" target="_blank">www.casahouse.com.au</a>	<br>
-
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
                                     <!--7 wire-->
                                     <div class="col-sm-4 news-w3lgrids">
                                         <div class="news-gridtext">
+                                            <h4 style="padding-top:30px"><strong>WIRE</strong></h4>
+                                            <img style="max-height:15px; max-width:20px" src="~/Content/Iteration3/css/img/scroll-arrow-to-down.png" />
                                             <div class="news-w3img">
-                                                <a href="#myModal7" data-toggle="modal"><img src="~/images/7wire.png" class="img-responsive zoom-img" alt="" /></a>
+                                                <a href="#myModal7" data-toggle="modal"><img src="~/Content/Iteration3/css/img/7wire.png" class="img-responsive zoom-img" alt="" /></a>
                                             </div>
                                             <div class="news-w3imgtext">
-
-                                                <h4><a href="#myModal7" data-toggle="modal">WIRE </a></h4>
-                                                <p>WIRE is a service for and by women in Victoria. They work within a feminist framework where they recognise women’s resilience and resourcefulness as a starting point. </p>
-
+                                                <p>
+                                                    WIRE is a service for and by women in Victoria. They work within a feminist framework where they recognise women’s resilience and resourcefulness as a starting point.
+                                                    Phone number: 1300134130<br>
+                                                    Email: support@wire.org.au<br>
+                                                    Address: 372 Spencer St, West Melbourne
+                                                    <a href="https://www.wire.org.au/" target="_blank">www.wire.org.au</a>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                     <!--modal 7 wire-->
-                                    <div class="modal about-modal w3-agileits fade" id="myModal7" tabindex="-1" role="dialog">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                </div>
-                                                <div class="modal-body" style="text-align: left">
-                                                    <img src="~/images/7wire-modal.png" alt="">
-                                                    <p>
-                                                        WIRE is a service for and by women in Victoria. They work within a feminist framework where we recognise women’s resilience and resourcefulness as a starting point. they take time to listen to women’s stories, and respect and acknowledge women’s diverse experiences and the different ways they choose to resolve their life situations.<br>
-                                                        A society where women are safe, respected, valued, informed, empowered and free to make genuine choices in their lives. WIRE aims to be inclusive of women from all backgrounds and experiences. They aim to create an environment which is free of exploitation and discrimination.<br>
-
-                                                        Legal matters are often complex, time-consuming and can drain your energy and money. WIRE can help you identify pathways to legal support and ways that you can support yourself whilst working through legal matters<br>
-                                                        <br />
-                                                        <br />
-                                                        WIRE achieves this by:<br />
-                                                        •	Listening to and amplifying the voices of women<br />
-                                                        •	Providing support and information to assist women to make informed choices<br>
-                                                        •	Providing women with tools and education to rebuild their live<br>
-                                                        <br />
-                                                        Phone number: 1300134130<br>
-                                                        Email: support@wire.org.au<br>
-                                                        Address: 372 Spencer St, West Melbourne
-                                                        <a href="https://www.wire.org.au/" target="_blank">www.wire.org.au</a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                     <!--8 sha-->
                                     <div class="col-sm-4 news-w3lgrids">
                                         <div class="news-gridtext">
+                                            <h4 style="padding-top:30px"><strong>Sexual Harassment Australia</strong></h4>
+                                            <img style="max-height:15px; max-width:20px" src="~/Content/Iteration3/css/img/scroll-arrow-to-down.png" />
                                             <div class="news-w3img">
-                                                <a href="#myModal8" data-toggle="modal"><img src="~/images/8sha.png" class="img-responsive zoom-img" alt="" /></a>
+                                                <a href="#myModal8" data-toggle="modal"><img src="~/Content/Iteration3/css/img/8sha.png" class="img-responsive zoom-img" alt="" /></a>
                                             </div>
                                             <div class="news-w3imgtext">
-                                                <h4><a href="#myModal8" data-toggle="modal">Sexual Harassment Australia</a></h4>
+
                                                 <p>
                                                     Lines are open 7 days a week and every case will be  evaluated personally, for free. <br>
                                                     If you choose to move forward, they will be beside you through every phase of the legal process.<br>
+                                                    Email: mediate@awna.com.au<br>
+                                                    Phone : 1800333666<br>
+                                                    Emergency phone : 0421634370<br>
+                                                    <a href="https://sexualharassmentaustralia.com.au/" style="word-break:break-all;" target="_blank">sexualharassmentaustralia.com.au</a>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                     <!--8 sha modal -->
-                                    <div class="modal about-modal w3-agileits fade" id="myModal8" tabindex="-1" role="dialog">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                </div>
-                                                <div class="modal-body" style="text-align: left">
-                                                    <img src="~/images/8sha-modal.png" alt="">
-                                                    <p>
-                                                        Sexual Harassment Australia offer a free consultation and a phone line that operates 7 days a week.<br>
-                                                        •	No ongoing costs and in some cases, no win no pay may apply.<br>
-                                                        •	In mediation, negotiation, arbitration and advocacy.<br>
-                                                        <br>
-                                                        Email: mediate@awna.com.au<br>
-                                                        Phone : 1800333666<br>
-                                                        Emergency phone : 0421634370<br>
-                                                        <a href="https://sexualharassmentaustralia.com.au/" target="_blank">sexualharassmentaustralia.com.au</a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                    <div class="clearfix"> </div>
                                 </div>
 
 
@@ -475,9 +341,34 @@
                         </div>
                         <!-- //support -->
                     </div>
+
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="terms" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" style="color:rgb(176,123,215)">Terms of Use</h3>
+                    <h4>[Last updated: 22/05/2019]</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position:absolute;right:25px;top:25px;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="terms-body">
+                    <p>
+                        The information provided by us on purpleumbrella.ml (the “site”) has been collected from City of Melbourne – Open Data Portal. We have also enabled our users to add information to our website. All information on the site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on the site.
+                    </p>
+                    <br>
+                    <p>
+                        Under no circumstances shall we have any responsibility or liability to you for any loss or damage, whether direct, indirect, incidental, special and/or consequential incurred as a result of the use of the site or reliance on any information provided on the site.
+                    </p>
+                    <br>
+                    <p>
+                        Your access to and use of the site is conditioned on your acceptance of and compliance with these Terms of Use (“terms”). These terms apply to all visitors, users and others who access or use the site. By accessing or using the site, you agree to be bound by these terms. If you disagree with any part of the terms then you may not access the site.
+                    </p>
                 </div>
             </div>
         </div>
@@ -537,16 +428,11 @@
 
     @Scripts.Render("~/Scripts/Iteration3/turf.min.js")
     <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
-
     @Scripts.Render("~/bundles/jqueryval")
     @Scripts.Render("~/bundles/datebox")
-    @Scripts.Render("~/Scripts/Iteration3/cookie.js?id=1")
+    @Scripts.Render("~/Scripts/Iteration3/cookie.js?id=3")
     @Scripts.Render("~/Scripts/Iteration3/bootstrap-tour.min.js")
-    @Scripts.Render("~/Scripts/Iteration3/mapControl.js?id=1")
-    @Scripts.Render("~/Scripts/Iteration3/navigationmap.js?id=1")
-
-
-
-
+    @Scripts.Render("~/Scripts/Iteration3/mapControl.js?id=3")
+    @Scripts.Render("~/Scripts/Iteration3/navigationmap.js?id=3")
 </body>
 </html>

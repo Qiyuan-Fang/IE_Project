@@ -35,6 +35,8 @@ namespace Purple_Umbrella.Controllers.Iteration3
         // GET: Support
         public ActionResult Support()
         {
+            List<string> IncidentTypes = new List<string>() { "There's a suspicious person.", "Someone harassed me." };
+            ViewBag.IncidentTypes = new SelectList(IncidentTypes);
             return View();
         }
 

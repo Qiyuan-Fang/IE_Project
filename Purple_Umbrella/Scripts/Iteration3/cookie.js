@@ -28,7 +28,7 @@ function checkCookie() {
         return uuid;
     } else {
         initiateCookie();
-        $('#intro-modal').modal({ show: true });
+        $('#information').modal({ show: true });
         //user = createUuid();
         //user = prompt("Please enter your name:", "");
         //setCookie("username", user, 30);

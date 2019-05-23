@@ -88,9 +88,10 @@ function one(event) {
 
 var sidenav_status = false;
 function openMenu(event) {
+    tour.end();
     if (!sidenav_status) {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("safetymap").style.marginLeft = "250px";
+        document.getElementById("mySidenav").style.width = "200px";
+        document.getElementById("safetymap").style.marginLeft = "200px";
         document.getElementById("safetymap").style.backgroundColor = "rgba(0,0,0,0.4)";
         sidenav_status = true;
     }
@@ -237,6 +238,118 @@ function report(event) {
 
 }
 
+function trackUser() {
+        let options = {
+            enableHighAccuracy: true,
+            timeout: Infinity,
+            maximumAge: 0
+        };
+        main_map.addSource("userPosition", {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": [{
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": []
+                    },
+                    "properties": {
+                        "title": "You're here!"
+                    }
+                }]
+            }
+        });
+        main_map.addLayer({
+            "id": "userPosition",
+            "type": "circle",
+            "source": "userPosition",
+            //"source-layer": "geomarker",
+            "paint": {
+                "circle-radius": radius,
+                "circle-color": "#00FFFF",
+                "circle-stroke-width": 2,
+                "circle-stroke-color": "#FFF",
+                "circle-opacity": 0.8
+            }
+        });
+        main_map.addSource("Minute10", {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": [{
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": []
+                    },
+                    "properties": {
+                        "title": "10 Minutes"
+                    }
+                }]
+            }
+        });
+        main_map.addLayer({
+            "id": "Minute10",
+            "type": "symbol",
+            "source": "Minute10",
+            "layout": {
+                "visibility": "visible",
+                "icon-image": "metro-demo",
+                "icon-size": 2,
+                "text-field": "{title}",
+                "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+                "text-offset": [0, 0.6],
+                "text-anchor": "top"
+            },
+            "paint": {
+                "text-color": "White"
+            }
+        });
+    
+    var id = navigator.geolocation.watchPosition(success, error, options);
+
+    function success(pos) {
+        let lat = pos.coords.latitude;
+        let lng = pos.coords.longitude;
+        main_map.on('load', function () {
+            main_map.addLayer({
+                "id": "points",
+                "type": "circle",
+                "source": {
+                    "type": "geojson",
+                    "data": {
+                        "type": "FeatureCollection",
+                        "features": [{
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [lng, lat]
+                            },
+                            "properties": {
+                                "title": 'Current Location'
+                            }
+                        }]
+                    }
+                },
+                "paint": {
+                    "circle-radius": 10,
+                    "circle-color": "#007cbf"
+                }
+            });
+        });
+
+        main_map.flyTo({
+            center: [lng, lat]
+        });
+        document.getElementById("longitude").value = lng;
+        document.getElementById("latitude").value = lat;
+    }
+    function error(err) {
+        console.warn('ERROR(' + err.code + '): ' + err.message);
+    }
+}
+
 function geolocate() {
     this.gl = !this.gl;
     if (this.gl === true) {
@@ -248,6 +361,7 @@ function geolocate() {
         };
 
         var geoSuccess = function (position) {
+            document.getElementById("map-geolocate").style.backgroundImage = "url('/Content/Iteration3/css/img/location-on.png')";
             startPos = position;
             var radius = 20;
             main_map.flyTo({
@@ -431,18 +545,15 @@ function geolocate() {
             console.log('Error occurred. Error code: ' + error.code);
         };
 
-        main_map.dragRotate.disable();
-        main_map.touchZoomRotate.disableRotation();
-
-        navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOptions);
+        var id = navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOptions);
     } else {
+        navigator.geolocation.clearWatch(id);
+        document.getElementById("map-geolocate").style.backgroundImage = "url('/Content/Iteration3/css/img/location-off.png')";
         d3.select("#geoCircle").remove();
         main_map.removeLayer("geomarker");
         main_map.removeSource("geomarker");
         main_map.removeLayer("Minute10");
         main_map.removeSource("Minute10");
-        main_map.dragRotate.enable();
-        main_map.touchZoomRotate.enableRotation();
 
     }
 }
@@ -451,26 +562,39 @@ function geolocate() {
 var tour = new Tour({
     steps: [
         {
+            element: "#map-menu",
+            placement: "bottom",
+            title: "Menu",
+            content: "More information will be provided here."
+        },
+        {
             element: "#map-geolocate",
             placement: "left",
             title: "Locate yourself",
-            content: "Find yourself and know how far you can go in 10 minutes."
+            content: "You can also know how far you can go in ten minutes."
         },
         {
             element: "#map-report",
             placement: "left",
             title: "Report an incident",
-            content: "Report what happened to you at anywhere or anytime to us."
+            content: "If you don't specify the location, it will use your current location by default."
         },
         {
             element: "#filter-group",
-            placement: "left",
-            title: "Too many information?",
-            content: "Try these filter button."
+            placement: "top",
+            title: "Want more information?",
+            content: "Try these filter buttons, and you will see the difference on the map."
+        },
+        {
+            element: "#map-emergency",
+            placement: "right",
+            title: "In emergency?",
+            content: "Play siren audio and call the police."
         }
 
     ]
 });
+
 function displayTutorial() {
 
     // Initialize the tour
@@ -482,23 +606,47 @@ function displayTutorial() {
 
 var emergency_status = false;
 var audio = new Audio("/Content/Iteration3/audio/police.mp3");
+audio.loop = true;
 function emergency() {
     if (!emergency_status) {
         var r = confirm("This will play a Police Siren audio and call the police.\n(Turn off the silent mode of your mobile.)\nAre you sure?");
         if (r === true) {
+            emergency_status = true;
+            document.getElementById("map-emergency").style.backgroundImage = "url(/Content/Iteration3/css/img/police.png)";
             window.open('tel:0422989757');
             audio.play();
-            emergency_status = true;
         }
     } else {
-        audio.load();
         emergency_status = false;
+        document.getElementById("map-emergency").style.backgroundImage = "url(/Content/Iteration3/css/img/police-off.png)";
+        audio.load();
     }
 
 }
 
+function resetFilter() {
+    main_map.setPaintProperty('bars_bg', 'circle-opacity', 0);
+    main_map.setPaintProperty('bars', 'text-color', "White");
+    main_map.setPaintProperty('bars_bg', 'circle-stroke-opacity', 0);
+    main_map.setPaintProperty('constructions_bg', 'circle-opacity', 0);
+    main_map.setPaintProperty('constructions_bg', 'circle-stroke-opacity', 0);
+    main_map.setFilter("sensors", null);
+    main_map.setFilter("nightclubs", null);
+    main_map.setFilter("bars_bg", null);
+    main_map.setFilter("constructions_bg", null);
+    main_map.setFilter("bars", null);
+    main_map.setFilter("constructions", null);
+}
+
 
 /* Instantiate new controls with custom event handlers */
+const resetControl = new MapboxGLButtonControl({
+    className: "mapbox-gl-reset",
+    title: "Reset Filter",
+    id: "map-reset",
+    eventHandler: resetFilter
+});
+
 const tutorialControl = new MapboxGLButtonControl({
     className: "mapbox-gl-tutorial",
     title: "Tutorial",
@@ -533,15 +681,6 @@ const emergencyControl = new MapboxGLButtonControl({
     id: "map-emergency",
     eventHandler: emergency
 });
-
-
-
-/* Add Controls to the Map */
-//map.addControl(new mapboxgl.NavigationControl(), "top-left");
-//map.addControl(new PitchToggle({ minpitchzoom: 11 }), "top-left");
-//map.addControl(ctrlPoint, "bottom-left");
-//map.addControl(ctrlLine, "bottom-right");
-//map.addControl(ctrlPolygon, "top-right");
 
 $(document).ready(function () {
     // when the DOM has fully loaded...

@@ -1,14 +1,17 @@
 ﻿const TOKEN = 'pk.eyJ1Ijoia2VvbnlhbWF0byIsImEiOiJjamw4cXR0MjcxZ24yM2txa2VhazJ2MmY5In0.b3cxVs4DdITNSJYZGzt9pA';
 
 //Create marker when user enter value 
-const first_marker_popup_content = "<div id='btn-group' class='btn-group'>"
-    + "<button id='setAsStart' onclick='setAsStart()'>Start from here</button>"
-    + "<button id='setAsDestination' onclick='setAsDestination()'>Go there</button>"
-    + "<button onclick='startFromCurrentPosition()'>From your position</button>"
-    + "</div>"
-    + "<div id='address-input'></div>";
-const first_marker_popup = new mapboxgl.Popup({ className: 'direction-popup', offset: 35.30, closeButton: false })
+const first_marker_popup_content = "<div>"
+    + "<div><button style='background-color: mediumpurple;border: 1px solid pink;color: white;padding: 8px 8px;cursor: pointer;float:left; width:200px;' onclick='startFromCurrentPosition()'>From your position</button></div>"
+            + "<div id='btn-group' class='btn-group'>"
+                + "<button id='setAsStart' onclick='setAsStart()'>Start from there</button>"
+    + "<button style='width:100px;' id='setAsDestination' onclick='setAsDestination()'>Go there</button>"
+            + "</div>"
+    + "<div id='address-input' style='max-width:200px;'></div>"
+    +"</div>";
+const first_marker_popup = new mapboxgl.Popup({ className: 'direction-popup', anchor: "bottom", offset: 35.30, closeButton: false })
     .setHTML(first_marker_popup_content);
+
 const first_marker = new mapboxgl.Marker({
     color: 'red',
     draggable: true
@@ -19,19 +22,25 @@ const second_marker = new mapboxgl.Marker({
     draggable: true
 });
 
+const third_marker = new mapboxgl.Marker({
+    color: 'red',
+    draggable: true
+});
+
 mapboxgl.accessToken = TOKEN;
 var bounds = [
-    [144.9200, -37.8310], // Southwest coordinates
-    [144.9998, -37.7879]  // Northeast coordinates
+    [144.5423, -38.0254], // Southwest coordinates
+    [145.6203, -37.5293]  // Northeast coordinates
 ];
 const main_map = new mapboxgl.Map({
     container: 'safetymap',
     style: 'mapbox://styles/mapbox/dark-v10',
     zoom: 14,
     center: [144.958429, -37.815858],
-    attributionControl: false
-    //,maxBounds: bounds
+    attributionControl: false,
+    maxBounds: bounds
 });
+
 
 $(document).ready(function () {
 
@@ -57,10 +66,11 @@ $(document).ready(function () {
     main_map.addControl(menuControl, "top-left");
     main_map.addControl(geocoder, "top-left");
     main_map.addControl(tutorialControl, "top-right");
-    main_map.addControl(new mapboxgl.NavigationControl({ id: "Nav-ctrl" }));
+    main_map.addControl(new mapboxgl.NavigationControl({ showZoom: false }));
     main_map.addControl(geoLocateControl, "top-right");
     main_map.addControl(reportControl, 'top-right');
     main_map.addControl(emergencyControl, 'bottom-left');
+
 
     geocoder.on('result', function (result) {
         let longitude = result.result.geometry.coordinates[0];
@@ -70,13 +80,29 @@ $(document).ready(function () {
         first_marker_popup.setLngLat([longitude, latitude]).addTo(main_map);
     });
 
+    var clear_button = document.getElementsByClassName("mapboxgl-ctrl-geocoder--button")[0];
+    clear_button.addEventListener("click", function () {
+        if (main_map.getSource('route')) {
+            main_map.removeSource('route');
+            first_marker.remove();
+            second_marker.remove();
+            third_marker.remove();
+            getRoute([0, 0], [0, 0]);
+            main_map.flyTo({
+                zoom: 14,
+                center: [144.958429, -37.815858]
+            });
+        }
+        resetFilter();
+    });
+
     main_map.on("load", function () {
         getRoute([0, 0], [0, 0]);
         getPedestrainCount();
         addBarsLayer();
         addReportsLayer();
         addNightClubsLayer();
-        addConstructionSitessLayer()
+        addConstructionSitessLayer();
         getAllRoadData();
 
         createFilter("sensors", "Pedestrain");
@@ -210,38 +236,9 @@ function getAllRoadData() {
                     0.7,
                     0.95]
             },
-            "filter": ["==", ["get", "type"], 'Road'],
-            "layout": { "visibility": 'none' }
+            "filter": ["==", ["get", "type"], 'Road']
 
         }, firstSymbolId);
-
-        //map.addLayer({
-        //    "id": "lanes",
-        //    "type": "line",
-        //    "source": "road_segments",
-        //    'paint': {
-        //        'line-width': {
-        //            'base': 15,
-        //            'stops': [[14, 3], [16, 8], [20, 240]]
-        //        },
-        //        // to set the line-color to a feature property value.
-        //        //'line-color': ['get', 'color']
-        //        'line-color':
-        //            ["case",
-        //                ["boolean", ["feature-state", "touchstart"], false],
-        //                "#00FFFF",
-        //                ["case",
-        //                    index1, colors[0],
-        //                    index2, colors[1],
-        //                    index3, colors[2],
-        //                    index4, colors[3], colors[4]]],
-        //        "line-opacity": ["case",
-        //            ["boolean", ["feature-state", "touchstart"], false],
-        //            0.7,
-        //            0.95]
-        //    },
-        //    "filter": ["==", ["get", "type"], 'Lane']
-        //}, firstSymbolId);
 
         //Display popup when user touch a line
         var popup = new mapboxgl.Popup({
@@ -308,7 +305,7 @@ function getAllRoadData() {
         });
 
         // Delete the popup when user's finger leave the road
-        main_map.on("touchend", "roads", function () {
+        main_map.on("touchend", function () {
             if (line_id) {
                 main_map.setFeatureState({ source: 'road_segments', id: line_id }, { touchstart: false });
             }
@@ -318,6 +315,8 @@ function getAllRoadData() {
 
     });
 }
+
+
 
 //Get reports data from backend
 function addReportsLayer() {
@@ -426,7 +425,7 @@ function addReportsLayer() {
                 el.style.height = '35px';
 
 
-                var popup = new mapboxgl.Popup()
+                var popup = new mapboxgl.Popup({ anchor: "bottom",offset: 10})
                     .setHTML(popup_content);
                 //el.addEventListener('click', function () {
                 //    window.alert(marker.properties.message);
@@ -474,7 +473,7 @@ function getPedestrainCount() {
                 "id": "sensors",
                 "type": "fill",
                 "source": "sensors",
-                'layout': {},
+                'layout': { 'visibility': 'none' },
                 'paint': {
                     'fill-color': {
                         property: 'count',
@@ -523,7 +522,8 @@ function addBarsLayer() {
                     "text-size": 10,
                     "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
                     "text-offset": [0, 1.2],
-                    "text-anchor": "top"
+                    "text-anchor": "top",
+                    'visibility': 'none'
                 },
                 "paint": {
                     "text-color": "White"
@@ -533,6 +533,9 @@ function addBarsLayer() {
                 "id": "bars_bg",
                 "type": "circle",
                 "source": "bars",
+                "layout": {
+                    'visibility': 'none'
+                },
                 "paint": {
                     'circle-radius': 12,
                     'circle-color': "Red",
@@ -573,7 +576,8 @@ function addNightClubsLayer() {
                         "text-size": 8,
                         "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
                         "text-offset": [0, 0.6],
-                        "text-anchor": "top"
+                        "text-anchor": "top",
+                        'visibility': 'none'
                     },
                     "paint": {
                         "text-color": "White"
@@ -619,7 +623,8 @@ function addConstructionSitessLayer() {
                         "text-size": 8,
                         "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
                         "text-offset": [0, 0.6],
-                        "text-anchor": "top"
+                        "text-anchor": "top",
+                        'visibility': 'none'
                     },
                     "paint": {
                         "text-color": "White"
@@ -629,6 +634,9 @@ function addConstructionSitessLayer() {
                     "id": "constructions_bg",
                     "type": "circle",
                     "source": "constructions",
+                    "layout": {
+                        'visibility': 'none'
+                    },
                     "paint": {
                         'circle-radius': 12,
                         'circle-color': "Yellow",
@@ -642,55 +650,6 @@ function addConstructionSitessLayer() {
 
         }
     });
-}
-
-function trackUser() {
-    let options = {
-        enableHighAccuracy: true,
-        timeout: Infinity,
-        maximumAge: 0
-    };
-
-    navigator.geolocation.watchPosition(success, error, options);
-    function success(pos) {
-        let lat = pos.coords.latitude;
-        let lng = pos.coords.longitude;
-        main_map.on('load', function () {
-            main_map.addLayer({
-                "id": "points",
-                "type": "circle",
-                "source": {
-                    "type": "geojson",
-                    "data": {
-                        "type": "FeatureCollection",
-                        "features": [{
-                            "type": "Feature",
-                            "geometry": {
-                                "type": "Point",
-                                "coordinates": [lng, lat]
-                            },
-                            "properties": {
-                                "title": 'Current Location'
-                            }
-                        }]
-                    }
-                },
-                "paint": {
-                    "circle-radius": 10,
-                    "circle-color": "#007cbf"
-                }
-            });
-        });
-
-        main_map.flyTo({
-            center: [lng, lat]
-        });
-        document.getElementById("longitude").value = lng;
-        document.getElementById("latitude").value = lat;
-    }
-    function error(err) {
-        console.warn('ERROR(' + err.code + '): ' + err.message);
-    }
 }
 
 function confirmReport(id) {
@@ -707,7 +666,21 @@ function confirmReport(id) {
     });
 }
 
+
 function setAsStart() {
+    if (main_map.getSource('route')) {
+        var emptyroute = {
+            type: 'Feature',
+            properties: {},
+            geometry: {
+                type: 'LineString',
+                coordinates: []
+            }
+        };
+        main_map.getSource('route').setData(emptyroute);
+        second_marker.remove();
+        third_marker.remove();
+    }
     let geocoder = new MapboxGeocoder({
         accessToken: 'pk.eyJ1Ijoia2VvbnlhbWF0byIsImEiOiJjamw4cXR0MjcxZ24yM2txa2VhazJ2MmY5In0.b3cxVs4DdITNSJYZGzt9pA',
         countries: 'au',
@@ -727,7 +700,7 @@ function setAsStart() {
 
     geocoder.on('result', function (result) {
         //Get start point's coordinates
-        let lngLat = first_marker_popup.getLngLat();
+        let lngLat = first_marker.getLngLat();
         let s_lng = lngLat.lng;
         let s_lat = lngLat.lat;
         let start = [s_lng, s_lat];
@@ -739,14 +712,20 @@ function setAsStart() {
         second_marker.setLngLat([d_lng, d_lat])
             .addTo(main_map);
         second_marker.on('dragend', onDragEnd);
+        first_marker.on('dragend', onDragEnd);
 
         getRoute(start, destination);
+        main_map.resize();
         el.removeChild(el.childNodes[0]);
         first_marker_popup.remove();
         function onDragEnd() {
-            let lngLat = second_marker.getLngLat();
-            let d_lng = lngLat.lng;
-            let d_lat = lngLat.lat;
+            let first_lngLat = first_marker.getLngLat();
+            let s_lng = first_lngLat.lng;
+            let s_lat = first_lngLat.lat;
+            let start = [s_lng, s_lat];
+            let second_lngLat = second_marker.getLngLat();
+            let d_lng = second_lngLat.lng;
+            let d_lat = second_lngLat.lat;
             let destination = [d_lng, d_lat];
             getRoute(start, destination);
         }
@@ -754,6 +733,20 @@ function setAsStart() {
 }
 
 function setAsDestination() {
+    if (main_map.getSource('route')) {
+        var emptyroute = {
+            type: 'Feature',
+            properties: {},
+            geometry: {
+                type: 'LineString',
+                coordinates: []
+            }
+        };
+        main_map.getSource('route').setData(emptyroute);
+        second_marker.remove();
+        third_marker.remove();
+    }
+    second_marker.remove();
     let geocoder = new MapboxGeocoder({
         accessToken: 'pk.eyJ1Ijoia2VvbnlhbWF0byIsImEiOiJjamw4cXR0MjcxZ24yM2txa2VhazJ2MmY5In0.b3cxVs4DdITNSJYZGzt9pA',
         countries: 'au',
@@ -773,7 +766,7 @@ function setAsDestination() {
 
     geocoder.on('result', function (result) {
         //Get start point's coordinates
-        let lngLat = first_marker_popup.getLngLat();
+        let lngLat = first_marker.getLngLat();
         let d_lng = lngLat.lng;
         let d_lat = lngLat.lat;
         let destination = [d_lng, d_lat];
@@ -784,23 +777,20 @@ function setAsDestination() {
         let start = [s_lng, s_lat];
         second_marker.setLngLat([s_lng, s_lat])
             .addTo(main_map);
-        second_marker.on('dragend', secondOnDragEnd);
-        first_marker.on('dragend', firstOnDragEnd);
+        second_marker.on('dragend', onDragEnd);
+        first_marker.on('dragend', onDragEnd);
         getRoute(start, destination);
         el.removeChild(el.childNodes[0]);
         first_marker_popup.remove();
 
-        function firstOnDragEnd() {
-            let lngLat = first_marker.getLngLat();
-            let d_lng = lngLat.lng;
-            let d_lat = lngLat.lat;
+        function onDragEnd() {
+            let first_lngLat = first_marker.getLngLat();
+            let d_lng = first_lngLat.lng;
+            let d_lat = first_lngLat.lat;
             let destination = [d_lng, d_lat];
-            getRoute(start, destination);
-        }
-        function secondOnDragEnd() {
-            let lngLat = second_marker.getLngLat();
-            let s_lng = lngLat.lng;
-            let s_lat = lngLat.lat;
+            let second_lngLat = second_marker.getLngLat();
+            let s_lng = second_lngLat.lng;
+            let s_lat = second_lngLat.lat;
             let start = [s_lng, s_lat];
             getRoute(start, destination);
         }
@@ -810,22 +800,27 @@ function setAsDestination() {
 }
 
 function startFromCurrentPosition() {
-    let lngLat = first_marker_popup.getLngLat();
+    let lngLat = first_marker.getLngLat();
     let longitude = lngLat.lng;
     let latitude = lngLat.lat;
+    third_marker.setLngLat([longitude, latitude]).addTo(main_map);
+    first_marker.remove();
     let destination = [longitude, latitude];
     navigator.geolocation.getCurrentPosition(success, error);
     function success(pos) {
+        if (main_map.getSource('route')) {
+            second_marker.remove();
+        }
         let lat = pos.coords.latitude;
         let lng = pos.coords.longitude;
         var start = [lng, lat];
-        second_marker.remove();
+        //second_marker.remove();
         getRoute(start, destination);
         document.getElementById('map-geolocate').click();
-        first_marker.on('dragend', onDragEnd);
+        third_marker.on('dragend', onDragEnd);
 
         function onDragEnd() {
-            let lngLat = first_marker.getLngLat();
+            let lngLat = third_marker.getLngLat();
             let d_lng = lngLat.lng;
             let d_lat = lngLat.lat;
             let new_destination = [d_lng, d_lat];
@@ -928,15 +923,17 @@ function getRoute(start, end) {
             }, new mapboxgl.LngLatBounds(route[0], route[0]));
 
             main_map.fitBounds(bounds, {
-                padding: 100
+                padding: 40
             });
-        }
-        showBarsAroundRoute(route);
+            showBarsAroundRoute(route);
 
-        showConstructionAroundRoute(route);
+            showConstructionAroundRoute(route);
+        }
+
 
     };
     req.send();
+    
 }
 
 
@@ -967,8 +964,12 @@ function createFilter(layerID, text) {
     var input = document.createElement('input');
     input.type = 'checkbox';
     input.id = layerID;
-    if (layerID === "roads") { input.checked = false; }
-    else { input.checked = true; }
+    if (layerID === "roads") {
+        input.checked = true;
+    }
+    else {
+        input.checked = false;
+    }
     filterGroup.appendChild(input);
 
     var label = document.createElement('label');
@@ -987,7 +988,6 @@ function createFilter(layerID, text) {
 
 function showBarsAroundRoute(route) {
     var bars = main_map.querySourceFeatures('bars');
-    //var bars = main_map.getLayer('bars');
     var options = { units: 'miles' };
     var filters = ['in', '@id'];
     bars.forEach(function (bar) {
@@ -1006,12 +1006,16 @@ function showBarsAroundRoute(route) {
             }
         }
     });
-
+    
     main_map.setFilter('bars', filters);
     main_map.setFilter('bars_bg', filters);
-    main_map.setPaintProperty('bars_bg', 'circle-opacity', 0.5);
     main_map.setPaintProperty('bars', 'text-color', "Red");
-    main_map.setPaintProperty('bars_bg', 'circle-stroke-opacity', 0.5);
+    let visibility = main_map.getLayoutProperty('bars', 'visibility');
+    //if (visibility !== "none") {
+        main_map.setPaintProperty('bars_bg', 'circle-opacity', 0.5);
+        main_map.setPaintProperty('bars_bg', 'circle-stroke-opacity', 0.5);
+    //}
+    
 }
 
 function showConstructionAroundRoute(route) {
@@ -1033,12 +1037,12 @@ function showConstructionAroundRoute(route) {
 
     main_map.setFilter('constructions', filters);
     main_map.setFilter('constructions_bg', filters);
-    main_map.setPaintProperty('constructions_bg', 'circle-opacity', 0.5);
-    main_map.setPaintProperty('constructions_bg', 'circle-stroke-opacity', 0.5);
+    let visibility = main_map.getLayoutProperty('constructions', 'visibility');
+    //if (visibility !== "none") {
+        main_map.setPaintProperty('constructions_bg', 'circle-opacity', 0.5);
+        main_map.setPaintProperty('constructions_bg', 'circle-stroke-opacity', 0.5);
+    //}
 }
-
-
-
 
 function displayInformation() {
     $('#information').modal('show');
@@ -1048,15 +1052,24 @@ function displaySupport() {
     $('#support').modal('show');
 }
 
+function displayTerms() {
+    $('#terms').modal('show');
+}
+
 var filternav_status = false;
 function openFilter() {
-    if (!filternav_status) {
+    this.fl = !this.fl;
+    if (this.fl) {
         document.getElementById("filter-group").style.marginBottom = "-255px";
-        filternav_status = true;
+        document.getElementById("filter-button").style.backgroundColor = "Grey";
+        document.getElementById("filter-button").innerHTML = "Show filters";
+        
     }
     else {
         document.getElementById("filter-group").style.marginBottom = "0";
-        filternav_status = false;
+        document.getElementById("filter-button").style.backgroundColor = "#a17dd0";
+        document.getElementById("filter-button").innerHTML = "Hide filters";
+        
     }
 
 }
@@ -1068,6 +1081,21 @@ $('#intro-modal').on('click', function () {
     }, 500);
 });
 
+//Display button only when the user scrolled down
+$('#support-body').on("scroll", function () {
+    if ($('#support-body').scrollTop() > 80) {
+        document.getElementById("b2t-button").style.display = "block";
+    } else {
+        document.getElementById("b2t-button").style.display = "none";
+    }
+});
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    console.log($("#support-body").position().top);
+    let position = $("#support-body").position().top - 50;
+    $("#support-body").animate({ scrollTop: position });
+}
     // initialize the map canvas to interact with later
     //var canvas = main_map.getCanvasContainer();
     //var start = [144.9134, -37.8415];
